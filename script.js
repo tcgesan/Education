@@ -6,23 +6,8 @@ const questions = [
         correct: 3 // Index of the correct answer
     },
     {
-        question: 'বাংলাদেশের জাতীয় ফুল কোনটি?',
-        options: ['রজনীগন্ধা', 'শাপলা', 'গোলাপ', 'জুঁই'],
-        correct: 1
-    },
-    {
-        question: 'বাংলাদেশের স্বাধীনতার বছর কোনটি?',
-        options: ['১৯৪৭', '১৯৭১', '১৯৯০', '১৯৮৬'],
-        correct: 1
-    },
-    {
         question: 'জাতিসংঘের বর্তমান মহাসচিব কে?',
         options: ['আন্তোনিও গুতেরেস', 'ব্যারাক ওবামা', 'বিল গেটস', 'জ্যাক মা'],
-        correct: 0
-    },
-    {
-        question: 'Which is our national Bird?',
-        options: ['Magpie', 'Crow', 'Parrot', 'Hen'],
         correct: 0
     },
 
@@ -34,13 +19,26 @@ const questions = [
 
     
     {
-        question: '  রামাল্লা কোথায় অবস্থিত  ?',
-        options: ['ইরাক', 'আফগানিস্তান', 'ফিলিস্তিন', 'মিসর'],
+        question: 'আর্য এটি কীসের নাম ?',
+        options: ['ভাষার নাম', 'স্থানের নাম', 'জাতিগোষ্ঠীর নাম', 'গ্রহের নাম'],
         correct: 2
     },
 
 
+    
+    {
+        question: 'আর্যদের ধর্মগ্রন্থের নাম কি ?',
+        options: ['ত্রিপিটক', 'উপনিষদ', 'বেদ', 'ভগবৎ গীতা'],
+        correct: 2
+    },
 
+    
+    {
+        question: 'বাংলাদেশের প্রাচীন জাতি কোনটি? ?',
+        options: ['আর্য', 'মোঙ্গল ', ' পুণ্ড্র', ' দ্রাবিড়'],
+        correct: 3
+    },
+    
 ];
 
 let currentQuestionIndex = 0;
