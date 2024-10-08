@@ -1,14 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 *{
     margin: 0;
     padding: 0;
 }
-#aa{
-    text-decoration: none;
-    color:inherit;
-}
+
+
 .header{
     display: flex;
     /* flex-direction: row; */
@@ -26,6 +21,12 @@
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
 
+#aa{
+    text-decoration: none;
+    color:inherit;
+}
+
+
 #Home{
     width: 15%;
     display: flex;
@@ -37,9 +38,11 @@ font-size: min(25px);
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
-    color:cyan;
+    color:white;
 
 }
+
+
 #dot{
     font-size: 06px;
     margin-left: 7%;
@@ -70,10 +73,9 @@ font-size: min(25px);
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
-    color: white;
+    color:white;
 
 }
-
 
 
 #Motivations{
@@ -91,6 +93,7 @@ font-size: min(25px);
 
 }
 
+
 #Syllabus{
     width: 15%;
     display: flex;
@@ -102,51 +105,6 @@ font-size: min(25px);
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
-    color: white;
+    color: cyan;
 
-}
-
-#home-logo{
-    display: flex;
-    flex-wrap: wrap;
-    min-width:290px;
-    max-width: 500px;
-margin-top: 10%;
-   width: 60%;
-   align-items: center;
-}
-
-.home_{
-    display: flex;
-    width: 100%;
-    height: auto;
-    /* background-color: black; */
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h1{
-    margin-top: 7%;
-    font-family: "Roboto Condensed", sans-serif;
-    background:linear-gradient(to right,blue,rgb(242, 33, 144));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* font-size: 3rem; */
-    font-size: min(30px);
-    /* min-inline-size: 12px; */
-}
-
-h2{
-    font-family: "Poppins", sans-serif;
-    background:linear-gradient(to left,rgb(6, 17, 237),rgb(224, 93, 154));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 2%;
-    font-size: min(20px);
-}
-
-.welcome-text{
-    margin-left: 30%;
 }
