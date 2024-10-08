@@ -51,10 +51,10 @@ font-size: min(25px);
 }
 @keyframes blink{
     0%{
-        color:white;
+        color:rgb(20, 220, 20);
     }
     50%{
-        color:white;
+        color:rgb(20, 220, 20);
     }
     100%{
         color: black;
