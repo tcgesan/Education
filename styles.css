@@ -20,6 +20,7 @@
     height: 70px;
     max-height: 80px;
     background-color: black;
+    box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
 
 #Home{
@@ -54,29 +55,49 @@ font-size: min(25px);
     }
 }
 #Profile{
-    width: 10%;
+    width: 15%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+font-size: min(25px);
+    border-radius: 10px;
+    height: 60px;
+    max-height: 90px;
+    /* background-color:red; */
     color: white;
-    height: 40px;
-    background-color: black;
 
 }
 
 
 
 #Motivations{
-    width: 10%;
-    height: 40px;
-    background-color: black;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+font-size: min(25px);
+    border-radius: 10px;
+    height: 60px;
+    max-height: 90px;
+    /* background-color:red; */
+    color: white;
 
 }
 
-
-
 #Syllabus{
-    width: 10%;
-    height: 40px;
-    background-color: black;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+font-size: min(25px);
+    border-radius: 10px;
+    height: 60px;
+    max-height: 90px;
+    /* background-color:red; */
+    color: white;
 
 }
 
@@ -114,7 +135,7 @@ h1{
 
 h2{
     font-family: "Poppins", sans-serif;
-    background:linear-gradient(to right,rgb(1, 1, 31),rgb(245, 160, 205));
+    background:linear-gradient(to right,rgb(231, 5, 5),rgb(235, 154, 197));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 2%;
