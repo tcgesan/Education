@@ -129,7 +129,7 @@ font-size: min(25px);
     justify-content: space-evenly;
     /* gap: 1px; */
     min-height: 400px;
-    margin-top:140px;
+    margin-top:380px;
     align-items: center;
     /* background-color: black; */
 }
@@ -200,4 +200,28 @@ transition-duration: 0.3s;
 #Extra:hover{
     box-shadow: 12px 10px 13px #999999;
     transform: scale(1.1);
+}
+
+#picc{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-width:290px;
+    z-index: -1;
+    max-width: 500px;
+margin-top: 35%;
+margin-left: 13%;
+   width: 60%;
+   align-items: center;
+}
+.choice-card{
+    display: flex;
+    user-select: none;
+    width: 100%;
+    height: auto;
+    /* background-color: black; */
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
