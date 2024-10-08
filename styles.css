@@ -118,6 +118,7 @@ margin-top: 15%;
 
 .home_{
     display: flex;
+    user-select: none;
     width: 100%;
     height: auto;
     /* background-color: black; */
@@ -129,13 +130,17 @@ margin-top: 15%;
 
 h1{
     margin-top: 7%;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     background:linear-gradient(to right,blue,rgb(242, 33, 144));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-size: 3rem; */
-    font-size: min(30px);
-    /* min-inline-size: 12px; */
+    font-size: min(25px);
+    margin-left: 10%;
+}
+
+#pp{
+    margin-left: 10%;
 }
 
 h2{
