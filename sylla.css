@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 *{
     margin: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
     padding: 0;
 }
 
@@ -107,4 +111,90 @@ font-size: min(25px);
     /* background-color:red; */
     color: cyan;
 
+}
+
+
+.content{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
+    max-width: 100%;
+    color: white;
+    flex-wrap: wrap;
+
+    min-width: 100%;
+    justify-content: space-evenly;
+    /* gap: 1px; */
+    min-height: 400px;
+    margin-top:140px;
+    align-items: center;
+    /* background-color: black; */
+}
+
+#Hsc{
+max-width: 80%;
+max-height: 90px;
+border-radius: 10px;
+width: 95%;
+color: black;
+display: flex;
+align-items: center;
+justify-content: center;
+ height: 90px;
+ border: none;
+background-color:#e6e6e6;
+box-shadow: 12px 10px 13px rgb(193, 196, 198);
+transition-duration: 0.3s;
+}
+
+#Hsc:hover{
+    box-shadow: 12px 10px 13px #999999;
+    transform: scale(1.1);
+}
+
+#Code{
+    max-width: 80%;
+    max-height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90px;
+  color: black;
+  transition-duration: 0.3s;
+  background-color:#e6e6e6;
+  box-shadow: 12px 10px 13px rgb(193, 196, 198);
+   border-radius: 10px;
+    }
+
+    
+#Code:hover{
+    box-shadow: 12px 10px 13px #999999;
+    transform: scale(1.1);
+}
+
+    #Extra{
+        max-width: 80%;
+    max-height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height:90px;
+    transition-duration: 0.3s;
+    color: black;
+    background-color:#e6e6e6;
+    box-shadow: 12px 10px 13px rgb(193, 196, 198);
+   border-radius: 10px;
+    }
+
+    
+#Extra:hover{
+    box-shadow: 12px 10px 13px #999999;
+    transform: scale(1.1);
 }
