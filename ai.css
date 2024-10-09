@@ -6,15 +6,15 @@
    /* overflow: hidden; */
    /* box-sizing: border-box; */
 }
-:root {
+/* :root { */
    /*Dark mode colors*/
-    --text-color:white;
+    /* --text-color:white;
    --subheading-color: #828282;
    --placeholder-color: #fdfafa;
    --primary-color: #000000;
    --secondary-color: #3c3e41;
    --secondary-hover-color: #444;
-   --recent-color:rgb(95, 98, 101);
+   --recent-color:rgb(95, 98, 101); */
 }
 .gemini{
    margin-left: 40%;
@@ -36,8 +36,8 @@
    flex-wrap: wrap;
    align-items: center;
    position: fixed;
-   border-bottom-left-radius: 40px;
-   border-bottom-right-radius: 40px;
+   border-bottom-left-radius: 50px;
+   border-bottom-right-radius: 50px;
    justify-content: space-evenly;
    /* justify-content: center; */
    height: 70px;
