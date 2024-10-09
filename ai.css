@@ -6,16 +6,16 @@
    /* overflow: hidden; */
    /* box-sizing: border-box; */
 }
-/* :root { */
+/* :root {  */
    /*Dark mode colors*/
     /* --text-color:white;
    --subheading-color: #828282;
    --placeholder-color: #fdfafa;
-   --primary-color: #000000;
+   --primary-color: #f8f8f8;
    --secondary-color: #3c3e41;
    --secondary-hover-color: #444;
-   --recent-color:rgb(95, 98, 101); */
-}
+   --recent-color:rgb(95, 98, 101);
+} */
 .gemini{
    margin-left: 40%;
    margin-top: 10%;
@@ -373,12 +373,12 @@ z-index: -1;
 }
 .typing-area .typing-input{
    width: 100%;
-   background: var(--secondary-color);
+   background-color: #E9EEF6;
    border: none;
    outline: none;
    font-size: 0.79rem;
    border-radius: 6.2rem;
-   color: var(--text-color);
+   color: black;
    padding: 1.1rem 4rem 1.1rem 1.5rem;
 }
 
