@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
@@ -37,7 +38,7 @@ font-size: min(25px);
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
-    color:cyan;
+    color:white;
 
 }
 #dot{
@@ -57,6 +58,7 @@ font-size: min(25px);
         color: black;
     }
 }
+
 #Profile{
     width: 15%;
     display: flex;
@@ -86,7 +88,7 @@ font-size: min(25px);
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
-    color: white;
+    color:cyan;
 
 }
 
@@ -105,70 +107,54 @@ font-size: min(25px);
 
 }
 
-#home-logo{
+
+.container {
+    text-align: center;
+    padding: 20px;
+    user-select: none;
+    position: absolute;
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+    margin-left: 10%;
     display: flex;
-    flex-wrap: wrap;
-    min-width:290px;
-    max-width: 500px;
-margin-top: 15%;
-   width: 60%;
-   align-items: center;
+    margin-top: 200px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.home_{
-    display: flex;
-    user-select: none;
+button {
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgb(27, 232, 58);
+    color: white;
     width: 100%;
-    height: auto;
-    /* background-color: black; */
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    height: 50px;
+    border: none;
+    font-family: "Fira Sans", sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
 }
+
+button:hover {
+    background-color:rgb(9, 187, 36);
+    font-family: "Fira Sans", sans-serif;
+}
+
+#fact {
+    margin: 20px 0;
+    font-size: 18px;
+    /* font-style: italic; */
+    font-family: "Fira Sans", sans-serif;
+}
+
 
 h1{
-    margin-top: 7%;
-    font-family:sans-serif;
-    background:linear-gradient(to right,blue,rgb(242, 33, 144));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* font-size: 3rem; */
-    font-size: min(25px);
-    user-select: none;
-    margin-left: 10%;
-}
-
-#pp{
-    margin-left: 10%;
-    user-select: none;
-}
-
-h2{
-    font-family: "Poppins", sans-serif;
-    background:linear-gradient(to left,rgb(6, 17, 237),rgb(224, 93, 154));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 2%;
-    font-size: min(20px);
-}
-
-.welcome-text{
-    margin-left: 30%;
-}
-
-
-.pdf{
-    display: flex;
-    width: 100%;
-    height: 160px;
-    background-color: black;
-    align-items: center;
-    justify-items: center;
- align-content: center;
-
-}
-.pdf-logo{
-    width:20% ;
-    margin-left: 40%;
+    margin: 20px 0;
+    font-size: 20px;
+    /* font-style: italic; */
+    font-family: "Fira Sans", sans-serif;
 }
