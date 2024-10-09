@@ -403,7 +403,7 @@ position: absolute;
 
 }
 .typing-area .icon:hover{
-   background: var(--secondary-hover-color)!important;
+   background: rgb(235, 235, 242)!important;
 
 }
 
