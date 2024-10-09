@@ -143,7 +143,7 @@ button.wrong {
     font-family: "Fira Sans", sans-serif;
     font-weight: bold;
     font-size: 25px;
-    height: 150px;
+    height: 130px;
     transition-duration: 0.3s;
 }
 .box:hover{
@@ -178,7 +178,7 @@ button.wrong {
     font-weight: bold;
     font-size: 25px;
     z-index: -1;
-    height: 150px;
+    height: 130px;
     transition-duration: 0.3s;
 }
 .box1:hover{
