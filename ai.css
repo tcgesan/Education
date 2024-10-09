@@ -150,7 +150,9 @@ body{
 .typing-area{
 color: var(--text-color);
 }
-
+.top-greeting{
+   margin-top: 25%;
+}
  .title{
    margin-left: 1rem;
    font-size: 2.7rem;
