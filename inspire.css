@@ -28,6 +28,14 @@
 }
 
 
+.ai-logo{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -14px;
+    /* width:20% ;
+    margin-left: 40%; */
+}
+
 #Home{
     width: 15%;
     display: flex;

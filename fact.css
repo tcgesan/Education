@@ -132,6 +132,13 @@ font-size: min(25px);
 }
 
 
+.ai-logo{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -14px;
+    /* width:20% ;
+    margin-left: 40%; */
+}
 
 .containerr{
     text-align: center;

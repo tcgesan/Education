@@ -134,6 +134,15 @@ font-size: min(25px);
     /* background-color: black; */
 }
 
+
+.ai-logo{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: -14px;
+    /* width:20% ;
+    margin-left: 40%; */
+}
+
 #Hsc{
 max-width: 80%;
 max-height: 90px;
