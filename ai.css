@@ -392,7 +392,7 @@ position: absolute;
   gap: 1rem;
 }
 .typing-area .icon{
-   background: var(--secondary-color);
+   background: rgb(235, 235, 242)!important;
    height: 36px;
    width: 36px;
    display: flex;
@@ -413,11 +413,11 @@ position: absolute;
    }
 
 .typing-area .typing-input::placeholder{
-   color: var(--placeholder-color);
+   background: rgb(235, 235, 242)!important;
 }
 
 .typing-area .typing-input:focus{
-   background: var(--secondary-hover-color);
+   background: rgb(235, 235, 242)!important;
  }
 .action{
    position:absolute;
