@@ -8,6 +8,10 @@
     /* background-color: silver; */
 }
 
+@font-face {
+    font-family: 'iphone';
+    src: url(Ios\ Kohinoor\ font.ttf);
+}
 body{
     background-color: rgb(249, 246, 246);
 }
@@ -211,8 +215,7 @@ button:hover {
 #banglaFact{
     margin: 20px 0;
     font-size: 15px;
-    /* font-style: italic; */
-    font-family: "Fira Sans", sans-serif;
+  font-family: iphone;
 }
 
 
