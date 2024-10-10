@@ -124,7 +124,7 @@ font-size: min(25px);
 
 
 h1{
-    margin-top: 400px;
+    margin-top: 380px;
     position: absolute;
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
@@ -132,12 +132,50 @@ h1{
     align-items: center;
     display: flex;
     background-color: lavender;
+    box-shadow: 12px 10px 23px rgb(193, 196, 198);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     width: 40%;
     height: 40px;
-    /* margin-left: 10%; */
+    margin-left: 31%;
     z-index: -1;
+    animation: shake 0.6s linear infinite;
+    /* animation-delay: 0.2s; */
+}
+
+@keyframes shake{
+    0%{
+        transform: translateY(0);
+
+    }
+    25%{
+        transform: translateY(-6px);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    75%{
+        transform: translateY(-6px);
+    }
+    10%{
+        transform: translateY(0);
+    }
+}
+
+.butter{
+    position: absolute;
+    margin-top: 78%;
+    transform: rotate(350deg);
+    z-index: -1;
+    margin-left: -2.0%;
+}
+
+.love{
+position: absolute;
+margin-top: 250px;
+margin-left: 30%;
 }
 
 #book-logo{
@@ -171,7 +209,7 @@ h1{
     margin-left: 13%;
     width: 100px;
     height: 148px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 
@@ -221,7 +259,7 @@ h1{
     margin-left: 63%;
     width: 100px;
     height: 140px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 
@@ -276,7 +314,7 @@ h1{
     margin-left: 16%;
     height: 29px;
     margin-top: 680px;
-    border-radius: 03px;
+    border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
     background-color: blue;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
@@ -295,7 +333,7 @@ h1{
     margin-left: 66%;
     height: 29px;
     margin-top: 680px;
-    border-radius: 03px;
+    border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
     background-color: blue;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
@@ -314,7 +352,7 @@ h1{
     margin-left: 16%;
     height: 29px;
     margin-top: 980px;
-    border-radius: 03px;
+    border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
     background-color: blue;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
@@ -333,8 +371,63 @@ h1{
     margin-left: 66%;
     height: 29px;
     margin-top: 980px;
-    border-radius: 03px;
+    border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
     background-color: blue;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
+}
+
+
+.card{
+    width: 25px;
+    position: absolute;
+    margin-top: 400px;
+    margin-top: 679px;
+    transform: rotate(310deg);
+    margin-left: 23.50%;
+    z-index: -1;
+    height: 25px;
+    background-color: blue;
+}
+
+
+
+
+.card2{
+    width: 25px;
+    position: absolute;
+    margin-top: 400px;
+    z-index: -1;
+    margin-top: 679px;
+    transform: rotate(310deg);
+    margin-left: 73.50%;
+    height: 25px;
+    background-color: blue;
+}
+
+
+
+.card3{
+    width: 25px;
+    position: absolute;
+    margin-top: 980px;
+    /* margin-top: 679px; */
+    z-index: -1;
+    transform: rotate(310deg);
+    margin-left: 23.50%;
+    height: 25px;
+    background-color: blue;
+}
+
+
+
+.card4{
+    width: 25px;
+    position: absolute;
+    margin-top: 980px;
+    z-index: -1;
+    transform: rotate(310deg);
+    margin-left: 73.50%;
+    height: 25px;
+    background-color: blue;
 }
