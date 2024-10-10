@@ -5,10 +5,6 @@
     margin: 0;
     padding: 0;
 }
-#aa{
-    text-decoration: none;
-    color:inherit;
-}
 /* 
 .Top-line{
 
@@ -22,6 +18,18 @@
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
 } */
+
+
+
+
+
+
+
+#aa{
+    text-decoration: none;
+    color:inherit;
+}
+
 .header{
     display: flex;
     /* flex-direction: row; */
@@ -118,6 +126,14 @@ font-size: min(25px);
 
 }
 
+
+
+
+
+
+
+
+
 #home-logo{
     display: flex;
     flex-wrap: wrap;
@@ -169,21 +185,6 @@ h2{
 
 .welcome-text{
     margin-left: 30%;
-}
-
-
-.footer{
-    display: flex;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    width: 100%;
-    margin-top: 500px;
-    height: 60px;
-    background-color: black;
-    align-items: center;
-    justify-items: center;
- align-content: center;
-
 }
 
 .ai-logo{
