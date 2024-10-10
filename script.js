@@ -198,6 +198,16 @@ const questions = [
         correct:0
     },
 
+
+
+
+
+
+
+
+
+    
+
 ]
 let currentQuestionIndex = 0;
 
