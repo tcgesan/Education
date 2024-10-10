@@ -154,3 +154,17 @@ font-size: min(25px);
     /* margin-top: 290px; */
     transform: rotate(270deg);
 }
+
+.logooo{
+position: absolute;
+z-index: -1;
+margin-top: 30%;
+margin-left: 20%;
+}
+    
+.empty-box{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: 500px;
+}
