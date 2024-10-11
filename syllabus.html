@@ -36,12 +36,30 @@
 
     <!-- Content -->
 
-<div class="card-choice"><img id="picc" src="Choice.png" alt=""></div>
-
+<img class="choice-card"  src="Choice.png" width="240" alt="">
 <!-- <div id="h1" class="category-text">Category</div> -->
 
-       <!-- <a href="Voice.html"><div class="voice">Voice Recognizer</div></a> -->
-       <a href="library.html"><div class="library">Library</div></a>
+       <!-- <a href="Voice.html"><div class="voice">Voice to Text</div></a> -->
+       <!-- <a href="library.html"><div class="library">Library</div></a> -->
+
+
+       <div class="library" onclick="library();">
+    Library
+    </div>
+
+    
+    <div class="voice" onclick="vtext();">
+        Voice To Text
+        </div>
+    
+
+    
+
+    <audio id="clickSound">
+        <source src="pop.mp3" type="audio/mpeg">
+    </audio>
+
+<script src="script.js"  ></script>
       <!-- <div class="empty"></div> -->
 </body>
 </html>

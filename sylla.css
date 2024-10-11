@@ -5,7 +5,7 @@
     margin: 0;
     font-family: "Fira Sans Condensed", sans-serif;
     padding: 0;
-    /* background-color: #e6e6e6; */
+ 
 }
 
 
@@ -230,13 +230,13 @@ margin-left: 11%;
 .choice-card{
     display: flex;
     user-select: none;
-    width: 100%;
     height: auto;
-    /* background-color: black; */
+    margin-left: 20%;
+    margin-top: 35%;
+    z-index: -1;
+    position: absolute;
     flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 
@@ -264,8 +264,8 @@ margin-left: 11%;
 }
 
 .voice{
-    width: 270px;
-    border-radius: 10px;
+    width: 70%;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -273,24 +273,25 @@ margin-left: 11%;
     font-size: 20px;
     align-items: center;
     height: 110px;
-    margin-left: 13%;
+    margin-left: 15%;
     transition-duration: 0.3s;
-    background-color: rgb(225, 225, 249);
+    background-color: #cce6ff;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
-    margin-top: 450px;
+    margin-top: 138%;
 }
 
 .voice:hover{
     box-shadow: 12px 10px 13px rgb(158, 159, 159);
-    transform: scale(1.1);
+    transform: scale(1.2);
+    opacity: 0;
 }
 
 
 .library{
-    width: 270px;
-    border-radius: 10px;
+    width: 70%;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     font-weight: bold;
@@ -299,13 +300,13 @@ margin-left: 11%;
     z-index: -1;
     align-items: center;
     height: 110px;
-    margin-left: 13%;
+    margin-left: 15%;
     transition-duration: 0.3s;
     background-color: rgb(225, 225, 249);
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
-    margin-top: 460px;
+    margin-top: 93%;
 }
 
 .library:hover{
@@ -326,12 +327,12 @@ margin-left: 11%;
     z-index: -1;
     font-size: 20px;
     align-items: center;
-    height: 110px;
+    height: 10px;
     margin-left: 13%;
     transition-duration: 0.3s;
     background-color:white;
     /* box-shadow: 12px 10px 13px rgb(193, 196, 198); */
     position: absolute;
     z-index: -1;
-    margin-top: 830px;
+    margin-top: 800px;
 }

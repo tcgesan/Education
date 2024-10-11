@@ -313,3 +313,27 @@ function gk() {
         window.location.href = 'gk.html';
     }, 150); // Adjust delay as needed
 }
+
+
+
+function library() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = 'library.html';
+    }, 150); // Adjust delay as needed
+}
+
+
+
+function vtext() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = 'voice.html';
+    }, 150); // Adjust delay as needed
+}
