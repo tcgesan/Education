@@ -194,3 +194,25 @@ margin-left: 20%;
     transform: scale(1.1);
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
 }
+
+.quiz-div {
+    width: 72%;
+    height: 110px;
+    background-color:lavender;
+    display: flex;
+    color: black;
+font-weight: bold;
+    z-index: -1;
+    border-radius: 20px;
+    margin-left: 13%;
+    margin-top: 96%;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+    justify-content: center;
+    /* color: white; */
+    box-shadow: 12px 10px 13px rgb(193, 196, 198);
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+}

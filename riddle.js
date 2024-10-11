@@ -45,7 +45,7 @@
 { question: " কোন প্রশ্ন যার উত্তর সবসময় পরিবর্তন হতে থাকে ?", answer: "  কয়টা বাজে " },
 { question: " কোন শব্দটিকে সব সময় ভুল বলা হয় ?", answer: "  ভুল " },
 { question: " জ্বলছে তবু পুড়ছে না , কোন সে প্রাণী বলো তো ?", answer: "  জোনাকি " },
-// { question: "  ?", answer: "   " },
+{ question: " কোন লঙ্কায় ঝাল নেই ?", answer: " শ্রীলঙ্কা  " },
 // { question: "  ?", answer: "   " },
 // { question: "  ?", answer: "   " },
 { question: " কোন চা খাই না ?", answer: " খাচা  " },
