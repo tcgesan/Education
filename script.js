@@ -328,7 +328,7 @@ function library() {
 
 
 
-function vtext() {
+function text() {
     var sound = document.getElementById("clickSound");
     sound.play();
 
