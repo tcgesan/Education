@@ -298,6 +298,6 @@ function riddle() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = 'RandomFact.html';
+        window.location.href = 'riddle.html';
     }, 150); // Adjust delay as needed
 }
