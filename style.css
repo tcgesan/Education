@@ -134,16 +134,16 @@ button.wrong {
 
 
 .box{
-    width: 70%;
+    width: 40%;
     display: flex;
-    margin-left: 15%;
+    margin-left: 55%;
     position: absolute;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: lavender;
+    color: white;
+    background-color: #ff3333;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
-    margin-top: 96%;
+    margin-top: 136%;
     z-index: -1;
     user-select: none;
     border-radius: 20px;
@@ -170,16 +170,16 @@ button.wrong {
 
 
 .box1{
-    width: 70%;
+    width: 40%;
     display: flex;
-    margin-left: 15%;
+    margin-left: 55%;
     position: absolute;
     justify-content: center;
     align-items: center;
-    color: black;
-    background-color: lavender;
+    color:black;
+    background-color: gold ;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
-    margin-top: 145%;
+    margin-top: 96%;
     user-select: none;
     border-radius: 20px;
     font-family: "Fira Sans", sans-serif;
