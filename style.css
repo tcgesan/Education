@@ -154,7 +154,8 @@ button.wrong {
     transition-duration: 0.3s;
 }
 .box:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    opacity: 0;
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
 }
 
@@ -189,6 +190,7 @@ button.wrong {
     transition-duration: 0.3s;
 }
 .box1:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    opacity: 0;
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
 }
