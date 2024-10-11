@@ -158,7 +158,8 @@ font-size: min(25px);
 .logooo{
 position: absolute;
 z-index: -1;
-margin-top: 38%;
+user-select: none;
+margin-top: 35%;
 margin-left: 20%;
 }
     
@@ -201,6 +202,7 @@ margin-left: 20%;
     background-color:lavender;
     display: flex;
     color: black;
+    user-select: none;
 font-weight: bold;
     z-index: -1;
     border-radius: 20px;
@@ -212,7 +214,6 @@ font-weight: bold;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
     position: absolute;
     font-size: 24px;
-    cursor: pointer;
     transition-duration: 0.3s;
     text-align: center;
 }
