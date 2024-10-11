@@ -267,3 +267,5 @@ options.forEach(option => {
 // Initialize the first question
 shuffleQuestions();  // Shuffle questions at the start
 loadQuestion();      // Load the first question
+
+
