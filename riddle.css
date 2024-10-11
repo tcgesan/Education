@@ -197,9 +197,25 @@ font-size: min(25px);
 }
 #riddle{
     font-size: 16px;
-    padding-left: 20px;
+    padding-left: 22px;
     padding-right: 10px;
-    margin-top: 10%;
+    margin-top: 24%;
     user-select: none;
     font-family: iphone;
+}
+
+.head{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: black;
+    display: flex;
+    font-family: iphone;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    height: 40px;
+    background-color: rgb(213, 213, 239);
 }
