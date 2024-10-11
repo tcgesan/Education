@@ -334,6 +334,6 @@ function vtext() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = 'voice.html';
+        window.location.href = 'Voice.html';
     }, 150); // Adjust delay as needed
 }
