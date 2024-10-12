@@ -337,3 +337,14 @@ function text() {
         window.location.href = 'Voice.html';
     }, 150); // Adjust delay as needed
 }
+
+
+function next() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = 'index.html';
+    }, 150); // Adjust delay as needed
+}
