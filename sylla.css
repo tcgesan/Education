@@ -31,6 +31,9 @@
     color:inherit;
 }
 
+body{
+    background-color:rgb(255, 255, 253);
+}
 
 #Home{
     width: 15%;
@@ -324,7 +327,6 @@ margin-left: 11%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    font-weight: bold;
     color: black;
     z-index: -1;
     font-size: 20px;
@@ -333,8 +335,9 @@ margin-left: 11%;
     margin-left: 13%;
     transition-duration: 0.3s;
     background-color:white;
-    /* box-shadow: 12px 10px 13px rgb(193, 196, 198); */
     position: absolute;
     z-index: -1;
     margin-top: 800px;
 }
+
+

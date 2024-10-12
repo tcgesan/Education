@@ -129,6 +129,7 @@ margin-top: 25%;
 
 h1{
     margin-top: 7%;
+    z-index: -1;
     font-family:sans-serif;
     background:linear-gradient(to right,blue,rgb(242, 33, 144));
     -webkit-background-clip: text;
@@ -138,6 +139,8 @@ h1{
     user-select: none;
     margin-left: 22%;
 }
+
+
 
 #pp{
     margin-left: 10%;
@@ -177,6 +180,7 @@ h2{
     justify-content: center;
     width: 25%;
     height: 05%;
+    z-index: -1;
     box-shadow: -2px 10px 13px rgb(201, 202, 203);
     background-color: blue;
    color: white;
@@ -185,8 +189,181 @@ h2{
 }
 
 #coming{
-    padding-bottom: 200px;
     margin-left: 32%;
+    margin-top: 50%;
     font-size: 20px;
     position: absolute;
 }
+
+.social-card{
+    position: absolute;
+    width: 30px;
+    transform: rotate(40deg);
+    margin-left:45% ;
+    z-index: -1;
+    height: 30px;
+    background:linear-gradient(to right, blue,deeppink);
+    margin-top: 193%;
+}
+
+.animate__bounceIn{
+    /* position: absolute; */
+    margin-top: -10%;
+}
+
+
+
+
+.social{
+    position: absolute;
+    z-index: -1;
+    margin-left: 8%;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 220%;
+}
+
+
+.icons{
+    width: 50%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 245%;
+
+}
+
+.fb{
+    width: 15%;
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 2px 10px 13px rgb(193, 196, 198);
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 27px;
+    transition-duration: 0.3s;
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 6%;
+}
+.fb:hover{
+    transform: scale(1.3);
+}
+
+
+.wp{
+    width: 15%;
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 2px 10px 13px rgb(193, 196, 198);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(12, 229, 12);
+    color: white;
+    height: 27px;
+    transition-duration: 0.3s;
+    position: absolute;
+    margin-top: -2%;
+    margin-left: -14%;
+}
+.wp:hover{
+    transform: scale(1.3);
+}
+
+
+
+.ig{
+    width: 15%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    height: 27px;
+    transition-duration: 0.3s;
+    box-shadow: 2px 10px 13px rgb(193, 196, 198);
+    position: absolute;
+    margin-top: 22%;
+    margin-left: -13%;
+}
+.ig:hover{
+    transform: scale(1.3);
+}
+
+
+.tw{
+    width: 15%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 176, 245);
+    color: white;
+    box-shadow: 2px 10px 13px rgb(193, 196, 198);
+    height: 27px;
+    transition-duration: 0.3s;
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 10%;
+}
+.tw:hover{
+    transform: scale(1.3);
+}
+
+.link{
+    position: absolute;
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, rgb(23, 23, 214) 10%, rgb(225, 7, 7));
+    -webkit-background-clip: text;
+    font-family: "Fira Sans", sans-serif;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40%;
+    height: 50px;
+    margin-top: 210%;
+}
+
+
+
+
+h3{
+    position: absolute;
+    width: 40%;
+    border-radius: 50px;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    margin-left: 30%;
+    font-family: "Fira Sans", sans-serif;
+    height: 40px;
+    box-shadow: 2px 10px 13px rgb(193, 196, 198);
+    background:linear-gradient(to right, blue,deeppink);
+    margin-top: 222%;
+}
+
+.carry{
+    /* position: absolute; */
+    margin-top: -180%;
+}
+
+
+
+.home_{
+    display: flex;
+    user-select: none;
+    margin-top: -04%;
+    width: 10%;
+    margin-left: 9%;
+    height: auto;
+    /* background-color: black; */
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
