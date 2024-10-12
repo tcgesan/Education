@@ -351,6 +351,7 @@ border-radius: 15px;
     justify-content: center;
     transition-duration: 0.3s;
     align-items: center;
+    box-shadow: 12px 10px 23px rgb(153, 190, 215);
     font-family: iphone;
     margin-top: 2350px;
 }

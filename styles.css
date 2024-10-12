@@ -217,6 +217,7 @@ h2{
 .social{
     position: absolute;
     z-index: -1;
+    user-select: none;
     margin-left: 8%;
     font-family: "Fira Sans", sans-serif;
     margin-top: 220%;
@@ -321,6 +322,7 @@ h2{
     font-family: "Fira Sans", sans-serif;
     -webkit-text-fill-color: transparent;
     margin-left: 40%;
+    user-select: none;
     height: 50px;
     margin-top: 210%;
 }
@@ -333,6 +335,7 @@ h3{
     width: 40%;
     border-radius: 50px;
     display: flex;
+    user-select: none;
     font-weight: 500;
     justify-content: center;
     align-items: center;
