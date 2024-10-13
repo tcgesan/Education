@@ -5,7 +5,7 @@ const deleteChatButton = document.querySelector("#delete-chat-button");
 let userMessage = null;
 
 // Api Configuration
-const API_KEY = "AIzaSyBpRIzBllxL18Houfu5NXJj9ymWw-XoluA";
+const API_KEY = "AIzaSyAPtXfG10yiBxM7m3q45CTzHk3ohVQFbnw";
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 
 
@@ -14,7 +14,7 @@ const savedChats =localStorage.getItem("savedChats");
    const isLightMode = (localStorage.getItem("themeColor") === "light_mode");
 
    document.body.classList.toggle("light_mode", isLightMode );
-   // toggleThemeButton.innerText = isLightMode ? "dark_mode" : "light_mode";
+   toggleThemeButton.innerText = isLightMode ? "dark_mode" : "light_mode";
 
 
    chatList.innerHTML = savedChats || "";
@@ -66,7 +66,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
 
    const data = await response.json();
 
-   const apiResponse = data?.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, `$1`);
+   const apiResponse = data?.candidates[0].content.parts[0].text.replace(/\\(.?)\\*/g, $1);
  showTypingEffect(apiResponse, textElement, incomingMessageDiv);
  }catch (error){
    console.log(error);
@@ -113,7 +113,7 @@ const handleOutgoingChat = () => {
 
    // console.log(userMessage);
    const html = ` <div class="message-content">
-           <img src="mm.png" alt="User-Image"  class="avatar">
+           <img src="Picsart_23-10-21_17-58-23-514_1.jpg" alt="User-Image"  class="avatar">
            <p class="text"></p>
       </div>`;
 

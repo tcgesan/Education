@@ -474,3 +474,21 @@ button{
    /* width:20% ;
    margin-left: 40%; */
 }
+
+
+h1{
+   position: absolute;
+   background: linear-gradient(to right, #4269e9 , #f159aa);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-top: 100%;
+   margin-left: 17%;
+}
+
+
+
+h2{
+   position: absolute;
+   margin-top: 102%;
+   margin-left: 73%;
+}
