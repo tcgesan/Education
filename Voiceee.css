@@ -175,11 +175,12 @@ body{
     border: none;
     border: none;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
-    background-color: blue;
+    opacity: 0.8;
+    background:linear-gradient(to right, blue, deeppink);
     color: white;
     border-radius: 50px;
     width: 170px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     height: 40px;
     font-weight: 550;
     user-select: none;
@@ -234,20 +235,26 @@ h1{
     position:absolute;
     margin-top: 60%;
 }
+@font-face {
+    font-family: iphone;
+    src: url(Ios\ Kohinoor\ font.ttf);
+}
 #bangla-btn{
     overflow: hidden;
     position: absolute;
     border: none;
-    color: black;
+    font-size: 15px;
+    color: white;
     border-radius: 50px;
     position:absolute;
     /* animation: bg2 1s linear infinite; */
     margin-left: 1%;
-    background-color:rgb(233, 233, 245);
+    /* opacity: 0.8; */
+    background:#212121;
     box-shadow: 12px 10px 13px rgb(193, 196, 198);
     margin-top: 1150px;
     width: 170px;
-    font-family: "Poppins", sans-serif;
+    font-family: iphone;
     height: 40px;
     user-select: none;
     font-weight: bold;
