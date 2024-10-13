@@ -7,8 +7,12 @@ const deleteBtn = document.getElementById('deleteBtn');
 const userPic = 'add.avif'; // User image URL
 const botPic = 'gpp.webp'; // Bot image URL
 
+
 sendBtn.addEventListener('click', sendMessage);
 deleteBtn.addEventListener('click', deleteChat);
+
+// Load chat history from localStorage
+loadChatHistory();
 
 function sendMessage() {
     const userText = userInput.value.trim();
@@ -35,6 +39,9 @@ function addMessage(text, sender) {
     messageElement.appendChild(messageText);
     messages.appendChild(messageElement);
 
+    // Save chat history to localStorage
+    saveChatHistory();
+
     // Scroll to the bottom
     messages.scrollTop = messages.scrollHeight;
 }
@@ -49,7 +56,7 @@ function getBotResponse(userText) {
         botResponse = knowledge[normalizedUserText];
     } else {
         // Check for similarity with predefined responses
-        botResponse = checkSimilarity(userText) || "I don't know that ! Ethun is still training me. 😊";
+        botResponse = checkSimilarity(userText) || "Out of my Database ! My Database Still upgrading by Ethun 😃!";
     }
 
     addMessage(botResponse, 'bot');
@@ -92,5 +99,19 @@ function normalizeString(str) {
 
 function deleteChat() {
     messages.innerHTML = ''; // Clear chat history
+    localStorage.removeItem('chatHistory'); // Clear chat history from localStorage
     addMessage("All chat cleared! 😁", 'bot');
+}
+
+function saveChatHistory() {
+    const chatHistory = messages.innerHTML; // Get chat history HTML
+    localStorage.setItem('chatHistory', chatHistory); // Save to localStorage
+}
+
+function loadChatHistory() {
+    const chatHistory = localStorage.getItem('chatHistory'); // Get chat history from localStorage
+    if (chatHistory) {
+        messages.innerHTML = chatHistory; // Set chat history HTML
+        messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+    }
 }
