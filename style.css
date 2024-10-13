@@ -20,7 +20,7 @@ body{
 }
 .container {
     position: absolute;
-    margin-top: 190px;
+    margin-top: 35%;
     font-family: "Fira Sans", sans-serif;
     text-align: center;
     /* background-color: ; */
@@ -198,4 +198,27 @@ button.wrong {
     transform: scale(1.2);
     opacity: 0;
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+}
+
+.refresh{
+    position: absolute;
+    width: 35%;
+    height: 6%;
+    color: white;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 165%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    align-items: center;
+    margin-left: 33%;
+    box-shadow:12px 12px 10px  rgb(207, 211, 226) ;
+    transition-duration: 0.3s;
+}
+.refresh:hover{
+    font-family: "Fira Sans", sans-serif;
+    opacity: 0;
+    transform: scale(1.2);
 }
