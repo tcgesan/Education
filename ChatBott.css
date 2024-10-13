@@ -212,7 +212,7 @@ input[type="text"] {
     width: 55%;
     padding: 10px;
     margin-left: 20%;
-    margin-top: 137%;
+    margin-top: 142%;
     user-select: none;
     /* color:bla; */
     outline: none;
@@ -233,7 +233,7 @@ button {
     margin-left: 83%;
     width: 50px;
     height: 50px;
-    margin-top: 137%;
+    margin-top: 142%;
     position: absolute;
     font-family: "Fira Sans", sans-serif;
     /* border-radius: 5px; */
@@ -246,7 +246,7 @@ button:hover {
     background-color: #0056b3;
 }
 .delete-btn {
-    margin-top: 137%;
+    margin-top: 142%;
     position: absolute;
     font-size: 20px;
     border-radius: 50px;
