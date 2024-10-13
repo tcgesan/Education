@@ -1,155 +1,171 @@
-const typingForm = document.querySelector(".typing-form");
-const chatList = document.querySelector(".chat-list");
-const toggleThemeButton = document.querySelector("#toggle-theme-button");
-const deleteChatButton = document.querySelector("#delete-chat-button");
-let userMessage = null;
 
-// Api Configuration
-const API_KEY = "AIzaSyAPtXfG10yiBxM7m3q45CTzHk3ohVQFbnw";
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
+        const messages = document.getElementById('messages');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const deleteBtn = document.getElementById('deleteBtn');
 
+        // Profile pictures
+        const userPic = 'add.avif'; // User image URL
+        const botPic = 'gpp.webp'; // Bot image URL
 
-const loadLocalstorageData = () => {
-const savedChats =localStorage.getItem("savedChats");
-   const isLightMode = (localStorage.getItem("themeColor") === "light_mode");
+        sendBtn.addEventListener('click', sendMessage);
+        deleteBtn.addEventListener('click', deleteChat);
 
-   document.body.classList.toggle("light_mode", isLightMode );
-   toggleThemeButton.innerText = isLightMode ? "dark_mode" : "light_mode";
+        function sendMessage() {
+            const userText = userInput.value.trim();
+            if (userText) {
+                addMessage(' '+ userText, 'user');
+                userInput.value = '';
+                getBotResponse(userText);
+            }
+        }
 
+        function addMessage(text, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.className = sender === 'user' ? 'user-message' : 'bot-message';
 
-   chatList.innerHTML = savedChats || "";
-   document.body.classList.toggle("hide-header", savedChats);
+            const profilePic = document.createElement('img');
+            profilePic.src = sender === 'user' ? userPic : botPic;
+            profilePic.className = 'profile-pic';
 
-   chatList.scrollTo(0, chatList.scrollHeight);
-}
+            const messageText = document.createElement('div');
+            messageText.className = 'message-text';
+            messageText.textContent = text;
 
-loadLocalstorageData();
-// create a new message element and return it 
-const createMessageElement = (content, ...classes) => {
-   const div = document.createElement("div");
-   div.classList.add("message", ...classes);
-   div.innerHTML = content;
-   return div;
-}
-const showTypingEffect = (text, textElement, incomingMessageDiv) => {
-   const words = text.split(` `);
-let currentWordIndex = 0;
+            messageElement.appendChild(profilePic);
+            messageElement.appendChild(messageText);
+            messages.appendChild(messageElement);
 
-   const typingInterval = setInterval(() =>{
-   textElement.innerText += (currentWordIndex === 0 ?` ` : ` `) + words[currentWordIndex++];
-   incomingMessageDiv.querySelector(".icon").classList.add("hide");
+            // Animation
+            requestAnimationFrame(() => {
+                messageElement.style.opacity = 1;
+                messageElement.style.transform = 'translateY(0)';
+            });
 
-   if(currentWordIndex === words.length){
-      clearInterval(typingInterval);
-      incomingMessageDiv.querySelector(".icon").classList.remove("hide");
-      localStorage.setItem("savedChats", chatList.innerHTML);
-   }
-      chatList.scrollTo(0, chatList.scrollHeight);
-   
-   }, 90);
-}
-const generateAPIResponse = async (incomingMessageDiv) => {
+            messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
+        }
 
-   const textElement = incomingMessageDiv.querySelector(".text");  //get text element 
+        function getBotResponse(userText) {
+            let botResponse = '';
 
- try{
-   const response = await fetch(API_URL, {
-      method: "POST",
-      headers:{"Content-Type": "application/json"},
-      body: JSON.stringify({
-         contents:[{
-            role: "user",
-            parts: [{text: userMessage}]
-         }]
-      })
-   });
+            // Check for teach, edit, or remove commands
+            if (userText.toLowerCase().startsWith('teach:')) {
+                const teaching = userText.slice(6).trim();
+                botResponse = storeKnowledge(teaching);
+            } else if (userText.toLowerCase().startsWith('edit:')) {
+                const editing = userText.slice(5).trim();
+                botResponse = editKnowledge(editing);
+            } else if (userText.toLowerCase().startsWith('remove:')) {
+                const removal = userText.slice(7).trim();
+                botResponse = removeKnowledge(removal);
+            } 
+            // Get knowledge if it exists
+            else {
+                const knowledge = getKnowledge(userText);
+                botResponse = knowledge || checkSimilarity(userText) || `I don't know that at this time, Ethun still Trainning Me . Thank You ! 😊`;
+            }
 
-   const data = await response.json();
+            addMessage(botResponse, 'bot');
+        }
 
-   const apiResponse = data?.candidates[0].content.parts[0].text.replace(/\\(.?)\\*/g, $1);
- showTypingEffect(apiResponse, textElement, incomingMessageDiv);
- }catch (error){
-   console.log(error);
- } finally{
-   incomingMessageDiv.classList.remove("loading");
- }
-}
+        function storeKnowledge(teaching) {
+            const parts = teaching.split('-').map(part => part.trim());
+            if (parts.length === 2) {
+                const question = normalizeString(parts[0]); // Normalize question
+                const answer = parts[1];
+                let knowledge = JSON.parse(localStorage.getItem('knowledge')) || {};
 
-// Show a loading animation while waiting for the API response 
-const showLoadingAnimation = () => {
-   const html = ` <div class="message-content">
-           <img src="google-gemini-icon.png" alt="Gemini-Image"  class="avatar">
-           <p class="text"></p>
-            <div class="loading-indicator">
-                 <div class="loading-bar"></div>
-                 <div class="loading-bar"></div>
-                 <div class="loading-bar"></div>
-            </div>
-      </div>
-      <span  onclick="copyMessage(this)"class="icon material-symbols-rounded">content_copy</span>`;
+                // Check if the question already exists
+                if (knowledge[question]) {
+                    return ` I already know this.😁`;
+                }
 
+                // Store the question and answer
+                knowledge[question] = answer;
+                localStorage.setItem('knowledge', JSON.stringify(knowledge));
+                return ` Got it! I've learned: "${parts[0]}" - "${answer}"`;
+            } else {
+                return ``;
+            }
+        }
 
-const incomingMessageDiv = createMessageElement(html, "incoming", "loading");
-chatList.appendChild(incomingMessageDiv);
+        function editKnowledge(editing) {
+            const parts = editing.split('-').map(part => part.trim());
+            if (parts.length === 2) {
+                const question = normalizeString(parts[0]); // Normalize question
+                const newAnswer = parts[1];
+                let knowledge = JSON.parse(localStorage.getItem('knowledge')) || {};
 
-chatList.scrollTo(0, chatList.scrollHeight);
-generateAPIResponse(incomingMessageDiv);
+                // Check if the question exists
+                if (knowledge[question]) {
+                    knowledge[question] = newAnswer;
+                    localStorage.setItem('knowledge', JSON.stringify(knowledge));
+                    return `Updated! "${parts[0]}" is now answered with: "${newAnswer}"`;
+                } else {
+                    return ` I don't know that question to edit.`;
+                }
+            } else {
+                return ``;
+            }
+        }
 
-}
+        function removeKnowledge(removal) {
+            const question = normalizeString(removal.trim()); // Normalize question
+            let knowledge = JSON.parse(localStorage.getItem('knowledge')) || {};
 
-const copyMessage = (copyIcon) => {
-   const messageText =copyIcon.parentElement.querySelector(".text").innerText;
-   navigator .clipboard.writeText(messageText);
-   copyIcon.innerText = "done";
-   setTimeout(() =>  copyIcon.innerText = content_copy, 1000);
-}
+            // Check if the question exists
+            if (knowledge[question]) {
+                delete knowledge[question];
+                localStorage.setItem('knowledge', JSON.stringify(knowledge));
+                return `Removed the knowledge of "${removal}".`;
+            } else {
+                return `I don't know that question to remove.`;
+            }
+        }
 
+        function getKnowledge(userText) {
+            const knowledge = JSON.parse(localStorage.getItem('knowledge')) || {};
+            const normalizedUserText = normalizeString(userText); // Normalize user input
+            return knowledge[normalizedUserText] || null; // Retrieve knowledge
+        }
 
-// Handle sending outgoing chat message 
-const handleOutgoingChat = () => {
-   userMessage =  typingForm.querySelector(".typing-input").value.trim();
-   if(!userMessage) return; 
+        function checkSimilarity(userText) {
+            const knowledge = JSON.parse(localStorage.getItem('knowledge')) || {};
+            const normalizedUserText = normalizeString(userText); // Normalize user input
 
+            for (const question in knowledge) {
+                const normalizedQuestion = normalizeString(question); // Normalize stored question
+                const similarity = calculateSimilarity(normalizedUserText, normalizedQuestion);
+                if (similarity >= 0.5) { // 50% similarity
+                    return `${knowledge[question]}`;
+                }
+            }
+            return null; // No similar question found
+        }
 
-   // console.log(userMessage);
-   const html = ` <div class="message-content">
-           <img src="Picsart_23-10-21_17-58-23-514_1.jpg" alt="User-Image"  class="avatar">
-           <p class="text"></p>
-      </div>`;
+        function calculateSimilarity(userText, storedQuestion) {
+            const userKeywords = extractKeywords(userText);
+            const storedKeywords = extractKeywords(storedQuestion);
+            const totalKeywords = new Set([...userKeywords, ...storedKeywords]).size;
+            const matchingKeywords = userKeywords.filter(keyword => storedKeywords.includes(keyword)).length;
 
+            return matchingKeywords / totalKeywords; // Calculate similarity as the ratio of matching keywords
+        }
 
-      const outgoingMessageDiv = createMessageElement(html, "outgoing");
-      outgoingMessageDiv.querySelector(".text").innerText = userMessage;
-      chatList.appendChild(outgoingMessageDiv);
+        function extractKeywords(text) {
+            const normalized = text.toLowerCase().replace(/[\W_]+/g, ' ');
+            return normalized.split(' ').map(word => removeExtraLetters(word)).filter(Boolean);
+        }
 
+        function removeExtraLetters(word) {
+            return word.replace(/(.)\1+/g, '$1'); // Remove repeated letters
+        }
 
-      typingForm.reset(); //Clear Input field
-      chatList.scrollTo(0, chatList.scrollHeight);//scroll to the bottom 
-      document.body.classList.add("hide-header");
-  setTimeout(showLoadingAnimation, 500); //show loading animation after a  deley 
+        function normalizeString(str) {
+            return str.toLowerCase().replace(/[\W_]+/g, ''); // Normalize to lowercase and remove non-alphanumeric characters
+        }
 
-}
-
-
-//toggle buttons light and dark theme
-toggleThemeButton.addEventListener("click", () => {
- const isLightMode =  document.body.classList.toggle("light_mode");
- localStorage.setItem("themeColor",  isLightMode ? "light_mode" : "dark_mode" )
-   toggleThemeButton.innerText = isLightMode ? "dark_mode" : "light_mode";
-});
-
-
-//delete all chats 
-deleteChatButton.addEventListener("click", () => {
-   if(confirm("Are you want to delete all Chats ?")){
-      localStorage.removeItem("savedChats");
-      loadLocalstorageData();
-   }
-});
-
-//prevent default from submission and handle outgoing chat 
-typingForm.addEventListener("submit", (e) => {
-e.preventDefault();
-
-handleOutgoingChat();
-});
+        function deleteChat() {
+            messages.innerHTML = ''; // Clear chat history
+            addMessage("All Clear 😁 ", 'bot');
+        }
