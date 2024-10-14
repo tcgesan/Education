@@ -216,9 +216,90 @@ const questions = [
 
 
 
+    {
+        question: ' এ পর্যন্ত বাংলাদেশ এর সংবিধান কতবার সংশোধিত হয়েছে ?',
+        options: ['১৪', '১৫', '২০', '১৭'],
+        correct: 3
+    },
+
+    
+    {
+        question: ' বর্তমান বৃৃহত্তর ঢাকা জেলা প্রাচীনকালে কোন জনপদের অন্তর্ভুক্ত ছিলো?',
+        options: ['সমতট', ' পুন্ড্র ', ' বঙ্গ ', 'হরিকেল'],
+        correct: 2
+    },
 
 
 
+
+    {
+        question: '  কবে ফরাসি বিপ্লব সংঘটিত হয় ?',
+        options: ['    ১৭৮৯  ', '   ১৭৯১   ', '   ১৭৯৫ ', '   ১৮০০   '],
+        correct:0
+    },
+
+    
+    {
+        question: ' বাংলাদেশকে স্বীকৃতি প্রদানকারী প্রথম আরব দেশ কোনটি ?',
+        options: ['  সৌদি আরব ', '  ইরাক   ', ' কুয়েত   ', '  মিসর    '],
+        correct:1
+    },
+
+
+    
+    {
+        question: '  TI এর সদর দপ্তর কোথায়  ?',
+        options: ['   ম্যানিলা  ', '   বার্লিন ', '  ব্যাংকক  ', '  সিঙ্গাপুর    '],
+        correct:1
+    },
+
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
+
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
+
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
+
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
+
+
+
+    
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:1
+    // },
 
 
     
@@ -228,8 +309,8 @@ let currentQuestionIndex = 0;
 
 // Shuffle the questions randomly
 function shuffleQuestions() {
-    for (let i = questions.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
+    for (let i = questions.length -1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i +1));
         [questions[i], questions[j]] = [questions[j], questions[i]];
     }
 }
@@ -272,7 +353,7 @@ options.forEach(option => {
                     currentQuestionIndex = 0;
                 }
                 loadQuestion(); // Load the next question
-            }, 400);
+            }, 500);
         } else {
             e.target.classList.add('wrong'); // Only add the 'wrong' class but do not proceed to the next question
         }
