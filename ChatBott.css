@@ -253,7 +253,7 @@ button:hover {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    background-color: blue;
+    /* background-color: blue; */
     position: absolute;
     margin-top: 149%;
 }
