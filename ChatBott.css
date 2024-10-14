@@ -164,7 +164,7 @@ font-size: min(25px);
     font-family: "Fira Sans", sans-serif;
 }
 .bot-message {
-    /* margin: 5px; */
+    margin-left: 7px;
     justify-content: flex-start;
     font-family: "Fira Sans", sans-serif;
 }
