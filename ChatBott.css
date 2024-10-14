@@ -16,6 +16,8 @@ body{
     background-size: cover;
     width: 100%;
     background-repeat: no-repeat;
+    background-color: rgb(238, 238, 242);
+    z-index: -1;
 }
 
 
@@ -130,22 +132,25 @@ font-size: min(25px);
     flex-direction: column;
 }
 .messages {
-    height: 80%;
+    height: 75%;
     position: absolute;
     display: flex;
     flex-direction: column;
-    margin-top: 23%; 
+    margin-top: 26%; 
+    margin-left: 10%;
     user-select: text;
     z-index: -1;
+    background-color: rgb(223, 226, 226);
     overflow-x: auto;
     border-radius: 5px;
-    width: 100%;
+    width: 80%;
     font-family: "Fira Sans", sans-serif;
  
 }
 .messages div {
     margin-bottom: 8px;
     display: flex;
+    /* background-color: black; */
     align-items: center;
     opacity: 0;
     transform: translateY(10px);
@@ -204,7 +209,7 @@ font-size: min(25px);
     /* background-color: blue; */
     /* bottom: 0; */
     position: absolute ;
-    margin-top: 172%;
+    margin-top: 152%;
 }
 
 input{
