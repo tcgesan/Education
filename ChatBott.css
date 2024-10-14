@@ -138,6 +138,7 @@ font-size: min(25px);
     flex-direction: column;
     margin-top: 26%; 
     margin-left: 10%;
+    box-shadow: 12px 10px 13px 2px rgb(193, 196, 198);
     user-select: text;
     z-index: -1;
     background-color: rgb(223, 226, 226);
