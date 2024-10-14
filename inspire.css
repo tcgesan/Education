@@ -26,7 +26,10 @@
     text-decoration: none;
     color:inherit;
 }
-
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .ai-logo{
     position: absolute;

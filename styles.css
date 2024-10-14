@@ -12,6 +12,11 @@
  }
  
 
+ body{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .header{
     display: flex;
     width: 100%;

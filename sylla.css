@@ -32,8 +32,11 @@
 }
 
 body{
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color:rgb(255, 255, 253);
 }
+
 
 #Home{
     width: 15%;

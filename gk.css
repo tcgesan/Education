@@ -14,6 +14,8 @@
 }
 body{
     background-color:#f2f2f2;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #aa{
     text-decoration: none;

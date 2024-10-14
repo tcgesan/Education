@@ -8,12 +8,15 @@
    
 }
 
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(249, 246, 246);
+}
 @font-face {
     font-family: 'iphone';
     src: url(Ios\ Kohinoor\ font.ttf);
-}
-body{
-    background-color: rgb(249, 246, 246);
 }
 #aa{
     text-decoration: none;
