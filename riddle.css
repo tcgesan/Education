@@ -267,8 +267,8 @@ justify-content: center;
     /* animation: appear 0.4s linear 1; */
 }
 .head{
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     color: white;
     display: flex;
     font-family: "Fira Sans", sans-serif;
