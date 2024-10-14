@@ -168,7 +168,7 @@ font-size: min(25px);
     background-color: rgb(255, 255, 255);
     font-size: 13px;
     margin-top: 250px;
-    animation: appear 0.5s linear 1;
+    animation: appear 0.2s linear 1;
 }
 @keyframes appear {
     
