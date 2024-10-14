@@ -109,13 +109,13 @@ font-size: min(25px);
 .chat-container {
     width: 100%;
     position: absolute;
-    margin-top: 34%;
+    margin-top: 24%;
     z-index: -1;
     display: flex;
     max-width: 100%;
     user-select: none;
     border: none;
-    height: 80%;
+    height: 70%;
     font-family: "Fira Sans", sans-serif;
     background: white;
  
