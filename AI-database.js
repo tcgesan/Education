@@ -2,6 +2,7 @@
 
 let knowledge = {
     "hello": "Hi there! How can I assist you today?",
+    "hey": "Hi there! How can I assist you today?",
     "helo": "Hi there! How can I assist you today?",
     "how are you": "I'm just a program, but I'm functioning as expected! How about you?",
     "what is your name": "My name is Mind !.",
