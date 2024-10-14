@@ -12,6 +12,7 @@
 body{
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
     background-color: rgb(249, 246, 246);
 }
 @font-face {
@@ -123,8 +124,8 @@ font-size: min(25px);
 
 .ai-logo{
     position: absolute;
-    margin-top: -35px;
-    margin-left: -14px;
+    margin-top: -28px;
+    /* margin-left: -14px; */
     /* width:20% ;
     margin-left: 40%; */
 }
