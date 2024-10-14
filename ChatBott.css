@@ -109,7 +109,7 @@ font-size: min(25px);
     max-width: 100%;
     user-select: none;
     border: none;
-    height: 81%;
+    height: 80%;
     font-family: "Fira Sans", sans-serif;
     background: white;
  
@@ -255,7 +255,7 @@ button:hover {
     display: flex;
     background-color: blue;
     position: absolute;
-    margin-top: 146%;
+    margin-top: 149%;
 }
 
 input{
