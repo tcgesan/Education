@@ -207,6 +207,7 @@ button.wrong {
     position: absolute;
     width: 35%;
     height: 6%;
+    user-select: none;
     color: white;
     border-radius: 30px;
     background-color: black;
@@ -223,5 +224,6 @@ button.wrong {
 .refresh:hover{
     font-family: "Fira Sans", sans-serif;
     opacity: 0;
+    user-select: none;
     transform: scale(1.2);
 }
