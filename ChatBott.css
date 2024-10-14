@@ -124,11 +124,11 @@ font-size: min(25px);
     flex-direction: column;
 }
 .messages {
-    height: 92%;
+    height: 75%;
     position: absolute;
     display: flex;
     flex-direction: column;
-    /* margin-top: 10%;  */
+    margin-top: 30%; 
     z-index: -1;
     overflow-x: auto;
     border-radius: 5px;
