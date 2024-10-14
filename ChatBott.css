@@ -253,9 +253,9 @@ button:hover {
     justify-content: space-evenly;
     align-items: center;
     display: flex;
-    /* background-color: blue; */
+    background-color: blue;
     position: absolute;
-    margin-top: 152%;
+    margin-top: 146%;
 }
 
 input{
@@ -265,7 +265,7 @@ input{
     font-family: "Fira Sans", sans-serif;
 text-align: center;
     border-radius: 50px;
-    height: 75%;
+    height: 85%;
     background-color: rgb(230, 230, 245);
 }
 
