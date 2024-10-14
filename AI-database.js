@@ -1,7 +1,8 @@
 
 
-const knowledge = {
+let knowledge = {
     "hello": "Hi there! How can I assist you today?",
+    "helo": "Hi there! How can I assist you today?",
     "how are you": "I'm just a program, but I'm functioning as expected! How about you?",
     "what is your name": "My name is Mind !.",
     "bye": "Goodbye! Have a great day!",
@@ -12,8 +13,19 @@ const knowledge = {
     "tomke ke banaise": " Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊!",
     "Better": "That's Great !",
    " Thank you?":" You're Most Welcome .❤️ ",
+   "what is your name": "I'm a chatbot created to assist you. You can call me Mine.",
+   "bye": "Goodbye! Have a great day!",
     " Who created you ?":" Ethun was created me on 13th October , 2024 !😊 .",
+    "tomare ke baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tmk k banaise":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tmk k baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tomake k baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tomake ke banaise":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tmke ke banaise":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tmk ke baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "tmke ke baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
     "tomake ke baniyeche":"Amke Ethun Baniyeche ! Apnar Ei Apps Somporke Kisu Janar thakle Bolben Amke 😊 ",
+    "How can i focused on my study": " Staying focused on your studies can be challenging, but with the right strategies, you can improve your concentration and productivity.      Here are some tips:      1.Set Clear Goals: Define what you want to achieve in each study session. Break larger tasks into smaller, manageable goals.           2. Create a Study Schedule: Allocate specific times for studying each subject. Consistency helps build a routine.             3. Minimize Distractions: Find a quiet study space. Turn off notifications on your phone or use apps that limit distractions.                     4.Use the Pomodoro Technique: Study for 25 minutes, then take a 5-minute break. After four sessions, take a longer break (15-30 minutes)                       .5.Stay Organized: Keep your study materials organized. Use folders or digital tools to track assignments and notes.Experiment with these strategies to find what works best for you!",
     // "Ethun": "That's Great !",
     // "Ethun": "That's Great !",
     // "Ethun": "Yes ! How Can i help You ?",

@@ -8,6 +8,7 @@ const userPic = 'add.avif'; // User image URL
 const botPic = 'gpp.webp'; // Bot image URL
 
 
+
 sendBtn.addEventListener('click', sendMessage);
 deleteBtn.addEventListener('click', deleteChat);
 
@@ -56,7 +57,7 @@ function getBotResponse(userText) {
         botResponse = knowledge[normalizedUserText];
     } else {
         // Check for similarity with predefined responses
-        botResponse = checkSimilarity(userText) || "Out of my Database ! My Database Still upgrading by Ethun 😃!";
+        botResponse = checkSimilarity(userText) || "Out of my Database! My database is still upgrading by Ethun 😃!";
     }
 
     addMessage(botResponse, 'bot');
@@ -68,7 +69,7 @@ function checkSimilarity(userText) {
     for (const question in knowledge) {
         const normalizedQuestion = normalizeString(question); // Normalize stored question
         const similarity = calculateSimilarity(normalizedUserText, normalizedQuestion);
-        if (similarity >= 0.4) { // 40% similarity
+        if (similarity >= 0.4) { // Adjusted similarity threshold to 40%
             return knowledge[question];
         }
     }
