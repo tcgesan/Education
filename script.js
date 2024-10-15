@@ -1,3 +1,4 @@
+
 // Array of questions
 const questions = [
     {
@@ -305,6 +306,12 @@ const questions = [
     
 
 ]
+
+
+
+
+
+
 let currentQuestionIndex = 0;
 
 // Shuffle the questions randomly
@@ -395,6 +402,18 @@ function riddle() {
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
         window.location.href = 'riddle.html';
+    }, 150); // Adjust delay as needed
+}
+
+
+
+function grammer() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = 'grammer.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -512,3 +531,4 @@ if ('serviceWorker' in navigator) {
   
   // Example usage: attach event listener to a form
   document.querySelector('form').addEventListener('submit', handleFormSubmit);
+
