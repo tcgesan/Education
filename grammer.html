@@ -16,7 +16,7 @@
 </head>
 <body>
 
-
+<!-- 
     <div class="header">
 
         <div  id="Home" ><i  onclick="window.location.href='index.html'"  class="fa-solid fa-house-chimney-window"></i>
@@ -33,12 +33,12 @@
         <div id="Syllabus"><i onclick="window.location.href='syllabus.html'"  class="fa-solid fa-outdent"></i>
     
         </div>
-    </div>
+    </div> -->
 
 
 <div class="all-grammer-content">
 
-<div   class="width">Tense</div>
+<div   class="width" id="tense"  >Tense</div>
 <div  class="width">Analogy & Spelling</div>
 <div  class="width">Phrase</div>
 <div  class="width">Clause</div>
@@ -51,13 +51,19 @@
 <div class="width">Narration</div>
 <div class="width">Translation</div>
 <div class="width">Literature</div>
-<div class="width">Tense & Sequense of Tense</div>
+<!-- <div class="width">Tense & Sequense of Tense</div> -->
 </div>
+
+
+<button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+
+<div class="category">Select Category</div>
 
 <div class="empty"></div>
 <audio id="clickSound">
     <source src="POOOO.mp3" type="audio/mpeg">
 </audio>
+
 
 
     <script src="script.js"></script>

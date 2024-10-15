@@ -465,7 +465,10 @@ function next() {
 }
 
 
-
+// Back Button
+function goBack() {
+    window.history.back();
+}
 
 
 
