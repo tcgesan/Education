@@ -11,7 +11,7 @@
     font-family: 'iphone';
     src: url(Ios\ Kohinoor\ font.ttf);
 }
-
+/* 
 body{
     background-size: cover;
     width: 100%;
@@ -19,7 +19,7 @@ body{
     background-repeat: no-repeat;
     background-color: rgb(255, 255, 255);
     z-index: -1;
-}
+} */
 
 
 #aa{
@@ -132,6 +132,7 @@ font-size: min(25px);
     font-family: "Fira Sans", sans-serif;
     flex-direction: column;
 }
+
 .messages {
     height: 75%;
     position: absolute;
@@ -152,7 +153,6 @@ font-size: min(25px);
 .messages div {
     margin-bottom: 8px;
     display: flex;
-    /* background-color: black; */
     align-items: center;
     opacity: 0;
     transform: translateY(10px);
@@ -177,9 +177,7 @@ font-size: min(25px);
     width: 30px;
     object-fit: cover;
     height: 30px;
-    /* box-shadow: -2px 10px 13px 2px rgb(229, 231, 232); */
     margin: 5px;
-    /* margin: 0 10px; */
 }
 .user-message .message-text {
     background-color: #007bff;
@@ -219,7 +217,7 @@ font-size: min(25px);
     /* background-color: blue; */
     /* bottom: 0; */
     position: absolute ;
-    margin-top: 190%;
+    margin-top: 170%;
 }
 
 input{
@@ -234,11 +232,11 @@ margin-left: -20%;
     border-radius: 50px;
     /* margin-top: 25%; */
     height: 40px;
-    background-color: rgb(230, 230, 245);
+    background-color: rgb(255, 255, 255);
 }
 
 input:hover{
-    background-color: rgb(219, 219, 244);
+    background-color: rgb(246, 246, 246);
     outline: none;
 }
 
