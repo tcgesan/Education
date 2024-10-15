@@ -447,14 +447,68 @@ function next() {
 
 
 
+
+
+
+
+
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('service-worker.js')
-            .then((registration) => {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            })
-            .catch((error) => {
-                console.log('ServiceWorker registration failed: ', error);
-            });
+      navigator.serviceWorker
+        .register('./service-worker.js')
+        .then((registration) => {
+          console.log('Service Worker registered with scope:', registration.scope);
+        })
+        .catch((error) => {
+          console.log('Service Worker registration failed:', error);
+        });
     });
-}
+  }
+  
+  // Function to handle form submission
+  async function handleFormSubmit(event) {
+    event.preventDefault();
+  
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+  
+    // Check if we are online
+    if (navigator.onLine) {
+      // Send data immediately
+      await sendDataToServer(data);
+    } else {
+      // Cache data and set up Background Sync
+      await cacheDataForSync(data);
+    }
+  }
+  
+  // Function to send data to the server
+  async function sendDataToServer(data) {
+    await fetch('/api/sync-endpoint', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  }
+  
+  // Function to cache data for sync
+  async function cacheDataForSync(data) {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.put('/data-to-sync', new Response(JSON.stringify(data)));
+  
+    // Request Background Sync
+    if ('serviceWorker' in navigator && 'SyncManager' in window) {
+      navigator.serviceWorker.ready
+        .then((registration) => {
+          return registration.sync.register('sync-data'); // 'sync-data' is the tag
+        })
+        .catch((error) => {
+          console.error('Failed to register sync:', error);
+        });
+    }
+  }
+  
+  // Example usage: attach event listener to a form
+  document.querySelector('form').addEventListener('submit', handleFormSubmit);
