@@ -81,7 +81,7 @@ async function getBotResponse(userText) {
 function deleteChat() {
     messages.innerHTML = ''; // Clear chat history
     localStorage.removeItem('chatHistory'); // Clear chat history from localStorage
-    addMessage("Hello there ! How can i assist you today ? 😊", 'bot');
+    addMessage("Hello Friends ! How can i assist you today ? 😊", 'bot');
 }
 
 function saveChatHistory() {
