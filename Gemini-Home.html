@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Gemini AI</title>
+   <link rel="stylesheet" href="Geminis-Css.css">
+   <!-- <link rel="icon" href="google-gemini-icon.png"> -->
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+            
+   <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+  
+
+<!-- Chat list / container -->
+
+<!-- <div class="head"><img src="giphy.gif"  width="80"  alt=""></div> -->
+<div class="chat-list">
+   <div class="message outgoing">
+        <div class="message-content">
+           <img src="mm.png" alt="" class="avatar">
+           
+        </div>
+   </div>
+   <div class="message incoming">
+      <div class="message-content">
+         <img src="google-gemini-icon.png" alt="" class="avatar">
+         
+      </div>
+      <span class="icon material-symbols-rounded">content_copy</span>
+ </div>
+    </div>
+
+
+            <!--Typing Areaa-->
+          <div class="typing-area">
+               <form action="#" class="typing-form">
+                   <div class="input-wrapper">
+                       <input type="text"  placeholder="Message" class="typing-input" required>
+                      <button class="icon material-symbols-rounded">send </button>
+                   </div>
+
+                   <div class="action-buttons">
+                     <span id="toggle-theme-button" class="icon material-symbols-rounded">light_mode</span>
+                     <span  id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+                   </div>
+               </form>
+         
+          </div>
+
+          
+          <!-- <img width="470"  class="gemini1" src="gemini.png" alt=""> -->
+
+
+          <script  src="Geminis-Script.js"></script>
+</body>
+</html>
