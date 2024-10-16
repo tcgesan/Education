@@ -192,7 +192,7 @@ height: auto;
 }
 
 .download{
-    width: 155%;
+    width: 65%;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -200,7 +200,8 @@ height: auto;
     box-shadow: 12px 10px 23px rgb(175, 178, 180);
     color: white;
     font-size: 12px;
-    margin-left: -10%;
+    margin-top: 16%;
+    margin-left: 20%;
     z-index: -1;
     text-decoration: none;
     height: 27px;
@@ -228,11 +229,11 @@ border-radius: 15px;
 
 .card{
     width: 20px;
-    margin-top: -0.50%;
+    margin-top: 3.50%;
     transform: rotate(40deg);
     position: absolute;
     text-decoration: none;
-    margin-left: 6.50%;
+    margin-left: 10%;
     z-index: -1;
     height: 20px;
    background-color: blue;
