@@ -4,54 +4,27 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-   <title>Gemini AI</title>
-   
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    
-   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-   <link rel="stylesheet" href="ChatBott.css">
-    
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <title>AI</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="ChatBott.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-                  
-
-    <!-- Header -->
-    <div class="header">
-
-      <div  id="Home" ><i onclick="window.location.href='index.html'"  class="fa-solid fa-house-chimney-window"></i></div>
-
-      <div id="Profile" ><img onclick="window.location.href='ChatBot.html'"  class="ai-logo" src="Ai-logo.png" width="50" alt=""></div>
-  
-      <div  id="Motivations"><i onclick="window.location.href='motivation.html'"   class="fa-solid fa-lightbulb"></i></div>
-  
-      <div id="Syllabus"><i  onclick="window.location.href='syllabus.html'"   class="fa-solid fa-outdent"></i>
-        </div>
-      </div>
-  </div>
+          
+  <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
 
 
 
+         <div class="messages" id="messages"></div>
 
-
-  <!-- <div class="chat-container"> -->
-    
-        <div class="messages" id="messages"></div>
-        <div class="bottom" >
+      <div class="bottom" >
             <input type="text" id="userInput" placeholder="Message">
             <button id="sendBtn"><i class="fa-solid fa-arrow-up"></i></button>
             <button class="delete-btn" id="deleteBtn"><i class="fa-solid fa-trash-can"></i></button>
-        </div>
+      </div>
 
-<!-- </div> -->
-
-
-
-
-<script src="aii.js"></script>
-<!-- <script src="https://unpkg.com/compromise@latest"></script> -->
-<!-- <script src="Ai-Similler.js"></script> -->
-<!-- <script src="AI-database.js" ></script> -->
+      
+          <script src="aii.js"></script>
 </body>
 </html>

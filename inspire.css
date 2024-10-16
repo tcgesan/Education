@@ -7,17 +7,16 @@
 
 .header{
     display: flex;
-    /* flex-direction: row; */
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
     position: fixed;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     justify-content: space-evenly;
-    /* justify-content: center; */
-    height: 70px;
-    max-height: 80px;
+    height: 50px;
     background-color: black;
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
@@ -35,22 +34,21 @@ body{
 .ai-logo{
     position: absolute;
     margin-top: -28px;
-    /* margin-left: -14px; */
-    /* width:20% ;
-    margin-left: 40%; */
 }
+
+
 
 #Home{
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+    margin-top: -3%;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color:white;
 
 }
@@ -80,12 +78,11 @@ font-size: min(25px);
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+    /* margin-top: -3%; */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color:white;
 
 }
@@ -96,13 +93,13 @@ font-size: min(25px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+/* font-size: min(25px); */
+margin-top: -3%;
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
-    color: cyan;
+    color:#93defc;
 
 }
 
@@ -112,13 +109,28 @@ font-size: min(25px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+    margin-top: -3%;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color: white;
+
+}
+
+
+#noti{
+    width: 15%;
+    display: flex;
+    font-weight: bold;
+    margin-top: -3%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 40px;
+    /* color:#93defc; */
 
 }
 
@@ -126,8 +138,6 @@ font-size: min(25px);
     width: 100%;
     z-index: -1;
     height: 4px;
-    /* background:linear-gradient(to right, blue,deeppink); */
-    /* overflow-x: -1; */
     position: absolute;
     margin-top: 270px;
     animation: color 1s linear infinite;
@@ -153,9 +163,7 @@ font-size: min(25px);
     margin-left: -810px;
     height: 4px;
     background:linear-gradient(to right, blue,deeppink);
-    /* overflow-x: -1; */
     position: absolute;
-    /* margin-top: 290px; */
     transform: rotate(270deg);
 }
 

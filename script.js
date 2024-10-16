@@ -531,7 +531,39 @@ if ('serviceWorker' in navigator) {
         });
     }
   }
-  
-  // Example usage: attach event listener to a form
-  document.querySelector('form').addEventListener('submit', handleFormSubmit);
+  function searchFunction() {
+    const input = document.getElementById('type').value.toLowerCase();
+    const results = document.querySelectorAll('.result');
 
+    results.forEach(result => {
+        if (result.textContent.toLowerCase().includes(input)) {
+            result.style.display = ""; // Show the element
+        } else {
+            result.style.display = "none"; // Hide the element
+        }
+    });
+}
+
+
+function searchFunction() {
+    const input = document.getElementById('type').value.toLowerCase();
+    const results = document.querySelectorAll('#content .result, #content h2, #content p, #content div, #content span, #content li');
+    const searchResultsDiv = document.getElementById('searchResults');
+
+    searchResultsDiv.innerHTML = ''; // Clear previous results
+
+    let hasMatches = false; // Flag to check if there are any matches
+
+    results.forEach(result => {
+        if (result.textContent.toLowerCase().includes(input)) {
+            const div = document.createElement('div');
+            div.className = 'result';
+            div.textContent = result.textContent; // Display matching text
+            searchResultsDiv.appendChild(div);
+            hasMatches = true; // Set flag to true if there's a match
+        }
+    });
+
+    // Toggle visibility of the content div
+    document.getElementById('content').style.display = hasMatches || input ? '' : 'none';
+}

@@ -26,17 +26,28 @@ body{
     text-decoration: none;
     color:inherit;
 }
+
+
+
+body{
+    background-size: cover;
+    width: 100%;
+    /* background-color:#ecf0f6; */
+    background-repeat: no-repeat;
+}
+
+
+
 .header{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
     position: fixed;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     justify-content: space-evenly;
-    height: 70px;
-    max-height: 80px;
+    height: 50px;
     background-color: black;
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
@@ -46,10 +57,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
+    margin-top: -3%;
     max-height: 90px;
     color:white;
 
@@ -61,8 +73,8 @@ font-size: min(25px);
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
@@ -77,8 +89,9 @@ font-size: min(25px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+    margin-top: -3%;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
@@ -86,13 +99,32 @@ font-size: min(25px);
 
 }
 
+
+
+#noti{
+    width: 15%;
+    display: flex;
+    font-weight: bold;
+    margin-top: -3%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 40px;
+    /* color:#93defc; */
+
+}
+
+
+
 #Syllabus{
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 20px;
+    margin-top: -3%;
+/* font-size: min(25px); */
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
@@ -140,10 +172,10 @@ font-size: min(25px);
     flex-direction: column;
     margin-top: 26%; 
     margin-left: 10%;
-    box-shadow: -1px 10px 13px 2px rgb(170, 172, 174);
+    box-shadow: 0px 5px 13px 2px rgb(179, 182, 184);
     user-select: text;
     z-index: -1;
-    background-color: rgb(198, 222, 248);
+    background-color: rgb(226, 236, 247);
     overflow-x: auto;
     border-radius: 5px;
     width: 80%;
@@ -240,6 +272,27 @@ input:hover{
 }
 
 
+
+.back-button{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 7%;
+    background-color:rgb(13, 250, 25);
+    color:black;
+    width: 50px;
+    font-size: 15px;
+    z-index: -1;
+    border: none;
+    box-shadow: 2px 10px 25px #d4d5d5;
+    border-radius: 50px;
+    transition-duration: 0.2s;
+    height: 50px;
+}
+
+.back-button:hover{
+    opacity: 0.3;
+    transform: scale(1.1);
+}
 
 #sendBtn{
     height: 35px;

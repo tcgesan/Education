@@ -96,3 +96,10 @@ function loadChatHistory() {
         messages.scrollTop = messages.scrollHeight; // Scroll to the bottom
     }
 }
+
+
+
+// Back Button
+function goBack() {
+    window.history.back();
+}
