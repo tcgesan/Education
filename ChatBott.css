@@ -333,3 +333,9 @@ input:hover{
 .delete-btn:hover{
     background-color: rgb(218, 10, 10);
 }
+
+.logo-ai{
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 05%;
+}
