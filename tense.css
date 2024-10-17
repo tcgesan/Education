@@ -33,7 +33,6 @@ user-select: none;
 }
 .incorrect {
     background-color: rgb(255, 0, 0);
-    font-size: 14px;
     color: white;
     flex-wrap: wrap;
     font-family: "Fira Sans", sans-serif;
