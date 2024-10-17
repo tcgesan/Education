@@ -332,7 +332,7 @@ align-items: center;
    z-index: 1000;
    display: flex;
    justify-content: c;
-   height: 9%;
+   height: 8%;
    background-color: var(--primary-color);
    box-shadow: 12px 2px 25px 0px #d5d6d7;
 }
@@ -354,7 +354,7 @@ align-items: center;
    height: 30px;
 }
 h4{
-margin-top: 3%;
+margin-top: 4%;
 font-weight: bold;
 margin-left: 10%;
    position: absolute;
@@ -367,6 +367,6 @@ margin-left: 10%;
 h5{
    position: absolute;
    font-size: 20px;
-   margin-top: 2%;
+   margin-top: 3%;
    margin-left: 77%;
 }
