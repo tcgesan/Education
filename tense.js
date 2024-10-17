@@ -3,7 +3,7 @@ let timeLeft = 15;
 let questions = [
     { 
         question: "One of the professor's greatest attributes is -------- ?", 
-        options: ["When he gives lectures", "how in the manner that he lectures", "the way t give lectures", "his ability to lecture"], 
+        options: ["When he gives lectures", "how in the manner that he lectures", "the way to give lectures", "his ability to lecture"], 
         answer: 3// Index of the correct answer
     },
     { 
