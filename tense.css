@@ -17,6 +17,7 @@
     align-items: center;
     width: 65%;
     flex-direction: column;
+    flex-wrap: wrap;
     color: black;
     margin-bottom: 3%;
     justify-content: space-evenly;
@@ -27,12 +28,14 @@ user-select: none;
 }
 .correct {
     background-color: rgb(4, 249, 4);
+    flex-wrap: wrap;
     font-family: "Fira Sans", sans-serif;
 }
 .incorrect {
     background-color: rgb(255, 0, 0);
     font-size: 14px;
     color: white;
+    flex-wrap: wrap;
     font-family: "Fira Sans", sans-serif;
 }
 
@@ -56,6 +59,7 @@ user-select: none;
     height: 50px;
     padding: 20px;
     font-weight: bold;
+    flex-wrap: wrap;
     font-size: 15px;
     font-family: "Fira Sans", sans-serif;
     border-radius: 50px;
@@ -110,6 +114,7 @@ user-select: none;
     border-radius: 30px;
     background-color: blue;
     color: white;
+    flex-wrap: wrap;
     position: absolute;
     font-family: "Fira Sans", sans-serif;
     margin-top: 165%;
