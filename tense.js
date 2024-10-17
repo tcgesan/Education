@@ -54,7 +54,7 @@ function displayQuestion() {
         div.style.pointerEvents = 'auto'; // Enable clicks
     });
 
-    timeLeft = 15;
+    timeLeft = 20;
     document.getElementById("timer").innerText = timeLeft;
     startTimer();
 }
