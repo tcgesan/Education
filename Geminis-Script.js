@@ -75,7 +75,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
             showTypingEffect(formattedResponse, textElement, incomingMessageDiv);
         } else {
             // Handle the case where the response is undefined or invalid
-            textElement.innerText = "Sorry, I couldn't understand that. Ethun not trained me yet";
+            textElement.innerText = "Sorry, I couldn't understand that. Ethun not trained me yet 😊";
         }
     } catch (error) {
         console.log(error);

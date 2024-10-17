@@ -13,6 +13,7 @@
    --primary-color: #000000;
    --secondary-color: #3c3e41;
    --secondary-hover-color: #444;
+   --primary-shadow:rgb(210, 209, 209);
    --recent-color:rgb(95, 98, 101);
 }
 
@@ -21,6 +22,7 @@
    --subheading-color:#A0A0A0;
    --placeholder-color:#FFF;
    --primary-color:#FFF;
+   --primary-shadow:rgb(170, 165, 165);
    --secondary-color:#E9EEF6;
    --secondary-hover-color:#DBE1EA;
 }
@@ -59,6 +61,7 @@ color: var(--text-color);
    margin-top: 3rem;
    background-clip: text;
    width: fit-content;
+
    background: linear-gradient(to right, #6196eb , #e91b97);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
@@ -87,7 +90,7 @@ color: var(--text-color);
    cursor: pointer;
    /* width: 227px; */
    display: flex;
-   flex-direction: column;
+   /* flex-direction: column; */
    justify-content: space-between;
    flex-shrink: 0;
    border-radius: 0.75rem;
@@ -217,6 +220,7 @@ background: var(--secondary-hover-color);
    height: 700px; 
    padding: 2rem 1rem 12rem;
    overflow-y: auto;
+   overflow-x: hidden;
    scrollbar-color: #62a3e8 transparent;
  scroll-behavior: smooth; 
  }
@@ -323,26 +327,46 @@ align-items: center;
 .head{
    position: fixed;
    width: 100%;
+   display: flex;
+   justify-content: space-evenly;
    z-index: 1000;
    display: flex;
-   justify-content: center;
-   height: 90px;
+   justify-content: c;
+   height: 9%;
    background-color: var(--primary-color);
+   box-shadow: 12px 2px 25px 0px #d5d6d7;
 }
 
 
 
 .back-button{
    position: fixed;
-   margin-left: 5%;
-   margin-top: 9%;
+   margin-left: -85%;
+   margin-top: 3%;
    background-color: rgb(255, 255, 255);
    color: black;
-   width: 40px;
+   width: 30px;
    font-size: 15px;
 
    border: none;
    box-shadow: 2px 1px 25px 0px #d5d6d7;
    border-radius: 50px;
-   height: 40px;
+   height: 30px;
+}
+h4{
+margin-top: 3%;
+font-weight: bold;
+margin-left: 10%;
+   position: absolute;
+   font-size: 16px;
+   background: linear-gradient(to right, #2e79f1 , #e91b97);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+h5{
+   position: absolute;
+   font-size: 20px;
+   margin-top: 2%;
+   margin-left: 77%;
 }
