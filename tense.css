@@ -75,6 +75,7 @@ user-select: none;
     margin-left: 05%;
     flex-wrap: wrap;
     text-wrap: wrap;
+    user-select: none;
     overflow: hidden;
     position: absolute;
     box-shadow: 1px 1px 13px 3px rgb(175, 200, 234);
@@ -107,9 +108,9 @@ user-select: none;
 
 
 #next{
-    width: 30%;
-    height: 40px;
-    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
     border: none;
     border-radius: 30px;
     background-color: blue;
@@ -140,4 +141,32 @@ user-select: none;
     box-shadow: 1px 15px 20px 0px #80bdfa;
     border-radius: 50px;
     height: 40px;
+}
+
+
+.refresh{
+    position: absolute;
+    width: 50px;
+    height:50px;
+    user-select: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 30px;
+    background-color: black;
+    margin-top: 165%;
+    display: flex;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    align-items: center;
+    margin-left: -20%;
+    box-shadow:12px 12px 10px  rgb(219, 221, 225) ;
+    transition-duration: 0.3s;
+}
+
+
+.refresh:hover{
+    font-family: "Fira Sans", sans-serif;
+    opacity: 0;
+    user-select: none;
+    transform: scale(1.2);
 }

@@ -96,3 +96,5 @@ window.onload = displayQuestion;
 function goBack() {
     window.history.back();
 }
+
+
