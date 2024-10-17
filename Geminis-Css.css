@@ -15,6 +15,8 @@
    --secondary-hover-color: #444;
    --primary-shadow:rgb(210, 209, 209);
    --recent-color:rgb(95, 98, 101);
+   --button-color:rgb(255, 252, 252);
+   --button-text:#000000;
 }
 
 .light_mode{
@@ -24,6 +26,8 @@
    --primary-color:#FFF;
    --primary-shadow:rgb(170, 165, 165);
    --secondary-color:#E9EEF6;
+   --button-text:#ffffff;
+   --button-color:rgb(0, 0, 0);
    --secondary-hover-color:#DBE1EA;
 }
 
@@ -347,16 +351,15 @@ align-items: center;
 .back-button{
    position: fixed;
    margin-left: -85%;
-   margin-top: 3%;
-   background-color: rgb(255, 255, 255);
-   color: black;
-   width: 30px;
+   margin-top: 2%;
+   width: 35px;
    font-size: 15px;
-
+color:var(--button-text);
+background-color: var(--button-color);
    border: none;
-   box-shadow: 2px 1px 25px 0px #d5d6d7;
+   box-shadow: 2px 1px 25px 0px #c3c4c5;
    border-radius: 50px;
-   height: 30px;
+   height: 35px;
 }
 h4{
 margin-top: 4%;
