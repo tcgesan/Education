@@ -122,13 +122,15 @@ background: var(--secondary-hover-color);
 
 
  .typing-area{
-   position: relative;
+   position: absolute;
    width: 100%;
    /* bottom: 0px; */
    max-width: 100%;
    height: 1rem;
    padding: 2rem;
-   /* background: var(--primary-color); */
+   display: flex;
+   align-items: center;
+   background: var(--primary-color);
 
 }
 
@@ -218,7 +220,7 @@ background: var(--secondary-hover-color);
    flex-direction: column;
    width: 100%;
    z-index: -1;
-   height:600px; 
+   height:700px; 
    padding: 1rem 1rem 12rem;
  
    overflow-y: auto;
