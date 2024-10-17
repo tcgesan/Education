@@ -293,8 +293,8 @@ align-items: center;
    display: flex;
 }
 .chat-list .loading-indicator .loading-bar{
-   height: 11px;
-   border-radius: 0.14rem;
+   height: 8px;
+   border-radius: 50px;
    width: 100%;
    background: linear-gradient(to right, #206be4, var(--primary-color), #2a20ea);
    animation: animate 2s linear infinite;

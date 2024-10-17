@@ -29,9 +29,24 @@ const createMessageElement = (content, ...classes) => {
 };
 
 const formatApiResponse = (response) => {
-    // Remove <br> tags and replace ** with bullet points or formatting
-    return response.replace(/<br\s*\/?>/gi, '') // Remove <br> tags
-                   .replace(/\*\*(.*?)\*\*/g, (match, p1) => `<li>${p1}</li>`); // Format lists
+    return response.replace(/\*\*(.*?)\*\*/g, (match, p1) => {
+        return `<br> ${p1}<br>`;
+    });
+};
+
+const validateApiResponse = (response) => {
+    return response && response.trim() !== "" && response.length < 500;
+};
+
+const getFallbackResponse = () => {
+    const fallbackResponses = [
+        "Sometimes it's good to take a deep breath and just enjoy the moment.",
+        "What a lovely day! How can I assist you further?",
+        "Remember, every question is a chance to learn something new!",
+        "I'm here to help! Feel free to ask me anything.",
+        "Life is full of wonders. What are you curious about today?"
+    ];
+    return fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
 };
 
 const showTypingEffect = (text, textElement, incomingMessageDiv) => {
@@ -46,7 +61,6 @@ const showTypingEffect = (text, textElement, incomingMessageDiv) => {
             clearInterval(typingInterval);
             incomingMessageDiv.querySelector(".icon").classList.remove("hide");
             localStorage.setItem("savedChats", chatList.innerHTML);
-            // Ensure scrolling happens after the typing effect completes
             setTimeout(() => chatList.scrollTo(0, chatList.scrollHeight), 100);
         }
     }, 75);
@@ -70,16 +84,17 @@ const generateAPIResponse = async (incomingMessageDiv) => {
         const data = await response.json();
         const apiResponse = data?.candidates[0]?.content?.parts[0]?.text;
 
-        if (apiResponse) {
+        if (validateApiResponse(apiResponse)) {
             const formattedResponse = formatApiResponse(apiResponse);
             showTypingEffect(formattedResponse, textElement, incomingMessageDiv);
         } else {
-            // Handle the case where the response is undefined or invalid
-            textElement.innerText = "Sorry, I couldn't understand that. Ethun not trained me yet 😊";
+            // Trigger fallback response if API response is not valid
+            const fallbackResponse = getFallbackResponse();
+            showTypingEffect(fallbackResponse, textElement, incomingMessageDiv);
         }
     } catch (error) {
         console.log(error);
-        textElement.innerText = "Error: Unable to fetch response.";
+        textElement.innerText = "Error: Unable to fetch response. Please check your connection or try again later.";
     } finally {
         incomingMessageDiv.classList.remove("loading");
     }
@@ -95,12 +110,10 @@ const showLoadingAnimation = () => {
             <div class="loading-bar"></div>
         </div>
     </div>
-    <span class="icon material-symbols-rounded"></span>`; // Removed copy functionality
+    <span class="icon material-symbols-rounded"></span>`;
 
     const incomingMessageDiv = createMessageElement(html, "incoming", "loading");
     chatList.appendChild(incomingMessageDiv);
-    
-    // Scroll after adding loading animation
     chatList.scrollTo(0, chatList.scrollHeight);
     
     generateAPIResponse(incomingMessageDiv);
@@ -144,8 +157,6 @@ typingForm.addEventListener("submit", (e) => {
     e.preventDefault();
     handleOutgoingChat();
 });
-
-
 
 // Back Button
 function goBack() {
