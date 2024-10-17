@@ -20,10 +20,6 @@
     color:inherit;
 }
 
-body{
-    background-color:white;
-}
-
 .header{
     display: flex;
     width: 100%;
@@ -157,7 +153,7 @@ align-items: center;
     transition-duration: 0.2s;
     font-size: 15px;
     align-content: center;
-    box-shadow: 2px 06px 20px rgb(215, 216, 217);
+    box-shadow: 2px 1px 20px rgb(202, 204, 204);
     font-family: "Fira Sans", sans-serif;
 }
 
@@ -197,7 +193,7 @@ align-items: center;
     color: black;
     display: flex;
     font-size: 15px;
-    margin-top: 7%;
+    margin-top: 8%;
     font-weight: bold;
     margin-left: 19%;
     align-items: center;

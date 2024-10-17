@@ -578,3 +578,19 @@ function searchFunction() {
     // Toggle visibility of the content div
     document.getElementById('content').style.display = hasMatches || input ? '' : 'none';
 }
+
+
+
+function tense() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    setTimeout(function() {
+      window.location.href = 'tense.html'; // Redirect after 3 seconds
+    },150); // 3000 milliseconds = 3 seconds
+  }
+
+
+
+
+
