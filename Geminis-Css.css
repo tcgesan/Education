@@ -125,14 +125,10 @@ background: var(--secondary-hover-color);
    position: relative;
    width: 100%;
    /* bottom: 0px; */
-   margin-top: 5%;
    max-width: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
    height: 1rem;
    padding: 2rem;
-   background: var(--primary-color);
+   /* background: var(--primary-color); */
 
 }
 
