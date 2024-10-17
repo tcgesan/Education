@@ -140,7 +140,7 @@ font-size: min(25px);
     user-select: none;
     position: absolute;
     width: 70%;
-    height: auto;
+    height: 10px;
     flex-direction: column;
     margin-left: 10%;
     display: flex;
