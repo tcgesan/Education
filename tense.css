@@ -93,7 +93,6 @@ user-select: none;
     justify-content: center;
     width: 100%;
     user-select: none;
-    gap: 10px;
     padding: 10px;
     /* background-color: black; */
     /* margin-left: 20%; */
@@ -113,7 +112,7 @@ user-select: none;
     color: white;
     position: absolute;
     font-family: "Fira Sans", sans-serif;
-    margin-top: 160%;
+    margin-top: 165%;
     box-shadow: 12px 10px 13px rgb(206, 206, 204);
 }
 
