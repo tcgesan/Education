@@ -185,6 +185,12 @@ align-items: center;
     box-shadow: 1px 15px 20px 0px #80bdfa;
     border-radius: 50px;
     height: 40px;
+    transition-duration: 0.2s;
+}
+
+
+.back-button:hover{
+    transform: scale(1.2);
 }
 .category{
     width: 70%;
