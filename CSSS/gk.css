@@ -28,11 +28,11 @@ body{
     flex-wrap: wrap;
     align-items: center;
     position: fixed;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     justify-content: space-evenly;
     /* justify-content: center; */
-    height: 50px;
+    height: 60px;
     max-height: 80px;
     background-color: black;
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
@@ -43,10 +43,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-/* font-size: min(25px); */
+    font-size: 23px;
     border-radius: 10px;
-    margin-top: -3%;
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
@@ -77,9 +75,8 @@ body{
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 23px;
     border-radius: 10px;
-    
     height: 60px;
     max-height: 90px;
     /* background-color:red; */
@@ -94,13 +91,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    margin-top: -3%;
-/* font-size: min(25px); */
+    font-size: 23px;
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color:#93defc;  
 
 }
@@ -110,13 +104,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    margin-top: -3%;
-/* font-size: min(25px); */
+    font-size: 23px;
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color: white;
 
 }

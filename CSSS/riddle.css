@@ -30,11 +30,11 @@ body{
     flex-wrap: wrap;
     align-items: center;
     position: fixed;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     justify-content: space-evenly;
     /* justify-content: center; */
-    height: 70px;
+    height: 60px;
     max-height: 80px;
     background-color: black;
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
@@ -45,8 +45,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
-font-size: min(25px);
+    font-size: 23px;
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
