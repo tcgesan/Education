@@ -413,7 +413,7 @@ function grammer() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/grammer.html';
+        window.location.href = '../HTMLS/grammer.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -425,7 +425,7 @@ function gk() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/gk.html';
+        window.location.href = '../HTMLS/gk.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -437,7 +437,7 @@ function library() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/library.html';
+        window.location.href = '../HTMLS/library.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -449,7 +449,7 @@ function chatbot() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/ChatBot.html';
+        window.location.href = '../HTMLS/ChatBot.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -460,7 +460,7 @@ function text() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/Voice.html';
+        window.location.href = '../HTMLS/Voice.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -471,7 +471,7 @@ function next() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = 'index.html';
+        window.location.href = '../index.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -488,7 +488,7 @@ function goBack() {
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker
-        .register('../js/service-worker.js')
+        .register('../JSS/service-worker.js')
         .then((registration) => {
           console.log('Service Worker registered with scope:', registration.scope);
         })
@@ -586,7 +586,7 @@ function tense() {
     sound.play();
 
     setTimeout(function() {
-      window.location.href = '../html/tense.html'; // Redirect after 3 seconds
+      window.location.href = '../HTMLS/tense.html'; // Redirect after 3 seconds
     },150); // 3000 milliseconds = 3 seconds
   }
 
