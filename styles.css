@@ -134,6 +134,7 @@ h1{
     z-index: -1;
     font-family:sans-serif;
     background:linear-gradient(to right,blue,rgb(242, 33, 144));
+    
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* font-size: 3rem; */
