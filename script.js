@@ -378,7 +378,7 @@ function handleClick() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/quiz.html';
+        window.location.href = '../HTMLS/quiz.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -389,7 +389,7 @@ function Fact() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/Fact.html';
+        window.location.href = '../HTMLS/Fact.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -401,7 +401,7 @@ function riddle() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../html/riddle.html';
+        window.location.href = '../HTMLS/riddle.html';
     }, 150); // Adjust delay as needed
 }
 
