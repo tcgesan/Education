@@ -24,43 +24,30 @@
     flex-wrap: wrap;
     align-items: center;
     position: fixed;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     justify-content: space-evenly;
-    height: 50px;
+    height: 60px;
     max-height: 80px;
     background-color: black;
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
 
+
+
 #Home{
     width: 15%;
     display: flex;
     font-weight: bold;
-    margin-top: -3%;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
+    font-size: 23px;
     height: 40px;
     color:#93defc;
 
 }
 
 
-
-#noti{
-    width: 15%;
-    display: flex;
-    font-weight: bold;
-    margin-top: -3%;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-    height: 40px;
-    /* color:#93defc; */
-
-}
 #dot{
     font-size: 06px;
     margin-left: 7%;
@@ -95,16 +82,12 @@ font-size: min(25px);
 
 #Motivations{
     width: 15%;
-    margin-top: -3%;
+    font-size: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-/* font-size: min(25px); */
     border-radius: 10px;
-    /* height: 60px; */
     max-height: 90px;
-    /* background-color:red; */
     color: white;
 
 }
@@ -114,13 +97,10 @@ font-size: min(25px);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 20px;
-    margin-top: -3%;
-/* font-size: min(25px); */
+    font-size: 23px;
     border-radius: 10px;
     height: 60px;
     max-height: 90px;
-    /* background-color:red; */
     color: white;
 
 }
