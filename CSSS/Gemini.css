@@ -351,15 +351,15 @@ align-items: center;
 .back-button{
    position: fixed;
    margin-left: -85%;
-   margin-top: 2%;
-   width: 35px;
+   width: 50px;
    font-size: 15px;
 color:var(--button-text);
 background-color: var(--button-color);
    border: none;
    box-shadow: 2px 1px 25px 0px #c3c4c5;
-   border-radius: 50px;
-   height: 35px;
+   height: 55px;
+   border-top-right-radius: 30px;
+   border-bottom-right-radius: 30px;
 }
 h4{
 margin-top: 4%;
