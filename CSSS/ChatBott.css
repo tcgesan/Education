@@ -112,7 +112,6 @@ body{
 .chat-container {
     width: 100%;
     position: absolute;
-    margin-top: 24%;
     z-index: -1;
     display: flex;
     max-width: 100%;
@@ -214,9 +213,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
     display: flex;
+    position: absolute;
+    margin-top: 185%;
     /* bottom: 0; */
-    position: absolute ;
-    margin-top: 180%;
+    /* position: relative; */
 }
 
 input{
