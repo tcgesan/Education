@@ -4,8 +4,8 @@ const sendBtn = document.getElementById('sendBtn');
 const deleteBtn = document.getElementById('deleteBtn');
 
 // Profile pictures
-const userPic = '../pic/add.avif'; // User image URL
-const botPic = '../pic/gpp.webp'; // Bot image URL
+const userPic = '../Pho/add.avif'; // User image URL
+const botPic = '../Pho/gpp.webp'; // Bot image URL
 
 const API_KEY = "AIzaSyC0sT2PvzG5--nXhxGsogbgI2RGbdPktxA";
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
