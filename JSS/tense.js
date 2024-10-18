@@ -237,8 +237,8 @@ function nextQuestion() {
     });
 }
 
-window.onload = displayQuestion;
 
+window.onload = displayQuestion;
 
 
 
