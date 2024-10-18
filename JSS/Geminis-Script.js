@@ -102,7 +102,7 @@ const generateAPIResponse = async (incomingMessageDiv) => {
 
 const showLoadingAnimation = () => {
     const html = `<div class="message-content">
-        <img src="../pic/google-gemini-icon.png" alt="Gemini-Image" class="avatar">
+        <img src="../Pho/google-gemini-icon.png" alt="Gemini-Image" class="avatar">
         <p class="text"></p>
         <div class="loading-indicator">
             <div class="loading-bar"></div>
@@ -124,7 +124,7 @@ const handleOutgoingChat = () => {
     if (!userMessage) return;
 
     const html = `<div class="message-content">
-        <img src="../pic/mm.png" alt="User-Image" class="avatar">
+        <img src="../Pho/mm.png" alt="User-Image" class="avatar">
         <p class="text"></p>
     </div>`;
 
