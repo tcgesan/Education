@@ -4,33 +4,118 @@ let timeLeft = 20;
 
 let questions = [
     { 
-        question: " ✨ . One of the professor's greatest attributes is -------- .", 
+        question: "  One of the professor's greatest attributes is -------- .", 
         options: ["When he gives lectures", "how in the manner that he lectures", "the way to give lectures", "his ability to lecture"], 
         answer: 3// Index of the correct answer
     },
     { 
-        question: " ✨ . I ___ to a foreign country.", 
+        question: " I ___ to a foreign country.", 
         options: ["was nerver been", "am never gone", "have never been", "am never been"], 
         answer: 2
     },
 
 
     { 
-        question: " ✨ .  Hurrah ! we have won the match . What kind of sentence is this?", 
+        question: "Hurrah ! we have won the match . What kind of sentence is this?", 
         options: ["Assertive", "Optative", "Imperative", "Exclamatory"], 
         answer: 3 
     },
     { 
-        question: "✨ . Which one is the correct sentence?", 
+        question: " Which one is the correct sentence?", 
         options: ["I know him for two years", "I have been knowing him for two years", "I have know him for two years", "I have known him since years"], 
         answer: 2
     },
     
     { 
-        question: " ✨ . ___ school very young, he is very successful.", 
+        question: " ___ school very young, he is very successful.", 
         options: ["Although leaving", "In spite of he left", "Because of", "In spite of leaving"], 
         answer: 3 
     },
+    
+
+    { 
+        question: " Which one of the following is a compound sentence?", 
+        options: ["I am glad that you have come ", " I have found the pen of lost ", "The enemy fled as soon as they sow us ", " The enemy saw us and fled at once "], 
+        answer: 3
+    },
+
+    
+
+    { 
+        question: "Which is correct ? ", 
+        options: [" We write by ink ", " We write with ink ", " We write in ink  ", " We write under ink"], 
+        answer: 1
+    },
+
+    
+    
+    { 
+        question: "Hold fast to dreams for when dreams £20 __ ", 
+        options: ["life is broken ", "man died  ", " man become helpless", "life is a barren field "], 
+        answer: 3
+    },
+
+    
+    { 
+        question: "Choose the correct sentense ---", 
+        options: ["I am very better today", "The goods are of inferior qualities ", "He gave me some advice", "He requested of my help"], 
+        answer: 2
+    },
+    
+    { 
+        question: "When water___it turns into ice . ", 
+        options: [" Will freeze", "freezes ", " would freeze", " froze"], 
+        answer: 1
+    },
+    
+    
+    { 
+        question: "Which Sentence is correct ?", 
+        options: ["I wish i was a king ", " I wish i am a king", " I wish i can be a king", " I wish i were a king"], 
+        answer: 3
+    },
+    
+    
+    { 
+        question: "I___him only one letter up to now .", 
+        options: [" sent ", "had sent ", "have sent ", "send "], 
+        answer: 2
+    },
+    
+    
+    { 
+        question: "A good player should know ___ .", 
+        options: [" how to practice hard", "how to be a good player ", " how to play effectively", " how to play in efficiently "], 
+        answer: 3
+    },
+    
+    
+    { 
+        question: " Choose the correct option: Even as harvesting was going on ", 
+        options: [" the rainy reason began", " the rainy season has begun", " the rainy reason had begun", " the rainy seasons begins"], 
+        answer: 0
+    },
+    
+    
+    { 
+        question: "How___learning English", 
+        options: ["long have you been", "much time are you ", " long are you", " many times have you been"], 
+        answer: 0
+    },
+    
+    { 
+        question: "He said nothing___a long time", 
+        options: [" after", " since", " during", " for"], 
+        answer: 3
+    },
+    
+    
+    { 
+        question: "Those who are vulnearable are____", 
+        options: [" aggressive and uncooperative", " reed to be trained in intensive care units", " guilty of crime", "susceptible to injury or disease  "], 
+        answer: 3
+    },
+    
     
 ];
 

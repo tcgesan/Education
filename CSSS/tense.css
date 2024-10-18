@@ -46,11 +46,12 @@ user-select: none;
     align-items: center;
     box-shadow: 2px 10px 13px rgb(171, 171, 169);
     width: 50px;
+    color: white;
     height: 50px;
     position: absolute;
     margin-top: 10%;
     border-radius:50px ;
-    background-color:gold;
+    background-color:rgb(246, 3, 11);
 }
 
 #question{
