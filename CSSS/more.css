@@ -290,13 +290,11 @@ margin-left: 11%;
     user-select: none;
     font-size: 20px;
     z-index: -1;
-    color: white;
     align-items: center;
     height: 100px;
     margin-left: 15%;
     transition-duration: 0.3s;
-    background-color: rgb(158, 60, 249);
-    box-shadow: 12px 6px 13px rgb(193, 196, 198);
+    box-shadow: 2px 2px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
     margin-top: 93%;
@@ -317,8 +315,8 @@ margin-left: 11%;
     height: 100px;
     margin-left: 15%;
     transition-duration: 0.3s;
-    background-color: gold;
-    box-shadow: 12px 6px 13px rgb(193, 196, 198);
+    background-color:white;
+    box-shadow: 2px 1px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
     transition-duration: 0.3s;
@@ -327,17 +325,15 @@ margin-left: 11%;
 
 
 .old-chatbot:hover{
-    opacity: 0;
+    background-color: gold;
     transform: scale(1.2);
 
 }
 
 
 .library:hover{
-    box-shadow: 12px 10px 13px rgb(158, 159, 159);
     transform: scale(1.2);
-    opacity: 0;
-
+background-color: cyan;
 }
 
 
@@ -346,16 +342,15 @@ margin-left: 11%;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    color: black;
     z-index: -1;
     font-size: 20px;
     align-items: center;
-    height: 10px;
+    height: 20px;
     transition-duration: 0.3s;
     background-color:white;
     position: absolute;
     z-index: -1;
-    margin-top: 1000px;
+    margin-top: 750px;
 }
 
 

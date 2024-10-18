@@ -223,9 +223,8 @@ font-weight: bold;
 .grammer{
     width: 60%;
     height: 100px;
-    background-color: #e699ff;
+    background-color:rgb(255, 255, 255);
     display: flex;
-    color:black;
     user-select: none;
 font-weight: bold;
     z-index: -1;
@@ -235,7 +234,7 @@ font-weight: bold;
     align-items: center;
     font-family: "Fira Sans", sans-serif;
     justify-content: center;
-    box-shadow: 12px 10px 13px rgb(193, 196, 198);
+    box-shadow: 1px 1px 13px rgb(193, 196, 198);
     position: absolute;
     font-size: 24px;
     transition-duration: 0.3s;
@@ -245,6 +244,5 @@ font-weight: bold;
 
 .grammer:hover{
     transform: scale(1.2);
-    opacity: 0;
-    box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+    background-color: gold;
 }

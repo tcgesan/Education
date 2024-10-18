@@ -166,7 +166,6 @@ user-select: none;
 
 .refresh:hover{
     font-family: "Fira Sans", sans-serif;
-    opacity: 0;
     user-select: none;
     transform: scale(1.2);
 }
