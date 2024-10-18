@@ -184,7 +184,6 @@ margin-left: 20%;
 }
 .box2:hover{
     transform: scale(1.2);
-    opacity: 0;
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
 }
 
@@ -213,7 +212,6 @@ font-weight: bold;
 
 .quiz-div:hover{
     transform: scale(1.2);
-    opacity: 0;
     box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
 }
 

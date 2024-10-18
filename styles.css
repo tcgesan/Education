@@ -220,7 +220,7 @@ h2{
     width: 40%;
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(to right, rgb(23, 23, 214) 10%, rgb(225, 7, 7));
+    background: linear-gradient(to right, rgb(23, 23, 214),deeppink);
     -webkit-background-clip: text;
     font-family: "Fira Sans", sans-serif;
     -webkit-text-fill-color: transparent;
@@ -247,8 +247,8 @@ h3{
     margin-left: 30%;
     font-family: "Fira Sans", sans-serif;
     height: 40px;
-    box-shadow: 2px 10px 13px rgb(193, 196, 198);
-    background:linear-gradient(to right, blue,deeppink);
+    box-shadow: 2px 10px 13px rgb(218, 219, 220);
+    background:linear-gradient(to right, rgb(57, 57, 241),deeppink);
     margin-top: 222%;
 }
 
