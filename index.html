@@ -67,6 +67,20 @@
         </button>
       </div>
     </div>
+
+
+
+    <div class="buttons" id="clearCacheButton">Clear Cache </div>
+
+<script>
+    document.getElementById('clearCacheButton').addEventListener('click', async () => {
+        const cacheNames = await caches.keys();
+        for (const cacheName of cacheNames) {
+            await caches.delete(cacheName);
+        }
+        console.log('Service worker cache cleared!');
+    });
+</script>
     
 <div class="empty"></div>
 <script src="script.js" ></script>
