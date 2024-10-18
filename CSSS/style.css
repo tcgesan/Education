@@ -152,7 +152,7 @@ button.wrong {
 }
 .box:hover{
     transform: scale(1.2);
-    box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+    box-shadow:2px 12px 10px 2px rgb(201, 202, 203) ;
 }
 
 
@@ -185,7 +185,7 @@ button.wrong {
 }
 .box1:hover{
     transform: scale(1.2);
-    box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+    box-shadow:2px 12px 10px 2px rgb(199, 199, 201) ;
 }
 
 .refresh{

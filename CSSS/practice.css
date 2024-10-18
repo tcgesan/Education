@@ -184,7 +184,7 @@ margin-left: 20%;
 }
 .box2:hover{
     transform: scale(1.2);
-    box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+    box-shadow:2px 12px 10px 2px rgb(188, 189, 191) ;
 }
 
 .quiz-div {
@@ -202,7 +202,7 @@ font-weight: bold;
     align-items: center;
     font-family: "Fira Sans", sans-serif;
     justify-content: center;
-    box-shadow: 12px 10px 13px rgb(193, 196, 198);
+    box-shadow: 12px 10px 13px rgb(210, 211, 212);
     position: absolute;
     font-size: 24px;
     transition-duration: 0.3s;
@@ -212,7 +212,7 @@ font-weight: bold;
 
 .quiz-div:hover{
     transform: scale(1.2);
-    box-shadow:2px 12px 10px 2px rgb(159, 160, 163) ;
+    box-shadow:2px 12px 10px 2px rgb(191, 192, 195) ;
 }
 
 
