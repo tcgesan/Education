@@ -563,6 +563,17 @@ function text() {
 }
 
 
+
+function tense() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    setTimeout(function() {
+      window.location.href = '../HTMLS/tense.html'; // Redirect after 3 seconds
+    },150); // 3000 milliseconds = 3 seconds
+  }
+
+
 function next() {
     var sound = document.getElementById("clickSound");
     sound.play();
@@ -583,10 +594,28 @@ function goBack() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Service Worker code
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker
-        .register('../JSS/service-worker.js')
+        .register('../service-worker.js')
         .then((registration) => {
           console.log('Service Worker registered with scope:', registration.scope);
         })
@@ -654,39 +683,6 @@ if ('serviceWorker' in navigator) {
 }
 
 
-function searchFunction() {
-    const input = document.getElementById('type').value.toLowerCase();
-    const results = document.querySelectorAll('#content .result, #content h2, #content p, #content div, #content span, #content li');
-    const searchResultsDiv = document.getElementById('searchResults');
-
-    searchResultsDiv.innerHTML = ''; // Clear previous results
-
-    let hasMatches = false; // Flag to check if there are any matches
-
-    results.forEach(result => {
-        if (result.textContent.toLowerCase().includes(input)) {
-            const div = document.createElement('div');
-            div.className = 'result';
-            div.textContent = result.textContent; // Display matching text
-            searchResultsDiv.appendChild(div);
-            hasMatches = true; // Set flag to true if there's a match
-        }
-    });
-
-    // Toggle visibility of the content div
-    document.getElementById('content').style.display = hasMatches || input ? '' : 'none';
-}
-
-
-
-function tense() {
-    var sound = document.getElementById("clickSound");
-    sound.play();
-
-    setTimeout(function() {
-      window.location.href = '../HTMLS/tense.html'; // Redirect after 3 seconds
-    },150); // 3000 milliseconds = 3 seconds
-  }
 
 
 
