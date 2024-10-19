@@ -154,12 +154,6 @@ margin-top: 35%;
 margin-left: 20%;
 }
     
-.empty-box{
-    position: absolute;
-    width: 100%;
-    height: 10px;
-    margin-top: 950px;
-}
 
 
 .box2{
@@ -219,20 +213,20 @@ font-weight: bold;
 
 
 .grammer{
-    width: 60%;
+    width: 40%;
     height: 100px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgb(232, 232, 232);
     display: flex;
     user-select: none;
 font-weight: bold;
     z-index: -1;
     border-radius: 20px;
-    margin-left: 20%;
+    margin-left: 08%;
     margin-top: 180%;
     align-items: center;
     font-family: "Fira Sans", sans-serif;
     justify-content: center;
-    box-shadow: 1px 1px 13px rgb(193, 196, 198);
+    box-shadow: 12px 10px 13px rgb(210, 211, 212);
     position: absolute;
     font-size: 24px;
     transition-duration: 0.3s;
@@ -242,5 +236,37 @@ font-weight: bold;
 
 .grammer:hover{
     transform: scale(1.2);
-    background-color: gold;
+}
+
+.voca{
+    width: 40%;
+    height: 100px;
+    background-color:rgb(241, 160, 248);
+    display: flex;
+    user-select: none;
+font-weight: bold;
+    z-index: -1;
+    border-radius: 20px;
+    margin-left: 55%;
+    margin-top: 180%;
+    align-items: center;
+    font-family: "Fira Sans", sans-serif;
+    justify-content: center;
+    box-shadow: 12px 10px 13px rgb(210, 211, 212);
+    position: absolute;
+    font-size: 23px;
+    transition-duration: 0.3s;
+    text-align: center;
+}
+
+
+.voca:hover{
+    transform: scale(1.2);
+}
+
+.empty-box{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    margin-top: 1000px;
 }

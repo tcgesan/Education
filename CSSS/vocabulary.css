@@ -1,0 +1,222 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     background-color: #f0f8ff;
+     color: #333;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+
+ main {
+     flex-grow: 1;
+     display: flex;
+     z-index: -1;
+     margin-top: 35%;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;     
+ }
+
+ .vocab-list {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     width: 80%;
+     flex-wrap: wrap;
+     z-index: -1;
+     margin-top: 110%;
+     overflow: hidden;     
+     position: absolute;
+ }
+
+ .vocab-item {
+     background-color: white;
+     border-radius: 20px;
+     box-shadow: 0 4px 10px rgba(24, 23, 23, 0.2);
+     margin: 15px;
+     padding: 35px;
+     width: 90%;
+     text-align: center;
+     opacity: 0;
+     transition: opacity 0.5s ease-in-out;
+     visibility: hidden;
+     position: absolute;  
+ }
+
+ .vocab-item.active {
+     opacity: 1;
+     visibility: visible;
+     position: relative;   
+ }
+
+ .word {
+     font-size: 20px;
+     font-weight: bold;
+     font-family: "Fira Sans", sans-serif;
+     color: #000000;
+ }
+
+ @font-face {
+     font-family: iphone;
+     src: url(../font/Ios\ Kohinoor\ font.ttf);
+ }
+ .definition {
+     font-size: 1.4em;
+     font-family: iphone;
+     display: flex;
+     flex-direction: column;
+     color:blue;
+     margin-top: 10px;
+ }
+
+ .button-container {
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     justify-content: space-evenly;
+     margin-top: 08%;
+ }
+
+ button {
+     padding: 10px 20px;
+     color: white;
+     border: none;
+ margin-top: 100%;
+     border-radius: 5px;
+     font-size: 1.1em;
+     transition: background-color 0.3s, transform 0.2s;
+ }
+
+ button:hover {
+     transform: scale(1.1);
+ }
+
+
+ 
+.header{
+     display: flex;
+     width: 100%;
+     flex-wrap: wrap;
+     align-items: center;
+     position: fixed;
+     border-bottom-left-radius: 25px;
+     border-bottom-right-radius: 25px;
+     justify-content: space-evenly;
+     height: 60px;
+     max-height: 80px;
+     background-color: black;
+     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
+ }
+ 
+ 
+ 
+ #Home{
+     width: 15%;
+     display: flex;
+     font-weight: bold;
+     align-items: center;
+     justify-content: center;
+     font-size: 23px;
+     height: 40px;
+     color:white;
+ 
+ }
+ 
+ 
+ #dot{
+     font-size: 06px;
+     margin-left: 7%;
+     animation: blink 0.5s ease-out infinite;
+     margin-top: 6px;
+ }
+ @keyframes blink{
+     0%{
+         color:rgb(20, 220, 20);
+     }
+     50%{
+         color:rgb(20, 220, 20);
+     }
+     100%{
+         color: black;
+     }
+ }
+ #Profile{
+     width: 15%;
+     display: flex;
+     text-decoration: none;
+     align-items: center;
+     justify-content: center;
+     font-size: 25px;
+ font-size: min(25px);
+     border-radius: 10px;
+     height: 60px;
+     max-height: 90px;
+     color: white;
+ 
+ }
+ 
+ #Motivations{
+     width: 15%;
+     font-size: 23px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 10px;
+     max-height: 90px;
+     color:#93defc;
+ 
+ }
+ 
+ #Syllabus{
+     width: 15%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 23px;
+     border-radius: 10px;
+     height: 60px;
+     max-height: 90px;
+     color: white;
+ 
+ }
+
+ .ai-logo{
+     position: absolute;
+     margin-top: -28px;
+     margin-left: -0px;
+ }
+  
+
+ .pre{
+border-radius: 40px;
+     background-color: rgb(65, 155, 235);
+     box-shadow: 12px 5px 13px rgb(210, 211, 212);
+ }
+
+ 
+ .ref{
+     border-radius: 40px;
+     box-shadow: 12px 5px 13px rgb(210, 211, 212);
+          background-color: rgb(26, 232, 92);
+      }
+
+      .a-p{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          border-radius: 20px;
+          font-size: 1.1rem;
+          font-family: "Fira Sans", sans-serif;
+          height: 50px;
+      }
