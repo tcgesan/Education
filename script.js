@@ -331,46 +331,50 @@ const questions = [
     },
 
     
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
+    // 41
+    {
+        question: ' বাংলদেশে  শহীদ বুদ্ধিজীবি দিবস কবে ? ',
+        options: ['   ১৪ ডিসেম্বর ', '    ১৫ জানুয়ারি   ', '   ১৭ এপ্রিল' ,' ২০ জুলাই'],
+        correct:0
+    },
+
+    // 42
+    {
+        question: '  বাংলাদেশ এর বৃহত্তম বিল কোনটি ?',
+        options: ['   চলন বিল    ', '   আড়িয়াল বিল    ', ' তামাবিল   ', '   চাতলার বিল   '],
+        correct:0
+    },
+
+    // 43
+    {
+        question: '  বিশ্ব মানবাধিকার দিবস কবে ?',
+        options: ['     ৮ ডিসেম্বর   ', '   ১০ ডিসেম্বর    ', '  ১১ ডিসেম্বর  ', '    ১৩ ডিসেম্বর  '],
+        correct:1
+    },
 
     
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
+    // 44
+    {
+        question: 'হিজরি সন গণনা শুরু হয় কোন সালে ?',
+        options: ['    ৬০২ সালে   ', '    ৬১৪ সালে   ', '  ৬২২ সালে  ', '  ৬২৪ সালে    '],
+        correct:2
+    },
 
-    
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
 
-    
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
 
-    
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
+    // 45
+    {
+        question: '  হামাস কোন দেশের সংগঠন ?',
+        options: ['   লেবানন   ', '  ফিলিস্তিন   ', '  মিশর  ', '  ইরাক    '],
+        correct:1
+    },
 
-    
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
+    // 46
+    {
+        question: '  বিশ্বসাহিত্য  কেন্দ্রের স্লোগান কী ?',
+        options: ['   আলোকিত মানুষ গড়ো  ', '  আলোকিত মানুষ চাই     ', '  সবার জন্য শিক্ষা  ', '   ঘরে ঘরে শিক্ষার আলো   '],
+        correct:1
+    },
 
     
     // {
@@ -456,9 +460,10 @@ options.forEach(option => {
                     // Shuffle questions and restart
                     shuffleQuestions();
                     currentQuestionIndex = 0;
-                }
+                };
+                
                 loadQuestion(); // Load the next question
-            }, 500);
+            }, 1800000);
         } else {
             e.target.classList.add('wrong'); // Only add the 'wrong' class but do not proceed to the next question
         }
@@ -468,6 +473,17 @@ options.forEach(option => {
 // Initialize the first question
 shuffleQuestions();  // Shuffle questions at the start
 loadQuestion();      // Load the first question
+
+
+
+
+
+
+
+
+
+
+
 
 
 function handleClick() {

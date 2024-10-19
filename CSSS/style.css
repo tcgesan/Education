@@ -57,17 +57,20 @@ p {
 
 button.option {
     padding: 15px;
-    background-color: #f0f0f0;
+    background-color:white;
     border: none;
     border-radius: 28px;
+    box-shadow: 0 3px 10px 2px rgb(229, 230, 232);
     font-size: 15px;
     color: #333;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition-duration: 0.2s;
+    transition: 0.3s ease;
 }
 
 button.option:hover {
-    background-color: #ddd;
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px 2px rgb(211, 212, 212);
 }
 
 button.correct {
@@ -188,7 +191,7 @@ button.wrong {
     box-shadow:2px 12px 10px 2px rgb(199, 199, 201) ;
 }
 
-.refresh{
+.next{
     position: absolute;
     width: 35%;
     height: 6%;
@@ -206,9 +209,8 @@ button.wrong {
     box-shadow:12px 12px 10px  rgb(207, 211, 226) ;
     transition-duration: 0.3s;
 }
-.refresh:hover{
+.next:hover{
     font-family: "Fira Sans", sans-serif;
-    opacity: 0;
     user-select: none;
     transform: scale(1.2);
 }
