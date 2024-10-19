@@ -91,7 +91,7 @@ body {
      padding: 10px 20px;
      color: white;
      border: none;
- margin-top: 100%;
+ margin-top: 110%;
      border-radius: 5px;
      font-size: 1.1em;
      transition: background-color 0.3s, transform 0.2s;
@@ -197,17 +197,13 @@ body {
  }
   
 
- .pre{
-border-radius: 40px;
-     background-color: rgb(65, 155, 235);
-     box-shadow: 12px 5px 13px rgb(210, 211, 212);
- }
 
  
  .ref{
      border-radius: 40px;
-     box-shadow: 12px 5px 13px rgb(210, 211, 212);
-          background-color: rgb(26, 232, 92);
+     color: black;
+     box-shadow: 2px 10px 13px rgb(210, 211, 212);
+          background-color: gold;
       }
 
       .a-p{
