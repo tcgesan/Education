@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable="no">
     <title>More</title>
     <link rel="stylesheet" href="../CSSS/more.css">
+    <link rel="stylesheet" href="../CSSS/mail.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
    </head>
@@ -49,10 +50,30 @@
         <source src="../sound/POOOO.mp3" type="audio/mpeg">
     </audio>
 
+
+
+    <h2 id="h2" >Contact Us</h2>
+    <form id="contact-form">
+
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+    
+        <button type="submit">Send Email</button>
+    </form>
+    
+
+
+
+
+
+
 <!-- 
     <div  onclick="window.location.href='https://drive.google.com/file/d/11P4uz20Sk3_AyilNuyRqo66g-em0dNIk/view?usp=drivesdk'"  class="buttons"><div class="red"><i  id="red-dot" class="fa-solid fa-circle" style="color: #ed0707;"></i></div><i id="arrow"  class="fa-solid fa-arrow-right"></i>&nbsp; Update&nbsp;Version</div> -->
 
 <div class="empty"></div>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script src="../JSS/mail.js" ></script>
 <script src="../script.js"  ></script>
       <!-- <div class="empty"></div> -->
 </body>
