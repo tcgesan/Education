@@ -376,84 +376,744 @@ const questions = [
         correct:1
     },
 
-    
+    // 47
     {
         question: '  একুশে পদক কোন সালে চালু হয় ?',
         options: ['   ১৯৭৬ সালে     ', '  ১৯৭২ সালে     ', '  ১৯৭৫ সালে   ', '   ১৯৮১ সালে   '],
         correct:0
     },
 
-    
+    // 48
     {
         question: '  ইউনেস্কোর প্রধান কার্যালয় কোথায় অবস্থিত ?',
         options: ['   নিউইয়র্ক    ', '     প্যারিস      ', 'রোম     ', '    জেনেভা  '],
         correct:1
     },
 
-    
+    // 49
     {
         question: '  কোন ক্ষুদ্র নৃ-গোষ্ঠীর ধর্ম ইসলাম ?',
         options: ['    রাখাইন   ', '    মারমা    ', ' পাঙ্গন    ', '    খিয়াং'],
         correct:2
     },
 
-    
+    // 50
     {
         question: '  আন্তর্জাতিক রেড ক্রস-এর সদর দপ্তর কোথায় ?',
         options: ['    ভিয়েনা    ', '     জেনেভা      ', '   প্যারিস  ', '   লন্ডন   '],
         correct:1
     },
     
+
+    // /51
     {
         question: '   বাঙালি জাতির প্রধান অংশ কোন মূল জাতিগোষ্ঠীর অন্তর্ভুক্ত ?',
         options: ['     দ্রাবিড়  ', '    নেগ্রিটো   ', '  ভোটচীন  ', '   অস্ট্রিক   '],
         correct:3
     },
     
+
+    // 52
     {
         question: '  দারফুর  হলো -- ',
         options: ['    ইরাকের একটি শহরের নাম   ', '   ইরানের একটি শহরের নাম   ', '  সুদানের একটি অঞ্চলের নাম  ', '    আফগানিস্তানের একটি অঞ্চলের নাম  '],
         correct:2
     },
     
+    // 53
+    {
+        question: '  লেবানন কোন দেশের কাছ থেকে স্বাধীনতা লাভ করে ?',
+        options: ['   ব্রিটেন    ', '   ফ্রান্স     ', ' তুরস্ক   ', '  স্পেন    '],
+        correct:1
+    },
+
+
+    // 54
+    {
+        question: '  মিয়ানমারে রোহিঙ্গারা তাদের নাগরিকত্ব হারায় --',
+        options: ['     ১৯৬২ সনে  ', '     ১৯৮৬ সনে    ', '   ১৯৭৮ সনে ', '    ১৯৮২ সনে  '],
+        correct:3
+    },
+
+
+    // 55
+    {
+        question: '  মালয়েশিয়া কোন দেশের উপনিবেশ ছিল ?',
+        options: ['  ব্রিটেন      ', '   পর্তুগাল    ', ' ফ্রান্স   ', '  যুক্তরাষ্ট্র     '],
+        correct:0
+    },
+
+    // 56
+    {
+        question: '   প্রাচীন বাংলার হরিকেল জনপদ অন্তর্ভুক্ত এলাকা --',
+        options: ['   রাজশাহী ', '     দিনাজপুর   ', '  খুলনা  ', '  চট্টগ্রাম    '],
+        correct:3
+    },
+
+// 57
+    {
+        question: '  ন্যায়পাল প্রতিষ্ঠানটির উদ্ভব কোথায় ?',
+        options: ['    ফিনল্যান্ড     ', '   নেদারল্যান্ড     ', '   আইসল্যান্ড   ', '   সুইডেন    '],
+        correct:3
+    },
+
+
+// 58
+    {
+        question: '  বাংলাদেশ সবচেয়ে বেশি সাহায্য পায় কোন দেশ থেকে ?',
+        options: ['  জাপান      ', '   ভারত      ', '  সৌদি আরব  ', '   সুইজারল্যান্ড   '],
+        correct:0
+    },
+
+
+// 59
+    {
+        question: '  দেশের প্রথম ভাসমান হাসপাতাল কোনটি ?',
+        options: ['  জীবনতরী    ', ' সবুজ ছাতা       ', '   ময়না    ', '   সন্ধানী      '],
+        correct:0
+    },
+
+// 60
+    {
+        question: '   Which constitutional amendment Dacca as Dhaka?',
+        options: [' The Fourth Amendment, 1975    ', '  The Sixth Amendment, 1981  ', ' The Eighth Amendment, 1988   ', '  The Tenth Amendment, 1990    '],
+        correct:2
+    },
+
+// 61
+    {
+        question: '  মুঘল আমলে ঢাকার নাম কি ছিল ?',
+        options: ['  ইসলামাবাদ     ', '  জাহাঙ্গীরনগর     ', '  বিক্রমপুর  ', '   সোনারগাঁও   '],
+        correct:1
+    },
+
+// 62
+    {
+        question: '   জাতিসংঘের সাধারণ পরিষদের অধিবেশনে প্রতিটি সদস্যরাষ্ট্র সর্বোচ্চ কত জন প্রতিনিধি পাঠাতে পারে ?',
+        options: ['   তিনজন   ', '       চারজন', '    পাঁচজন   ', '   ছয়জন  '],
+        correct:2
+    },
+
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
+    // {
+    //     question: '   ?',
+    //     options: ['       ', '       ', '    ', '      '],
+    //     correct:
+    // },
+
     
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-    // {
-    //     question: '   ?',
-    //     options: ['       ', '       ', '    ', '      '],
-    //     correct:1
-    // },
-
-
     
 
 ]
