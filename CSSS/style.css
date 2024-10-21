@@ -73,13 +73,13 @@ button.option:hover {
 }
 
 button.correct {
-    background-color: #28a745 !important;
-    color: white;
+    background-color: #0fd83e !important;
+    color: black;
 }
 
 button.wrong {
-    background-color: #dc3545 !important;
-    color: white;
+    background-color: #d30c20 !important;
+    color:black;
 }
 
 #quiz-container {
@@ -121,7 +121,7 @@ button.wrong {
 }
 
 .option.correct {
-    background-color: #4caf50;
+    background-color: #72ed76;
     color: white;
 }
 
