@@ -1123,6 +1123,10 @@ const questions = [
 
 
 
+
+
+
+
 let currentQuestionIndex = 0;
 
 // Shuffle the questions randomly

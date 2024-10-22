@@ -287,13 +287,14 @@ margin-left: 11%;
     justify-content: center;
     font-weight: bold;
     user-select: none;
+    background-color: rgb(219, 219, 219);
     font-size: 20px;
     z-index: -1;
     align-items: center;
     height: 100px;
     margin-left: 15%;
     transition-duration: 0.3s;
-    box-shadow: 2px 2px 13px rgb(193, 196, 198);
+    box-shadow: 12px 10px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
     margin-top: 93%;
@@ -314,8 +315,8 @@ margin-left: 11%;
     height: 100px;
     margin-left: 15%;
     transition-duration: 0.3s;
-    background-color:white;
-    box-shadow: 2px 1px 13px rgb(193, 196, 198);
+    background-color:rgb(192, 225, 240);
+    box-shadow: 12px 10px 13px rgb(193, 196, 198);
     position: absolute;
     z-index: -1;
     transition-duration: 0.3s;
@@ -324,7 +325,7 @@ margin-left: 11%;
 
 
 .old-chatbot:hover{
-    background-color: gold;
+    /* background-color: gold; */
     transform: scale(1.2);
 
 }
@@ -332,7 +333,7 @@ margin-left: 11%;
 
 .library:hover{
     transform: scale(1.2);
-background-color: cyan;
+/* background-color: cyan; */
 }
 
 
@@ -348,7 +349,7 @@ background-color: cyan;
     transition-duration: 0.3s;
     position: absolute;
     z-index: -1;
-    margin-top: 1000px;
+    margin-top: 0px;
 }
 
 
