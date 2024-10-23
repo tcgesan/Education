@@ -39,3 +39,10 @@ displayRandomWord();
 
 // Add event listener to the button
 document.getElementById('nextButton').addEventListener('click', displayRandomWord);
+
+
+
+// Back Button
+function goBack() {
+    window.history.back();
+}

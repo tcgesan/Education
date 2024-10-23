@@ -170,3 +170,18 @@ body {
         font-size: 1.3em;
     }
    
+    
+.back-button{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 25%;
+    background-color:blue;
+    color: white;
+    width: 40px;
+    font-size: 15px;
+    z-index: 1;
+    border: none;
+    box-shadow: 1px 15px 20px 0px #80bdfa;
+    border-radius: 50px;
+    height: 40px;
+}
