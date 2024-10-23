@@ -282,9 +282,9 @@ h2{
 
 .next{
     background-color: gold;
-    width: 35%;
+    width: 30%;
     position: absolute;
-    margin-left: 35%;
+    margin-left: 55%;
     height: 06%;
     display: flex;
     border-radius: 50px;
@@ -304,6 +304,31 @@ h2{
     transform: scale(1.2);
 }
 
+
+
+.back-button{
+    position: absolute;
+    margin-left: 13%;
+    margin-top: 1200px;
+    background-color:rgb(239, 13, 13);
+    color: white;
+    width: 30%;
+    font-weight: bold;
+    z-index: -1;
+    font-size: 15px;
+    transition-duration: 0.2s;
+    z-index: 1;
+    font-family: iphone;
+    border: none;
+    box-shadow: 1px 15px 20px 0px #80bdfa;
+    border-radius: 30px;
+    height: 06%;
+}
+
+
+.back-button:hover{
+    transform: scale(1.2);
+}
 
 .empty{
     width: 30%;
