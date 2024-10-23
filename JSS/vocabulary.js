@@ -19,6 +19,10 @@
     { english: " Fiction", bangla: " কথাসাহিত্য" },
     { english: " Era", bangla: "যুগ " },
     { english: "Biography ", bangla: " জীবনি" },
+    // { english: " ", bangla: " " },
+    // { english: " ", bangla: " " },
+    // { english: " ", bangla: " " },
+    
     
 ];
 
@@ -30,15 +34,12 @@ function displayRandomWord() {
 
     // Update the word container with the English and Bangla meanings
     const wordContainer = document.getElementById('wordContainer');
-    wordContainer.innerHTML = `<p><strong></strong> ${word.english}</p><br>
-                               <p><strong></strong> ${word.bangla}</p>`;
+    wordContainer.innerHTML = `<p> <strong> <font color="blue">${word.english} </font></strong> </p><br><hr>
+                               <p> ${word.bangla}</p>`;
 }
 
 // Set an initial random word
 displayRandomWord();
-
-// Add event listener to the button
-document.getElementById('nextButton').addEventListener('click', displayRandomWord);
 
 
 
