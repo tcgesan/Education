@@ -34,7 +34,7 @@ function displayRandomWord() {
 
     // Update the word container with the English and Bangla meanings
     const wordContainer = document.getElementById('wordContainer');
-    wordContainer.innerHTML = `<p> <strong> <font color="blue">${word.english} </font></strong> </p><br><hr>
+    wordContainer.innerHTML = `<p> <strong> <font color="blue">${word.english} </font></strong> </p><br>
                                <p> ${word.bangla}</p>`;
 }
 
