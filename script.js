@@ -1318,7 +1318,41 @@ function next() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../index.html';
+        window.location.href = '../HTMLS/L2.html';
+    }, 150); // Adjust delay as needed
+}
+
+
+function l3() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = '../HTMLS/L3.html';
+    }, 150); // Adjust delay as needed
+}
+
+
+
+function l4() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = '../HTMLS/L4.html';
+    }, 150); // Adjust delay as needed
+}
+
+
+function l5() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    // Wait for the sound to play for at least 500ms before redirecting
+    setTimeout(function() {
+        window.location.href = '../HTMLS/L5.html';
     }, 150); // Adjust delay as needed
 }
 
