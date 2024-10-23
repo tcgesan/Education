@@ -154,6 +154,11 @@ body {
 
       
  
+ .nextt:hover{
+    transform: scale(1.2);
+    opacity: 0;
+ }
+ 
       #wordContainer {
         background-color: white;
         width: 60%;
