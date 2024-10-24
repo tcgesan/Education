@@ -1,4 +1,4 @@
-document.querySelectorAll('audio').forEach(audio => {
+document.querySelectorAll('audio').forEach((audio, index, audioList) => {
     audio.addEventListener('play', function() {
         // Pause all other audio elements when this one is played
         document.querySelectorAll('audio').forEach(otherAudio => {
@@ -7,6 +7,16 @@ document.querySelectorAll('audio').forEach(audio => {
                 otherAudio.currentTime = 0; // Optional: Reset other audio
             }
         });
+    });
+
+    audio.addEventListener('ended', function() {
+        // Play the next audio element if available
+        const nextAudio = audioList[index + 1];
+        if (nextAudio) {
+            nextAudio.play().catch(error => {
+                console.error("Playback failed:", error);
+            });
+        }
     });
 });
 
@@ -29,8 +39,6 @@ function skipAudio(seconds, audioId) {
         console.error(`Audio element with ID "${audioId}" not found.`);
     }
 }
-
-
 
 // Back Button
 function goBack() {
