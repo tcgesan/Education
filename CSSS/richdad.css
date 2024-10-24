@@ -140,12 +140,6 @@ h1{
  
  
 
-.emptyy{
-  width: 100%;
-  height: 3px;
-  margin-top: 1770%;
-  position: absolute;
-}
 
 
 #ebook{
@@ -276,7 +270,7 @@ width: 100%;
 margin-top:60%;
 justify-content: center;
 user-select: none;
-column-gap: 20%;
+column-gap: 15%;
 row-gap: 60px;
 align-items: center;
   flex-wrap: wrap;
