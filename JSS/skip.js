@@ -29,3 +29,10 @@ function skipAudio(seconds, audioId) {
         console.error(`Audio element with ID "${audioId}" not found.`);
     }
 }
+
+
+
+// Back Button
+function goBack() {
+    window.history.back();
+}
