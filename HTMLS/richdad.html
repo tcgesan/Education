@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Rich Dad Poor dad</title>
+      <link rel="stylesheet" href="../CSSS/practice.css">
+      <link rel="stylesheet" href="../CSSS/richdad.css">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+             <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+</head>
+<body>
+
+<!-- Header -->
+ 
+<div class="header">
+    <div  id="Home" ><i onclick="window.location.href='../index.html'" class="fa-solid fa-house-chimney-window"></i> </div>
+    <!-- <div id="Profile" ><img onclick="window.location.href='../HTMLS/Gemini-Home.html'"  class="ai-logo" src="../Ai-logo.png" width="50" alt=""></div> -->
+    
+    <div  id="ebook" > <i onclick="window.location.href='../HTMLS/audio.html'" class="fa-solid fa-headphones-simple"></i><div id="dot"><i class="fa-solid fa-circle"></i></div></div>
+    
+    <div  id="Motivations"><i onclick="window.location.href='../HTMLS/Practice.html'"  class="fa-solid fa-lightbulb"></i></div>
+    <div id="Syllabus"><i  onclick="window.location.href='../HTMLS/more.html'" class="fa-solid fa-list"></i></div>
+</div>
+
+        
+
+
+<div class="audio-container">
+
+     <div class="audio-player">
+          <h1>Episode 1</h1>
+          <audio class="audioo"  id="audio1" controls><source src="../sound/Rich/Ep1.mp3" type="audio/mpeg"></audio>
+          <button  class="backword"  onclick="skipAudio(-5, 'audio1')">  5s &nbsp; <i class="fa-solid fa-backward"></i></button>
+          <button  class="forward"   onclick="skipAudio(5, 'audio1')"><i class="fa-solid fa-forward"></i>&nbsp; 5s</button>
+     </div>
+
+     <div class="audio-player">
+          <h1>Episode 2</h1>
+          <audio class="audioo"  id="audio2" controls><source src="../sound/Rich/Ep2.mp3" type="audio/mpeg"></audio>
+          <button  class="backword"  onclick="skipAudio(-5, 'audio2')">  5s &nbsp; <i class="fa-solid fa-backward"></i></button>
+          <button  class="forward"   onclick="skipAudio(5, 'audio2')"><i class="fa-solid fa-forward"></i>&nbsp; 5s</button>
+     </div>
+
+     <div class="audio-player">
+          <h1>Episode 3</h1>
+          <audio class="audioo"  id="audio3" controls><source src="../sound/Rich/Ep3.mp3" type="audio/mpeg"></audio>
+          <button  class="backword"  onclick="skipAudio(-5, 'audio3')">  5s &nbsp; <i class="fa-solid fa-backward"></i></button>
+          <button  class="forward"   onclick="skipAudio(5, 'audio3')"><i class="fa-solid fa-forward"></i>&nbsp; 5s</button>
+     </div>
+
+     <div class="audio-player">
+          <h1>Episode 4</h1>
+          <audio class="audioo"  id="audio4" controls><source src="../sound/Rich/Ep4.mp3" type="audio/mpeg"></audio>
+          <button  class="backword"  onclick="skipAudio(-5, 'audio4')">  5s &nbsp; <i class="fa-solid fa-backward"></i></button>
+          <button  class="forward"   onclick="skipAudio(5, 'audio4')"><i class="fa-solid fa-forward"></i>&nbsp; 5s</button>
+     </div>
+
+
+     
+
+   </div>
+
+<div class="emptyy"></div>
+                                     <audio id="clickSound">
+                  <source src="../sound/POOOO.mp3" type="audio/mpeg">
+                                      </audio>
+
+    <script src="../JSS/skip.js" ></script>
+</body>
+</html>
+
+

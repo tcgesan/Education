@@ -70,19 +70,15 @@ body{
     }
 }
 
-#Profile{
+#ebook{
     width: 15%;
     display: flex;
-    text-decoration: none;
+    font-weight: bold;
     align-items: center;
     justify-content: center;
-    margin-left: 2%;
     font-size: 23px;
-    border-radius: 10px;
-    height: 60px;
-    max-height: 90px;
-    color:white;
-
+    height: 40px;
+color: white;
 }
 
 
@@ -297,3 +293,5 @@ font-weight: bold;
     height: 5px;
     margin-top: 1000px;
 }
+
+

@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#aa{
+    text-decoration: none;
+    color:inherit;
+ }
+ 
+
+.audio{
+     width: 100%;
+     height: 500px;
+     z-index: -1;
+     font-size: 50px;
+     margin-top: 40%;
+     
+     position: absolute;
+   }
+   
+   
+   
+   
+   .audio-container{
+     display: flex;
+     flex-direction: column;
+     row-gap: 100px;
+     z-index: -1;
+     margin-top: 50%;
+     position: absolute;
+     margin-left: 10%;
+   }
+   
+   
+   .backword{
+     margin-top: 20%;
+     margin-left: -80%;
+     position: absolute;
+     width: 30%;
+     z-index: -1;
+     user-select: none;
+     border: none;
+     box-shadow: -2px 10px 13px rgb(201, 202, 203);
+     border-radius: 50px;
+     height: 30px;
+     background-color: red;
+     font-family: "Fira Sans", sans-serif;
+     transition-duration: 0.3s;
+     color: white;
+   }
+   
+   
+   .backword:hover{
+transform: scale(1.1);
+   }
+
+
+   .forward{
+     margin-top: 20%;
+     margin-left: -45%;
+     position: absolute;
+     box-shadow: -2px 10px 13px rgb(201, 202, 203);
+     width: 30%;
+     user-select: none;
+     border: none;
+     border-radius: 50px;
+     z-index: -1;
+     height: 30px;
+     font-family: "Fira Sans", sans-serif;
+     transition-duration: 0.3s;
+     background-color: blue;
+     color: white;
+   }
+   
+   
+   .forward:hover{
+
+     transform: scale(1.1);
+   }
+   
+   .audioo{
+     height: 45px;
+     border-radius: 50px;
+     z-index: -1;
+     box-shadow: -2px 10px 13px rgb(201, 202, 203);
+     
+   }
+   
+
+   
+
+h1{
+     z-index: -1;
+     padding: 20px;
+     z-index: -1;
+     font-family: "Fira Sans", sans-serif;
+     background:linear-gradient(to right,rgb(36, 36, 240),rgb(231, 87, 164));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 1rem;
+     user-select: none;
+     margin-left: 35%;
+ }
+ 
+ 
+
+.emptyy{
+  width: 100%;
+  height: 3px;
+  margin-top: 1000px;
+  position: absolute;
+}
+
+
+#ebook{
+  width: 15%;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  height: 40px;
+color: cyan;
+}
+
+
+.header{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  justify-content: space-evenly;
+  height: 60px;
+  background-color: black;
+  box-shadow: 0 5px 25px rgba(70, 150, 243,1);
+}
+
+#aa{
+  text-decoration: none;
+  color:inherit;
+}
+body{
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.ai-logo{
+  position: absolute;
+  margin-top: -29px;
+}
+
+
+
+#Home{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  border-radius: 10px;
+  margin-left: -2.40%;
+  height: 60px;
+  max-height: 90px;
+  color:white;
+
+}
+
+
+#dot{
+  font-size: 06px;
+  margin-left: 7%;
+  animation: blink 0.5s ease-out infinite;
+  margin-top: 6px;
+}
+@keyframes blink{
+  0%{
+      color:rgb(20, 220, 20);
+  }
+  50%{
+      color:rgb(20, 220, 20);
+  }
+  100%{
+      color: black;
+  }
+}
+
+#ebook{
+  width: 15%;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  height: 40px;
+color: #93defc;
+}
+
+
+#Motivations{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  border-radius: 10px;
+  height: 60px;
+  max-height: 90px;
+  color:white;
+
+}
+
+
+#Syllabus{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  border-radius: 10px;
+  height: 60px;
+  max-height: 90px;
+  color: white;
+
+}
+
+
+
+
+.books{
+  display: flex;
+position: absolute;
+z-index: -1;
+width: 100%;
+margin-top:60%;
+justify-content: center;
+user-select: none;
+column-gap: 20%;
+row-gap: 60px;
+align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.listen{
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 12px 10px 23px rgb(175, 178, 180);
+  color: white;
+  font-size: 13px;
+  margin-top: 16%;
+  z-index: -1;
+  text-decoration: none;
+  height: 30px;
+  font-family: "Fira Sans", sans-serif;
+border-radius: 50px;
+  background-color: rgb(16, 16, 237);
+  transition-duration: 0.2s;
+}
+.listen:hover{
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.book-radius{
+  border-radius: 5px;
+   box-shadow: 12px 10px 23px rgb(175, 178, 180);
+}

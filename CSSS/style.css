@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
     align-items: center;
     justify-content: center;
@@ -213,3 +214,96 @@ button.wrong {
     user-select: none;
     transform: scale(1.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    width: 20px;
+    margin-top: 3.50%;
+    transform: rotate(40deg);
+    position: absolute;
+    text-decoration: none;
+    margin-left: 10%;
+    z-index: -1;
+    height: 20px;
+   background-color: blue;
+
+}
+
+
+
+
+
+
+
+
+h2{
+    margin-top: 380%;
+    position: absolute;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    background-color: #00bfff;
+    box-shadow: 12px 10px 23px rgb(193, 196, 198);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 30%;
+    height: 40px;
+    margin-left: 0;
+    z-index: -1;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'iphone';
+    src: url(../font/Ios\ Kohinoor\ font.ttf);
+}
+
+.next{
+    background-color: gold;
+    width: 35%;
+    position: absolute;
+    margin-left: 35%;
+    height: 06%;
+    display: flex;
+    border-radius: 50px;
+    user-select: none;
+    z-index: -1;
+    font-weight: bold;
+    color: black;
+    justify-content: center;
+    transition-duration: 0.3s;
+    align-items: center;
+    box-shadow: 12px 10px 23px rgb(153, 190, 215);
+    font-family: iphone;
+    margin-top: 600px;
+}
+
+.next:hover{
+    z-index: -1;
+    transform: scale(1.2);
+}
+
+

@@ -1263,7 +1263,7 @@ function audioBook() {
 
     // Wait for the sound to play for at least 500ms before redirecting
     setTimeout(function() {
-        window.location.href = '../HTMLS/updating.html';
+        window.location.href = '../HTMLS/audio.html';
     }, 150); // Adjust delay as needed
 }
 
@@ -1382,22 +1382,6 @@ function goBack() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Service Worker code
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
@@ -1468,9 +1452,6 @@ if ('serviceWorker' in navigator) {
         }
     });
 }
-
-
-
 
 
 
