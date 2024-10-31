@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body{
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: auto;
+    width: 100%;
+}
+
+#ebook{
+width: 15%;
+display: flex;
+font-weight: bold;
+align-items: center;
+justify-content: center;
+font-size: 23px;
+height: 40px;
+color: cyan;
+}
+
+
+.navbar{
+  width: 100%;
+  display: flex;
+  background-color: black;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: 1000;
+  position: fixed;
+  color: white;
+  column-gap: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+
+
+#aa{
+text-decoration: none;
+color:inherit;
+}
+body{
+background-size: cover;
+width: 100%;
+background-repeat: no-repeat;
+}
+
+.ai-logo{
+position: absolute;
+margin-top: -29px;
+}
+
+
+
+.Home{
+  width: 6%;
+  display: flex;
+  /* padding-top: 2.8rem; */
+  font-size: 23px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  height: 4rem;
+}
+
+
+#dot{
+font-size: 06px;
+margin-left: 7%;
+animation: blink 0.5s ease-out infinite;
+margin-top: 6px;
+}
+@keyframes blink{
+0%{
+   color:rgb(20, 220, 20);
+}
+50%{
+   color:rgb(20, 220, 20);
+}
+100%{
+   color: black;
+}
+}
+
+.ebook{
+  width: 6%;
+  display: flex;
+  /* padding-top: 2.8rem; */
+  font-size: 23px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #9ad9f2;
+  height: 4rem;
+}
+
+
+.practice{
+  width: 6%;
+  display: flex;
+  /* padding-top: 2.8rem; */
+  font-size: 23px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+
+
+.more{
+  width: 6%;
+  display: flex;
+  /* padding-top: 2.8rem; */
+  font-size: 23px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
+
+
+   
+.books{
+  display: flex;
+width: 95%;
+margin-top:30%;
+justify-content: center;
+user-select: none;
+column-gap: 70px;
+row-gap: 60px;
+margin-bottom: 25%;
+align-items: center;
+  flex-wrap: wrap;
+}

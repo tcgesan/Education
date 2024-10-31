@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: "Fira Sans Condensed", sans-serif;
+    padding: 0;
+ 
+}
+
+
+body{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+      width: 100%;
+  }
+
+
+#aa{
+    text-decoration: none;
+    color:inherit;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 1000;
+    position: fixed;
+    color: white;
+    column-gap: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+  }
+
+.ebook{
+    width: 6%;
+    display: flex;
+    /* padding-top: 2.8rem; */
+    font-size: 23px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 4rem;
+  }
+
+  .practice{
+    width: 6%;
+    display: flex;
+    /* padding-top: 2.8rem; */
+    font-size: 23px;
+    flex-direction: row;
+ color: white;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+  }
+  
+  
+  
+.more{
+    width: 6%;
+    display: flex;
+    /* padding-top: 2.8rem; */
+    font-size: 23px;
+    color: #9ad9f2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+  }
+
+  .Home{
+    width: 6%;
+    display: flex;
+    /* padding-top: 2.8rem; */
+    font-size: 23px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 4rem;
+  }
+  
+
+
+#dot{
+    font-size: 06px;
+    margin-left: 7%;
+    animation: blink 0.5s ease-out infinite;
+    margin-top: 6px;
+}
+@keyframes blink{
+    0%{
+        color:rgb(20, 220, 20);
+    }
+    50%{
+        color:rgb(20, 220, 20);
+    }
+    100%{
+        color: black;
+    }
+}
+
+
+
+
+a{
+    text-decoration: none;
+
+}
+
+
+#voice-recognizer{
+max-width: 800px;
+max-height: 90px;
+border-radius: 10px;
+margin-top: -30%;
+color: black;
+display: flex;
+align-items: center;
+user-select: none;
+justify-content: center;
+ height: 90px;
+ border: none;
+background-color:rgb(229, 229, 241);
+box-shadow: 12px 10px 13px rgb(193, 196, 198);
+transition-duration: 0.3s;
+}
+
+#Hsc:hover{
+    box-shadow: 12px 10px 13px #999999;
+    transform: scale(1.1);
+}
+
+
+    
+
+
+.logo{
+    display: flex;
+    user-select: none;
+    height: auto;
+    margin-top: 22%;
+    z-index: -1;
+    flex-wrap: wrap;
+
+}
+
+
+#h1{
+    margin-top: 350px;
+    font-weight:550;
+    text-align: center;
+    font-family:sans-serif;
+    background:linear-gradient(to right,blue,rgb(242, 33, 144));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    z-index: -1;
+    font-size: min(25px);
+    margin-top: 110px;
+    margin-left: 40%;
+}
+
+
+.category-text{
+    margin-left: 30%;
+    font-family: "Fira Sans Condensed", sans-serif;
+    width: 30%;
+    background-color: blue;
+    height: 60px;
+}
+
+.voice{
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    height: 110px;
+    margin-left: 15%;
+    transition-duration: 0.3s;
+    background-color: #cce6ff;
+    box-shadow: 12px 10px 13px rgb(193, 196, 198);
+    position: absolute;
+    z-index: -1;
+    margin-top: 138%;
+}
+
+.voice:hover{
+    box-shadow: 12px 10px 13px rgb(158, 159, 159);
+    transform: scale(1.2);
+    opacity: 0;
+}
+
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    align-items: center;
+    /* background-color: blue; */
+    row-gap: 70px;
+    height: auto;
+    padding-bottom: 10%;
+  }
+
+
+.library{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
+    padding: 25px;
+    background-color: #cce6ff;
+    font-size: 18px;
+    align-items: center;
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+    box-shadow: 10px 10px 10px rgb(193, 194, 195);
+}
+
+
+.old-chatbot{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(224, 224, 246);
+    font-weight: bold;
+    user-select: none;
+    padding: 25px;
+    font-size: 18px;
+    align-items: center;
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+    box-shadow: 10px 10px 10px rgb(193, 194, 195);
+}
+
+
+
+.old-chatbot:active{
+    transform: scale(1.1);
+
+}
+
+
+.library:active{
+    transform: scale(1.1);
+/* background-color: cyan; */
+}
+
+
+.empty{
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    font-size: 20px;
+    align-items: center;
+    height: 10px;
+    transition-duration: 0.3s;
+    position: absolute;
+    z-index: -1;
+    margin-top: 0px;
+}
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color:black;
+    width: 60%;
+    font-size: 15px;
+    height: 60px;
+    font-weight: bold;
+    box-shadow: 1px 2px 10px 2px rgb(220, 220, 220);
+    user-select: none;
+    background-color: rgb(255, 255, 255);
+    margin-top: 200%;
+    font-family: "poppins", sans-serif ;
+    position: absolute;
+    transition-duration: 0.2s;
+    margin-left: 20%;
+  }
+
+
+  
+  .buttons:hover{
+    transform: scale(1.1);
+  }
+
+  #red-dot{
+    font-size: 10px;
+    /* position: fixed; */
+  }
+
+  .red{
+    width: 15%;
+    margin-top: -19%;
+    display: flex;
+    margin-left: -15%;
+    align-items: flex-start;
+    height: 20px;
+  }
+
+
+  #arrow{
+    animation: shake 2s linear infinite;
+  }
+
+  @keyframes shake {
+    
+    0%{
+        color: white;
+    }
+    20%{
+transform: translate(-5px);
+color: black;
+    }
+    40%{
+        transform: translate(0px);
+        color: black;
+    }
+    60%{
+        color: black;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        transform: translate(0px);
+        color: white;
+    }
+  }
+

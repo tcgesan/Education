@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Practice</title>
+      <link rel="stylesheet" href="../CSSS/practice.css">
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+             <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+</head>
+<body>
+
+<!-- Header -->
+ 
+<div class="navbar">
+    <div  class="Home" ><i onclick="window.location.href='../index.html'" class="fa-solid fa-house-chimney-window"></i> </div>
+    <div  class="ebook" > <i onclick="window.location.href='../HTMLS/audio.html'" class="fa-solid fa-headphones-simple"></i></div>
+    <div  class="practice"><i onclick="window.location.href='../HTMLS/Practice.html'"  class="fa-solid fa-lightbulb"></i><div id="dot"><i class="fa-solid fa-circle"></i></div></div>
+    <div class="more"><i  onclick="window.location.href='../HTMLS/more.html'" class="fa-solid fa-list"></i></div>
+</div>
+
+
+<div class="imgg"><img src="../Pho/quiz.png" width="230" alt=""></div>
+             <div class="content">
+             <div class="que" onclick="ques();">Question Bank</div>
+             <div class="quiz-div" onclick="handleClick();">Quiz</div>
+            <div class="box" onclick="gk();"> GK</div>
+            <div class="box1" onclick="Fact();">Fact</div>
+            <div class="box2" onclick="riddle();"> Riddle</div>
+            <div class="voca" onclick="voca();">Words</div>
+            <div class="proverb" onclick="proverb();">Proverb</div>
+            <div class="grammer" onclick="grammer();"> Grammar</div>
+
+            </div>
+
+            <div class="empty-box"></div>
+
+                                     <audio id="clickSound">
+                  <source src="../sound/POOOO.mp3" type="audio/mpeg">
+                                      </audio>
+
+    <script src="../script.js" ></script>
+</body>
+</html>
+
+

@@ -1,0 +1,27 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+.loader{
+     width: 50px;
+     background-color:white;
+     height: 50px;
+     border: 6px solid #ddd;
+     margin-top: 30%;
+     border-top: 6px solid blue;
+     margin-left: 30%;
+     border-radius: 50%;
+     animation: rotate .7s linear infinite;
+}
+
+
+@keyframes rotate {
+     0%{
+          transform: rotate(0deg);
+     }
+   
+     100%{
+          transform: rotate(360deg);
+     }
+}

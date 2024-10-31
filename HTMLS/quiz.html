@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../CSSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+
+    <div class="navbar">
+        <div  class="Home" ><i onclick="window.location.href='../index.html'" class="fa-solid fa-house-chimney-window"></i> </div>
+        <div  class="ebook" > <i onclick="window.location.href='../HTMLS/audio.html'" class="fa-solid fa-headphones-simple"></i></div>
+        <div  class="practice"><i onclick="window.location.href='../HTMLS/Practice.html'"  class="fa-solid fa-lightbulb"></i><div id="dot"><i class="fa-solid fa-circle"></i></div></div>
+        <div class="more"><i  onclick="window.location.href='../HTMLS/more.html'" class="fa-solid fa-list"></i></div>
+    </div>
+
+
+    <div class="container">
+        <h1 id="question-title">Quiz</h1>
+        <p id="question-text">PIB কোন দেশের সংবাদ সংস্থা-</p>
+        <div class="options">
+            <button class="option">পাকিস্তান</button>
+            <button class="option">আমেরিকা</button>
+            <button class="option">পর্তুগাল</button>
+            <button class="option">বাংলাদেশ</button>
+        </div>
+        
+<div onclick="window.location.href='quiz.html'  " class="next">Next &nbsp; <i class="fa-solid fa-arrow-right"></i></div>
+  
+</div>
+
+
+<audio id="clickSound">
+    <source src="../sound/POOOO.mp3" type="audio/mpeg">
+</audio>
+
+
+    <script src="../script.js"></script>
+</body>
+</html>
