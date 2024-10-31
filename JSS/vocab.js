@@ -1,61 +1,57 @@
-
+let timer;
+let timeLeft = 20;
 
 
 let questions = [
 
      
-     { 
-         question: " Synonym of 'Paint' is ----  ", 
-         options: [" capture", "dye ", " dough ", "oblige "], 
-         answer: 1
-     },
-     
-     { 
-         question: " Antonym of the word 'Obdurate' is ----  ", 
-         options: [" Grim", " Acrimonius", "  Boorish", "Humane "], 
-         answer: 3
-     },
-     
-     { 
-         question: " Which is the following word is the correct synonym of 'Libel' ? ", 
-         options: ["misrepresentation ", "convincing ", "  annihilate ", " enervated"], 
-         answer: 0
-     },
-     
-     
-     { 
-         question: " The word 'audacious'  means -- ", 
-         options: ["Dangerous  ", " Caring", "  Daring ", "Serious "], 
-         answer: 2
-     },
-     
-     
-     { 
-         question: " Opposite of Smart ? ", 
-         options: ["Irrelevant  ", " Boring", " Stupid  ", "Difficult "], 
-         answer: 2
-     },
-     
-     
-     { 
-         question: " The word  'muting'  means --", 
-         options: [" silent", "shout ", "  revolt ", " vocal"], 
-         answer: 0
-     },
-     
-     
-      
-      
+    { 
+        question: " Synonym of 'Paint' is ----  ", 
+        options: [" capture", "dye ", " dough ", "oblige "], 
+        answer: 1
+    },
+    
+    { 
+        question: " Antonym of the word 'Obdurate' is ----  ", 
+        options: [" Grim", " Acrimonius", "  Boorish", "Humane "], 
+        answer: 3
+    },
+    
+    { 
+        question: " Which is the following word is the correct synonym of 'Libel' ? ", 
+        options: ["misrepresentation ", "convincing ", "  annihilate ", " enervated"], 
+        answer: 0
+    },
+    
+    
+    { 
+        question: " The word 'audacious'  means -- ", 
+        options: ["Dangerous  ", " Caring", "  Daring ", "Serious "], 
+        answer: 2
+    },
+    
+    
+    { 
+        question: " Opposite of Smart ? ", 
+        options: ["Irrelevant  ", " Boring", " Stupid  ", "Difficult "], 
+        answer: 2
+    },
+    
+    
+    { 
+        question: " The word  'muting'  means --", 
+        options: [" silent", "shout ", "  revolt ", " vocal"], 
+        answer: 0
+    },
+    
+    
      
      
- 
- 
+    
+    
+
+
 ]
-
-
-
-
-
 
 
 let currentQuestionIndex;
