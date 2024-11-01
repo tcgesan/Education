@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable="no">
     <title>Phrase</title>
-    <link rel="stylesheet" href="../CSSS/phrase.css">
+    <link rel="stylesheet" href="../CSSS/tense.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
  
@@ -12,23 +12,21 @@
 <body>
     
 
-
-    <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
-<div class="all">
-    
-     <div class="headname"> <q> Phrase </q> </div>
-    <div id="question"></div>
-    <div id="answers">
-        <div class="answer" onclick="checkAnswer(0)"></div>
-        <div class="answer" onclick="checkAnswer(1)"></div>
-        <div class="answer" onclick="checkAnswer(2)"></div>
-        <div class="answer" onclick="checkAnswer(3)"> </div>
-    </div>
-
-
-<div class="bottoms">
-    <div  onclick="window.location.href='../HTMLS/phrase.html'"  class="refresh"><i class="fa-solid fa-rotate"></i></div>
-</div>
+    <div class="all">
+        <div class="tops">
+            <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+             <div class="headname"> <q> Phrase </q> </div>
+        </div>
+        <div id="question"></div>
+            <div id="answers">
+                <div class="answer" onclick="checkAnswer(0)"></div>
+                <div class="answer" onclick="checkAnswer(1)"></div>
+                <div class="answer" onclick="checkAnswer(2)"></div>
+                <div class="answer" onclick="checkAnswer(3)"> </div>
+            </div>
+            <div  onclick="window.location.href='../HTMLS/phrase.html'"  class="refresh"><i class="fa-solid fa-rotate"></i></div>
+        </div>
+        
 
 
     <audio id="correctSound" src="../sound/Correct.mp3"></audio>
