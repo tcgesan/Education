@@ -748,6 +748,33 @@ function vocab() {
     },150); // 3000 milliseconds = 3 seconds
   }
 
+function partof() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    setTimeout(function() {
+      window.location.href = '../HTMLS/part.html'; // Redirect after 3 seconds
+    },150); // 3000 milliseconds = 3 seconds
+  }
+
+function prepo() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    setTimeout(function() {
+      window.location.href = '../HTMLS/prepo.html'; // Redirect after 3 seconds
+    },150); // 3000 milliseconds = 3 seconds
+  }
+
+function gs() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+
+    setTimeout(function() {
+      window.location.href = '../HTMLS/grammar&syntax.html'; // Redirect after 3 seconds
+    },150); // 3000 milliseconds = 3 seconds
+  }
+
 
 function analogy() {
     var sound = document.getElementById("clickSound");
