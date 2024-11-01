@@ -7,7 +7,7 @@ const deleteBtn = document.getElementById('deleteBtn');
 const userPic = '../Pho/add.avif'; // User image URL
 const botPic = '../Pho/gpp.webp'; // Bot image URL
 
-const API_KEY = "AIzaSyC0sT2PvzG5--nXhxGsogbgI2RGbdPktxA";
+const API_KEY = "AIzaSyA5DBvdapQL-WCwIXXe3oO-pehVdlvQpJ0";
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 
 sendBtn.addEventListener('click', sendMessage);
