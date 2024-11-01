@@ -5,18 +5,35 @@
     margin: 0;
     padding: 0;
 }
+
 body{
+    width: 100%;
     display: flex;
-    /* width: 100%; */
     justify-content: center;
     align-items: center;
-    /* background-color: rgb(242, 245, 247); */
-    flex-direction: column;
+    height: auto;
+    overflow: hidden;
+    background-color: rgb(249, 249, 251);
 }
 
-      
+#answers{
+    width: 100%;
+    display: flex;
+padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    user-select: none;
+    /* background-color: cyan; */
+    }
+    
+      @font-face {
+        font-family: 'consi';
+        src: url(../font/RobotoCondensed-Regular.ttf);
+      }
 .answer{
-    padding: 20px;
     display:flex;
     font-family: "Fira Sans", sans-serif;
     justify-content: center;
@@ -25,7 +42,10 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     color: black;
-    margin-bottom: 4%;
+    background-color: white;
+    user-select: none;
+    margin-bottom: 5%;
+    padding: 17px;
     justify-content: space-evenly;
     box-shadow: 0px 1px 13px rgb(202, 202, 200);
     height: auto;
@@ -44,135 +64,91 @@ user-select: none;
     font-family: "Fira Sans", sans-serif;
 }
 
-#question{
-    display: flex;
-    /* margin-left: -7%; */
-    height: 50px;
-    width: 75%;
-    font-weight: bold;
-    background-color: gold;
-    flex-wrap: wrap;
-    padding: 17px;
-    font-size: 14px;
-    font-family: "Fira Sans", sans-serif;
-    border-radius: 20px;
-    box-shadow: 1px 5px 13px rgb(210, 209, 209);
-    color:black;
-    justify-content: center;
-    align-items: center;
-}
-
 .all{
-align-items: center;
-flex-direction: column;
-padding: 15px;
-row-gap: 15px;
-    flex-wrap: wrap;
-    height: 90vh;
-    user-select: none;
-    /* box-shadow: 1px 1px 13px 3px rgb(175, 200, 234); */
-    display: flex;
-    border-radius: 20px;
-    justify-content: center;
-    width: 84%;
-    background-color: rgb(255, 255, 255);
-}
-
-#answers{
-    z-index: 1000;
-    display: flex;
-    overflow-y: hidden;
-    flex-wrap: wrap;
-    /* font-size: 14px; */
-    color: white;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
     user-select: none;
-    padding: 15px;
+    align-items: center;
     flex-direction: column;
 }
 
 
-
-#next{
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    border: none;
-    border-radius: 30px;
-    background-color: blue;
-    color: white;
-    flex-wrap: wrap;
-    font-family: "Fira Sans", sans-serif;
-    margin-top: 165%;
-    transition-duration: 0.3s;
-    box-shadow: 12px 10px 13px rgb(206, 206, 204);
-}
-
-#next:hover{
-    transform: scale(1.3);
-}
-
-.back-button{
-    background-color:blue;
-    color: white;
-    width: 35px;
-    font-size: 15px;
-    z-index: 1;
-    transform: scale(1.3);
-    border: none;
-    box-shadow: 1px 15px 20px 0px #80bdfa;
-    border-radius: 50px;
-    transition-duration: 0.2s;
-    height: 35px;
-}
-.back-button:active{
-    transform: scale(1.1);
-}
-
-
-.refresh{
-    width: 35px;
-    height:35px;
-    user-select: none;
-    font-size: 15px;
-    color: white;
-    border-radius: 30px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    font-family: "Fira Sans", sans-serif;
-    align-items: center;
-    transform: scale(1.3);
-    box-shadow:12px 12px 10px  rgb(219, 221, 225) ;
-    transition-duration: 0.3s;
-}
-
-
-.refresh:active{
-    font-family: "Fira Sans", sans-serif;
-    user-select: none;
-    transform: scale(1.1);
-}
-
 .tops{
     width: 100%;
-    /* margin-top: -10%; */
-    padding-bottom: 10px;
-    margin-left: -10%;
-    height: auto;
+    column-gap: 25px;
+    padding-bottom: 80px;
+    justify-content: center;
     display: flex;
+    column-gap: 30px;
+    /* margin-top: -10%; */
+    user-select: none;
+    align-items: center;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
 }
 
-.headname{
+#question{
+    width: 60%;
+    display: flex;
     font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    user-select: none;
+    padding: 20px;
+    box-shadow: 0px 1px 13px rgb(202, 202, 200);
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    background-color:gold;
+    flex-wrap: wrap;
+}
+
+
+.headname{
+    font-weight: bold;
+    user-select: none;
+    font-family: consi;
     background:linear-gradient(to right,blue,rgb(242, 33, 144));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1rem;
-    /* background-color: blue; */
-    padding: 10px;
-    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.refresh{
+    background-color: black;
+    border-radius: 50px;
+    height: 40px;
     user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 40px;
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+}
+
+.refresh:active{
+    transform: scale(1.1);
+}
+
+.back-button{
+    width: 30px;
+    background-color: rgb(21, 21, 243);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-left: -5%;
+    transition-duration: 0.2s;
+    transform: scale(1.3);
+    box-shadow: 0px 10px 13px rgb(177, 210, 241);
+    border-radius: 50px;
+    color: white;
+}
+
+.back-button:active{
+    transform: scale(1.1);
 }
