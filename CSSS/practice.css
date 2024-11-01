@@ -269,7 +269,7 @@ body{
     display: flex;
     font-family: fira;
     border-radius: 10px;
-    font-size: .9rem;
+    font-size: .75rem;
     justify-content: center;
     align-items: center;
     height: 4rem;
