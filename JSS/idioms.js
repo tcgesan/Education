@@ -12,30 +12,36 @@ let questions = [
          answer:  2
      },
     
-//      { 
-//          question:  " ", 
-//          options: [" ", "  ", " ", "  "], 
-//          answer:  
-//      },
+
+
+     { 
+         question:  " What is the meaning of this idiom - He was always pulling my legs.", 
+         options: ["He was always physically aggressive ", " He was always trying to stretch me ", "He was always trying to make fun of me ", "  He was trying to make me stand up."], 
+         answer:  2
+     },
+
     
-//      { 
-//          question:  " ", 
-//          options: [" ", "  ", " ", "  "], 
-//          answer:  
-//      },
+     { 
+         question:  " ' Look before you leap ' means ?", 
+         options: [" Be ready ", " Be amazed ", "Beaware ", " Be successful "], 
+         answer:  2
+     },
+
     
-//      { 
-//          question:  " ", 
-//          options: [" ", "  ", " ", "  "], 
-//          answer:  
-//      },
+     { 
+         question:  " A person whose 'head' is in the 'clouds' is- ", 
+         options: [" useless ", "  proud ", " an aviator ", "  a day dreamer "], 
+         answer:  3
+     },
+
     
-//      { 
-//          question:  " ", 
-//          options: [" ", "  ", " ", "  "], 
-//          answer:  
-//      },
+     { 
+         question:  " The meaning of ' Cock and bull story ' is --  ", 
+         options: [" Strong fight ", "  Painful situation ", " A false story ", " Unequal fight "], 
+         answer:  2
+     },
     
+     
 //      { 
 //          question:  " ", 
 //          options: [" ", "  ", " ", "  "], 
