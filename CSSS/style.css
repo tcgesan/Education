@@ -232,8 +232,8 @@ body{
  }
  
  .option.correct {
-     background-color: #72ed76;
-     color: white;
+     background-color: #00ff08;
+     color:white;
  }
  
  .option.wrong {
