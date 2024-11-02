@@ -76,7 +76,7 @@ button:active{
           font-family: iphone;
           transition-duration: 0.2s;
           height: 2.6rem;
-          font-size: 14px;
+          font-size: 12px;
           transform: scale(1.3);
           display: flex;
           flex-wrap: wrap;
