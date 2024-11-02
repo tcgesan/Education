@@ -127,6 +127,14 @@ function tense() {
     },150); 
 }
 
+function idioms() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+      window.location.href = '../HTMLS/idioms.html'; 
+    },150); 
+}
+
 
 
 function phrase() {
