@@ -373,8 +373,8 @@ height: 35px;
     align-items: center;
     margin-top: 26%;
     border-radius: 10px;
-    background-color: aliceblue;
-    box-shadow: 0 4px 8px rgba(187, 185, 185, 0.941); 
+    background-color: rgb(229, 240, 251);
+    box-shadow: 0 5px 8px rgba(187, 185, 185, 0.941); 
 }
 
 @font-face {
