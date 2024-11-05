@@ -41,13 +41,14 @@ let questions = [
          answer:  2
      },
     
-     
-//      { 
-//          question:  " ", 
-//          options: [" ", "  ", " ", "  "], 
-//          answer:  
-//      },
+
+     { 
+         question:  " Choose the appropriate meaning of the idiom ' swan sang '  -- ", 
+         options: ["First work  ", " Last work  ", " Middle work ", " Early work  "], 
+         answer:  1
+     },
     
+     
 //      { 
 //          question:  " ", 
 //          options: [" ", "  ", " ", "  "], 
