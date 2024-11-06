@@ -510,7 +510,7 @@ let questions = [
       {
           question: '   কারা বর্গী নামে পরিচিত ?',
           options: ['    ইংরেজ  ', '  মারাঠি   ', '  আকবর  ', '  তামিল '],
-          correct:1
+          answer:1
       },
 
 
@@ -518,102 +518,99 @@ let questions = [
       {
           question: ' ভারতের শেষ মোঘল সম্রাট কে ছিলেন ?',
           options: ['  শাহজাহান  ', '   আকবর ', '  বাহাদুর শাহ্   ', ' হুমায়ূন '],
-          correct:2
+          answer:2
       },
 
 
       {
           question: '  বাংলাকে জান্নাতাবাদ নামকরণ করেন কে?',
           options: ['     বাবর  ', '    আকবর   ', '  হুমায়ুন   ', '    জাহাঙ্গীর  '],
-          correct:2
+          answer:2
       },
 
   
       {
           question: '   বাংলার প্রথম নবাব কে ছিলেন  ?',
           options: ['    আলীবর্দী খান   ', '    সুজাউদ্দীন মুহাম্মদ খান   ', '   মুর্শিদকুলী খান ', '   সিরাজ-উদ-দৌলা   '],
-          correct:2
+          answer:2
       },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
   
+
       // {
       //     question: '   ?',
       //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
+      //     answer:
       // },
-  
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
-      // },
-  
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     correct:
-      // },
-  
-  
   
 
 ]
