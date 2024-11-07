@@ -55,7 +55,6 @@ body{
   .practice{
     width: 6%;
     display: flex;
-    /* padding-top: 2.8rem; */
     font-size: 23px;
     flex-direction: row;
  color: white;
@@ -69,7 +68,6 @@ body{
 .more{
     width: 6%;
     display: flex;
-    /* padding-top: 2.8rem; */
     font-size: 23px;
     color: #9ad9f2;
     flex-direction: row;
@@ -81,7 +79,6 @@ body{
   .Home{
     width: 6%;
     display: flex;
-    /* padding-top: 2.8rem; */
     font-size: 23px;
     flex-direction: row;
     justify-content: center;
@@ -119,32 +116,6 @@ a{
 }
 
 
-#voice-recognizer{
-max-width: 800px;
-max-height: 90px;
-border-radius: 10px;
-margin-top: -30%;
-color: black;
-display: flex;
-align-items: center;
-user-select: none;
-justify-content: center;
- height: 90px;
- border: none;
-background-color:rgb(229, 229, 241);
-box-shadow: 12px 10px 13px rgb(193, 196, 198);
-transition-duration: 0.3s;
-}
-
-#Hsc:hover{
-    box-shadow: 12px 10px 13px #999999;
-    transform: scale(1.1);
-}
-
-
-    
-
-
 .logo{
     display: flex;
     user-select: none;
@@ -169,41 +140,6 @@ transition-duration: 0.3s;
     font-size: min(25px);
     margin-top: 110px;
     margin-left: 40%;
-}
-
-
-.category-text{
-    margin-left: 30%;
-    font-family: "Fira Sans Condensed", sans-serif;
-    width: 30%;
-    background-color: blue;
-    height: 60px;
-}
-
-.voice{
-    width: 70%;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    user-select: none;
-    font-weight: bold;
-    color: black;
-    font-size: 20px;
-    align-items: center;
-    height: 110px;
-    margin-left: 15%;
-    transition-duration: 0.3s;
-    background-color: #cce6ff;
-    box-shadow: 12px 10px 13px rgb(193, 196, 198);
-    position: absolute;
-    z-index: -1;
-    margin-top: 138%;
-}
-
-.voice:hover{
-    box-shadow: 12px 10px 13px rgb(158, 159, 159);
-    transform: scale(1.2);
-    opacity: 0;
 }
 
 
@@ -246,12 +182,11 @@ transition-duration: 0.3s;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    background-color:black;
+    background-color:lavender;
     font-weight: bold;
     user-select: none;
     padding: 25px;
     font-size: 18px;
-    color: white;
     align-items: center;
     transform: scale(1.3);
     transition-duration: 0.2s;
