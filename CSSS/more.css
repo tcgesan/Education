@@ -203,23 +203,6 @@ a{
 
 .library:active{
     transform: scale(1.1);
-/* background-color: cyan; */
-}
-
-
-.empty{
-    width: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    z-index: -1;
-    font-size: 20px;
-    align-items: center;
-    height: 10px;
-    transition-duration: 0.3s;
-    position: absolute;
-    z-index: -1;
-    margin-top: 0px;
 }
 
 
@@ -248,11 +231,6 @@ a{
   
   .buttons:hover{
     transform: scale(1.1);
-  }
-
-  #red-dot{
-    font-size: 10px;
-    /* position: fixed; */
   }
 
   .red{
