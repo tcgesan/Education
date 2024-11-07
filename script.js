@@ -301,3 +301,14 @@ if ('serviceWorker' in navigator) {
 // Service Worker code End  !!!!
 
 
+
+
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true
+});
+
+scroll.on("scroll", () => {
+  console.log("Locomotive Scroll is working!");
+});

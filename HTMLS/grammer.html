@@ -11,18 +11,18 @@
 </head>
 <body>
 
-<div class="all-grammer-content">
+<div class="all-grammer-content"  data-scroll-container>
 
-<div  onclick="tense()" class="width" id="tense"  >Tense</div>
-<div  onclick="idioms()" class="width" id="tense"  >Idioms</div>
-<div onclick="analogy()" class="width" id="analogy"  >Analogy & Spelling</div>
-<div onclick="phrase()" class="width" id="analogy">Phrase</div>
-<div onclick="clause()" class="width" id="analogy">Clause</div>
-<div onclick="voicee()" class="width" id="analogy">Voice</div>
-<div onclick="vocab()" class="width" id="analogy">Vocabulary</div>
-<div onclick="partof()" class="width" id="analogy">Part of Speech</div>
-<div onclick="prepo()" class="width" id="analogy">Preposition</div>
-<div onclick="gs()" class="width" id="analogy">Grammar & Syntax </div>
+<div data-scroll  onclick="tense()" class="width" id="tense"  >Tense</div>
+<div   data-scroll onclick="idioms()" class="width" id="tense"  >Idioms</div>
+<div  data-scroll onclick="analogy()" class="width" id="analogy"  >Analogy & Spelling</div>
+<div  data-scroll onclick="phrase()" class="width" id="analogy">Phrase</div>
+<div  data-scroll onclick="clause()" class="width" id="analogy">Clause</div>
+<div  data-scroll onclick="voicee()" class="width" id="analogy">Voice</div>
+<div  data-scroll onclick="vocab()" class="width" id="analogy">Vocabulary</div>
+<div data-scroll  onclick="partof()" class="width" id="analogy">Part of Speech</div>
+<div data-scroll onclick="prepo()" class="width" id="analogy">Preposition</div>
+<div data-scroll onclick="gs()" class="width" id="analogy">Grammar & Syntax </div>
 
 
 </div>
@@ -30,7 +30,7 @@
 
 <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
 
-<div class="category"><img src="../Pho/Test.png" width="200" alt=""></div>
+<div  data-scroll class="category"><img src="../Pho/Test.png" width="200" alt=""></div>
 
 <div class="empty"></div>
 
@@ -41,6 +41,9 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js" ></script>
     <script src="../script.js"></script>
 </body>
 </html>
