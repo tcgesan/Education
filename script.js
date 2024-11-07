@@ -98,6 +98,14 @@ function library() {
     }, 150);
 }
 
+function pera() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/sub-pera.html';
+    }, 150);
+}
+
 
 
 function chatbot() {
@@ -312,3 +320,41 @@ const scroll = new LocomotiveScroll({
 scroll.on("scroll", () => {
   console.log("Locomotive Scroll is working!");
 });
+
+
+
+
+
+// Search Paragraphs
+
+              // Function to show random three paragraphs
+              function showRandomParagraphs() {
+                const paragraphs = Array.from(document.querySelectorAll('.paragraph'));
+                paragraphs.forEach(paragraph => paragraph.classList.add('hidden'));
+          
+                // Shuffle paragraphs and pick first 3
+                const selectedParagraphs = paragraphs.sort(() => 0.5 - Math.random()).slice(0, 3);
+                selectedParagraphs.forEach(paragraph => paragraph.classList.remove('hidden'));
+              }
+          
+              // Initial display of random paragraphs on page load
+              showRandomParagraphs();
+          
+              // Search function
+              function searchParagraphs() {
+                const keyword = document.getElementById('searchInput').value.toLowerCase();
+                const paragraphs = document.querySelectorAll('.paragraph');
+                let found = false;
+          
+                paragraphs.forEach(paragraph => {
+                  if (keyword && paragraph.textContent.toLowerCase().includes(keyword)) {
+                    paragraph.classList.remove('hidden');
+                    found = true;
+                  } else {
+                    paragraph.classList.add('hidden');
+                  }
+                });
+          
+                // Show "no results" message if nothing is found
+                document.getElementById('noResults').classList.toggle('hidden', found);
+              }
