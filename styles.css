@@ -189,3 +189,17 @@ height: 35px;
     src: url(font/Ios\ Kohinoor\ font.ttf);
 }
 
+.balls{
+  width: 45px;
+  /* z-index: 1000; */
+  position: absolute;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  background-image: linear-gradient(120deg, #0a1ecde4 0%, #2688f0 100%);
+  box-shadow: 0px 4px 10px rgb(4, 78, 174);
+}

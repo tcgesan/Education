@@ -171,9 +171,8 @@ body{
     width: 35%;
     display: flex;
     overflow-x: hidden;
-    font-family: fira;position:absolute;
+    font-family: fira;
     border-radius: 10px;
-    z-index: 1000;
     font-size: .9rem;
     justify-content: center;
     align-items: center;
@@ -332,20 +331,22 @@ body{
 }
 
 .ball{
-    width: 50px;
-    border-radius: 50px;
-    height: 50px;
+    width: 30px;
+    border-radius: 50%;
+    height: 12px;
     z-index: -1;
     display: flex;
-    opacity: 0.3;
+    opacity: 0.4;
     overflow-x: hidden;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    transform: rotate(60deg);
     font-size: 26px;
+    margin-left: -60%;
     animation-delay: 2s;
     position: absolute;
-    background:linear-gradient(50deg, rgb(50, 50, 241),rgb(212, 233, 241));
+    background:linear-gradient(50deg, rgb(252, 252, 252),rgb(247, 248, 248));
     /* animation: flashes 04s linear infinite; */
 }
 @keyframes flashes{
