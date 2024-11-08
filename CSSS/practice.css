@@ -214,7 +214,6 @@ body{
     font-family: fira;
     border-radius: 10px;
     font-size: .9rem;
-    flex-basis: 60%;
     justify-content: center;
     align-items: center;
     height: 4rem;
@@ -295,6 +294,7 @@ body{
     font-size: .9rem;
     justify-content: center;
     align-items: center;
+    flex-basis: 60%;
     height: 4rem;
     box-shadow: 5px 10px 13px rgb(188, 187, 187);
     transform: scale(1.3);
