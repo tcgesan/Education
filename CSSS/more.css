@@ -120,7 +120,7 @@ a{
     display: flex;
     user-select: none;
     height: auto;
-    margin-top: 22%;
+    margin-top: 30%;
     z-index: -1;
     flex-wrap: wrap;
 
@@ -218,6 +218,10 @@ a{
 
 
 .library:active{
+    transform: scale(1.1);
+}
+
+.pera:active{
     transform: scale(1.1);
 }
 
