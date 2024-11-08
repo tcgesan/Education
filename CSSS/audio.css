@@ -9,7 +9,7 @@ body{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background: linear-gradient(-230deg, #ffffff 50%, #e7eff5 90%);
   height: auto;
   overflow-x: hidden;
     width: 100%;
@@ -37,7 +37,7 @@ align-items: center;
 }
 img{
   border-radius: 6px;
-  box-shadow: 12px 10px 23px rgb(175, 178, 180);
+  box-shadow: 12px 10px 23px rgb(158, 159, 160);
 }
 
 .listen{
