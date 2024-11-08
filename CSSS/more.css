@@ -176,6 +176,22 @@ a{
     box-shadow: 10px 10px 10px rgb(193, 194, 195);
 }
 
+.pera{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    user-select: none;
+    padding: 25px;
+    background-color: #b483ed4b;
+    font-size: 18px;
+    align-items: center;
+    transform: scale(1.3);
+    transition-duration: 0.2s;
+    box-shadow: 10px 10px 10px rgb(193, 194, 195);
+}
+
 
 .old-chatbot{
     width: 30%;
