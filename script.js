@@ -366,3 +366,43 @@ scroll.on("scroll", () => {
                 // Show "no results" message if nothing is found
                 document.getElementById('noResults').classList.toggle('hidden', found);
               }
+
+
+
+
+
+              const ball = document.querySelector('.ball');
+    const sensitivity = 2.5; // Lower sensitivity for a more controlled response
+    let targetX = window.innerWidth / 2;
+    let targetY = window.innerHeight / 2;
+
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener('deviceorientation', (event) => {
+        const { beta, gamma } = event;
+
+        // Calculate target position based on device orientation
+        targetX = window.innerWidth / 2 + (gamma * sensitivity);
+        targetY = window.innerHeight / 2 + (beta * sensitivity);
+      });
+      
+      // Function to smoothly move the ball towards the target
+      function moveBall() {
+        const currentX = parseFloat(ball.style.left) || window.innerWidth / 2;
+        const currentY = parseFloat(ball.style.top) || window.innerHeight / 2;
+
+        // Smoothly interpolate towards the target position
+        const smoothFactor = 0.05; // Adjust this factor for smoother or snappier movement
+        const newX = currentX + (targetX - currentX) * smoothFactor;
+        const newY = currentY + (targetY - currentY) * smoothFactor;
+
+        // Update ball position
+        ball.style.left = `${newX}px`;
+        ball.style.top = `${newY}px`;
+
+        // Keep moving the ball
+        requestAnimationFrame(moveBall);
+      }
+      moveBall(); // Start the animation loop
+    } else {
+      console.log("noo")
+    }
