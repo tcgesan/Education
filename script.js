@@ -372,7 +372,7 @@ scroll.on("scroll", () => {
 
 
               const ball = document.querySelector('.ball');
-    const sensitivity = 2.5; // Lower sensitivity for a more controlled response
+    const sensitivity = 1.5; // Lower sensitivity for a more controlled response
     let targetX = window.innerWidth / 2;
     let targetY = window.innerHeight / 2;
 
