@@ -171,8 +171,9 @@ body{
     width: 35%;
     display: flex;
     overflow-x: hidden;
-    font-family: fira;
+    font-family: fira;position:absolute;
     border-radius: 10px;
+    z-index: 1000;
     font-size: .9rem;
     justify-content: center;
     align-items: center;
