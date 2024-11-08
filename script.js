@@ -106,6 +106,14 @@ function pera() {
     }, 150);
 }
 
+function adb() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/audio.html';
+    }, 150);
+}
+
 
 
 function chatbot() {

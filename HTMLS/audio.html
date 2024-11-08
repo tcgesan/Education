@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable="no">
     <title>Audio Book</title>
-    <link rel="stylesheet" href="../CSSS/richdad.css">
     <link rel="stylesheet" href="../CSSS/audio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
              <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -12,30 +11,25 @@
 </head>
 <body>
 
-<!-- Header -->
- 
-<div class="navbar">
-    <div  class="Home" ><i onclick="window.location.href='../index.html'" class="fa-solid fa-house-chimney-window"></i> </div>
-    <div  class="ebook" > <i onclick="window.location.href='../HTMLS/updating.html'" class="fa-solid fa-headphones-simple"></i><div id="dot"><i class="fa-solid fa-circle"></i></div></div>
-    <div  class="practice"><i onclick="window.location.href='../HTMLS/Practice.html'"  class="fa-solid fa-lightbulb"></i></div>
-    <div class="more"><i  onclick="window.location.href='../HTMLS/more.html'" class="fa-solid fa-list"></i></div>
-</div>
 
-      
+  <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+
+  <h1><q> Audio Books Zone </q></h1>
 
 <!-- Top Books -->
  <div class="books">
 
-    <div class="book-shadow" ><img class="book-radius"  src="../Pho/RichDad.jpg"  width="90"  alt="">
+    <div class="book-shadow" ><img class="book-radius"  src="../Pho/RichDad.jpg"  width="120"  alt="">
               <div onclick="window.location.href='../HTMLS/richdad.html'" class="listen">  <i class="fa-solid fa-circle-play"></i> &nbsp;  Play 
              </div>
   </div>
 
-    <div class="book-shadow" ><img class="book-radius"  src="../Pho/7habbit.jpg"   width="95"  alt="">
+<!-- 
+
+    <div class="book-shadow" ><img class="book-radius"  src="../Pho/7habbit.jpg"   width="120" height="190" alt="">
               <div onclick="window.location.href='../HTMLS/7habbit.html'" class="listen"> <i class="fa-solid fa-circle-play"></i> &nbsp;  Play 
               </div>
   </div>
-
     <div class="book-shadow" ><img class="book-radius"  src="../Pho/doit.jpg" width="90"  alt="">
               <div onclick="window.location.href='../HTMLS/doit.html'" class="listen"> <i class="fa-solid fa-circle-play"></i> &nbsp;  Play 
              </div>
@@ -64,7 +58,7 @@
   </div> 
 
   </div>
-<div class="null"></div>
+<div class="null"></div> -->
 
                                      <audio id="clickSound">
                   <source src="../sound/POOOO.mp3" type="audio/mpeg">
