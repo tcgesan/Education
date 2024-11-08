@@ -46,11 +46,19 @@ body {
     
     
         #noResults {
-          margin-top: 20px;
+          margin-top: 30%;
           font-size: 1em;
+          flex-direction: column;
+          width: 100%;
+          font-family: head;
+          height:auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
     
         .hidden {
+       
           display: none;
         }
 
