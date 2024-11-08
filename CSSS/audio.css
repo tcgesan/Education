@@ -24,12 +24,13 @@ color:inherit;
    
 .books{
   display: flex;
-width: 95%;
+width: 100%;
 margin-top:10%;
+margin-left: -5%;
 justify-content: center;
 user-select: none;
-column-gap: 70px;
-row-gap: 60px;
+column-gap: 60px;
+row-gap: 80px;
 margin-bottom: 25%;
 align-items: center;
   flex-wrap: wrap;
