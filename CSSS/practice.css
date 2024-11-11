@@ -37,6 +37,7 @@ body{
     border-bottom-right-radius: 25px;
     z-index: 1000;
     position: fixed;
+    box-shadow: 0 5px 25px rgba(70, 150, 243,1);
     color: white;
     column-gap: 10px;
     flex-direction: row;

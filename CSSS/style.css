@@ -37,6 +37,7 @@ body{
     z-index: 1000;
     position: fixed;
     color: white;
+    box-shadow: 0px 5px 16px rgb(125, 207, 240);
     column-gap: 10px;
     flex-direction: row;
     justify-content: space-evenly;
