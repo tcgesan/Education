@@ -406,3 +406,62 @@ scroll.on("scroll", () => {
     } else {
       console.log("noo")
     }
+
+
+
+
+
+
+    // Flash Cards 
+    let currentIndex = 0;
+    const cards = Array.from(document.querySelectorAll('.card'));
+
+    function getRandomIndex(excludeIndex) {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * cards.length);
+        } while (randomIndex === excludeIndex);
+        return randomIndex;
+    }
+
+    function showNextCard() {
+        const currentCard = cards[currentIndex];
+
+        // Get a random next card
+        const nextIndex = getRandomIndex(currentIndex);
+        const nextCard = cards[nextIndex];
+
+        // Animate the current card to exit upwards
+        currentCard.classList.remove('active');
+        currentCard.classList.add('exiting');
+
+        // Reset current card after animation ends
+        setTimeout(() => {
+            currentCard.classList.remove('exiting');
+            currentCard.style.zIndex = 1;
+        }, 300);
+
+        // Animate the next card to enter from below
+        nextCard.style.zIndex = 6;
+        nextCard.classList.add('entering');
+
+        setTimeout(() => {
+            nextCard.classList.remove('entering');
+            nextCard.classList.add('active');
+        }, 6);
+
+        // Update current index
+        currentIndex = nextIndex;
+    }
+
+    // Event listener for swipe up
+    let startY = 0;
+    document.addEventListener('touchstart', (event) => {
+        startY = event.touches[0].clientY;
+    });
+    document.addEventListener('touchend', (event) => {
+        const endY = event.changedTouches[0].clientY;
+        if (startY - endY > 50) {
+            showNextCard(); // Trigger next card on swipe up
+        }
+    });
