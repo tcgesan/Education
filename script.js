@@ -245,6 +245,14 @@ function dokhota() {
     }, 150); 
 }
 
+function flash() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/flash.html';
+    }, 150); 
+}
+
 
 
 // Back Button
