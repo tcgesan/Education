@@ -18,7 +18,7 @@ function getRandomIndex(excludeIndex) {
 
 function showNextCard() {
     const currentCard = cards[currentIndex];
-    cardHistory.push(currentIndex); // Save current index to history for "Previous" button
+    cardHistory.push(currentIndex);
 
     // Get a random next card
     const nextIndex = getRandomIndex(currentIndex);
@@ -28,7 +28,6 @@ function showNextCard() {
     currentCard.classList.remove('active');
     currentCard.classList.add('exiting');
 
-    // Reset current card after animation ends
     setTimeout(() => {
         currentCard.classList.remove('exiting');
         currentCard.style.zIndex = 1;
@@ -54,7 +53,6 @@ function showPreviousCard() {
     currentCard.classList.remove('active');
     currentCard.classList.add('exiting');
 
-    // Reset current card after animation ends
     setTimeout(() => {
         currentCard.classList.remove('exiting');
         currentCard.style.zIndex = 1;
@@ -64,7 +62,6 @@ function showPreviousCard() {
     const previousIndex = cardHistory.pop();
     const previousCard = cards[previousIndex];
 
-    // Animate the previous card to enter
     previousCard.style.zIndex = 6;
     previousCard.classList.add('entering');
     setTimeout(() => {
@@ -76,10 +73,25 @@ function showPreviousCard() {
     currentIndex = previousIndex;
 }
 
-// Back Button
-function goBack() {
-    window.history.back();
-}
+// Detect swipe gestures
+let startY;
+document.addEventListener('touchstart', (e) => {
+    startY = e.touches[0].clientY;
+});
+
+document.addEventListener('touchend', (e) => {
+    const endY = e.changedTouches[0].clientY;
+    const diffY = startY - endY;
+
+    // Swipe up for next card
+    if (diffY > 30) {
+        showNextCard();
+    }
+    // Swipe down for previous card
+    else if (diffY < -30) {
+        showPreviousCard();
+    }
+});
 
 // Show the initial card on page load
 showInitialCard();
