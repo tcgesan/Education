@@ -40,14 +40,14 @@ background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 transform: scale(1.1);
 }
 
-.container {
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     flex-direction: column;
     position: relative;
-    width:80%;
+    width:85%;
 }
 
 .card {
@@ -78,7 +78,7 @@ transform: scale(1.1);
 }
 
 .card img {
-    width: 90%;
+    width: 80%;
     height: auto;
     border-radius: 18px;
 }
@@ -115,6 +115,7 @@ font-family: iphone;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 5%;
     z-index: 1000;
 border: none;
 }
