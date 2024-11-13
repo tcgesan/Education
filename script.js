@@ -473,3 +473,19 @@ scroll.on("scroll", () => {
             showNextCard(); // Trigger next card on swipe up
         }
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
