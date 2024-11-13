@@ -13,6 +13,7 @@
 <body>
     <div class="container">
 
+    
         <div class="card active" id="card1">
             <img src="../Pho/pa.jpg"  alt="Image 1">
             <h1>টার্ন</h1>
@@ -79,10 +80,11 @@
             <p>Text about Image 10</p>
         </div>
     </div>
-
+    
     <script>
-        let currentIndex = 0;
+       let currentIndex = 0;
         const cards = Array.from(document.querySelectorAll('.card'));
+        const cardHistory = [];
 
         function getRandomIndex(excludeIndex) {
             let randomIndex;
@@ -94,6 +96,7 @@
 
         function showNextCard() {
             const currentCard = cards[currentIndex];
+            cardHistory.push(currentIndex); // Save current index to history for "Previous" button
 
             // Get a random next card
             const nextIndex = getRandomIndex(currentIndex);
@@ -108,9 +111,8 @@
                 currentCard.classList.remove('exiting');
                 currentCard.style.zIndex = 1;
             }, 300);
-
-            // Animate the next card to enter from below
-            nextCard.style.zIndex = 6;
+ // Animate the next card to enter from below
+ nextCard.style.zIndex = 6;
             nextCard.classList.add('entering');
 
             setTimeout(() => {
@@ -121,19 +123,34 @@
             // Update current index
             currentIndex = nextIndex;
         }
+        function showPreviousCard() {
+            if (cardHistory.length === 0) return;
 
-        // Event listener for swipe up
-        let startY = 0;
-        document.addEventListener('touchstart', (event) => {
-            startY = event.touches[0].clientY;
-        });
-        document.addEventListener('touchend', (event) => {
-            const endY = event.changedTouches[0].clientY;
-            if (startY - endY > 50) {
-                showNextCard(); // Trigger next card on swipe up
-            }
-        });
+            const currentCard = cards[currentIndex];
+            currentCard.classList.remove('active');
+            currentCard.classList.add('exiting');
 
+            // Reset current card after animation ends
+            setTimeout(() => {
+                currentCard.classList.remove('exiting');
+                currentCard.style.zIndex = 1;
+            }, 300);
+
+            // Get the previous index from history
+            const previousIndex = cardHistory.pop();
+            const previousCard = cards[previousIndex];
+
+            // Animate the previous card to enter
+            previousCard.style.zIndex = 6;
+            previousCard.classList.add('entering');
+            setTimeout(() => {
+                previousCard.classList.remove('entering');
+                previousCard.classList.add('active');
+            }, 6);
+
+            // Update current index
+            currentIndex = previousIndex;
+        }
 
 
 
@@ -146,5 +163,11 @@ function goBack() {
 
 
     </script>
+    
+    <div class="buttons">
+        <button  id="pre"  onclick="showPreviousCard()">Previous</button>
+        <button  id="next" onclick="showNextCard()">Next</button>
+    </div>
+
 </body>
 </html>
