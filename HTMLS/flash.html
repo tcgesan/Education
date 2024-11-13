@@ -28,8 +28,13 @@
 
 
         <div class="card" id="card2">
-            <img src="https://via.placeholder.com/300x200" alt="Image 2">
-            <p>Text about Image 2</p>
+            <img src="../Pho/artik.JPG"  alt="Image 2">
+            <h1>আর্কটিক টার্ন </h1>
+            <p>   আর্কটিক টার্ন দ্বিপদ নাম স্টারনা প্যারাডাইসাইয়া হচ্ছে একধরনের 
+                সমুদ্রচারী টার্ন পাখি এরা ইউরোপ, এশিয়া এবং উত্তর আমেরিকার আর্কটিক 
+                ও সাব-আর্কটিক অঞ্চলে বাস করে। এরা অভিবাসী পাখি এবং একই বছরে দুটি 
+                গ্রীষ্মকাল কাটায়। প্রাণীজগতের মধ্যে এরাই সব থেকে লম্বা অভিবাসী হয়। এরা বাতাসে 
+                ওড়ার পাশাপাশি গ্লাইডিং করে থাকে। </p>
         </div>
 
 
@@ -81,93 +86,13 @@
         </div>
     </div>
     
-    <script>
-       let currentIndex = 0;
-        const cards = Array.from(document.querySelectorAll('.card'));
-        const cardHistory = [];
 
-        function getRandomIndex(excludeIndex) {
-            let randomIndex;
-            do {
-                randomIndex = Math.floor(Math.random() * cards.length);
-            } while (randomIndex === excludeIndex);
-            return randomIndex;
-        }
-
-        function showNextCard() {
-            const currentCard = cards[currentIndex];
-            cardHistory.push(currentIndex); // Save current index to history for "Previous" button
-
-            // Get a random next card
-            const nextIndex = getRandomIndex(currentIndex);
-            const nextCard = cards[nextIndex];
-
-            // Animate the current card to exit upwards
-            currentCard.classList.remove('active');
-            currentCard.classList.add('exiting');
-
-            // Reset current card after animation ends
-            setTimeout(() => {
-                currentCard.classList.remove('exiting');
-                currentCard.style.zIndex = 1;
-            }, 300);
- // Animate the next card to enter from below
- nextCard.style.zIndex = 6;
-            nextCard.classList.add('entering');
-
-            setTimeout(() => {
-                nextCard.classList.remove('entering');
-                nextCard.classList.add('active');
-            }, 6);
-
-            // Update current index
-            currentIndex = nextIndex;
-        }
-        function showPreviousCard() {
-            if (cardHistory.length === 0) return;
-
-            const currentCard = cards[currentIndex];
-            currentCard.classList.remove('active');
-            currentCard.classList.add('exiting');
-
-            // Reset current card after animation ends
-            setTimeout(() => {
-                currentCard.classList.remove('exiting');
-                currentCard.style.zIndex = 1;
-            }, 300);
-
-            // Get the previous index from history
-            const previousIndex = cardHistory.pop();
-            const previousCard = cards[previousIndex];
-
-            // Animate the previous card to enter
-            previousCard.style.zIndex = 6;
-            previousCard.classList.add('entering');
-            setTimeout(() => {
-                previousCard.classList.remove('entering');
-                previousCard.classList.add('active');
-            }, 6);
-
-            // Update current index
-            currentIndex = previousIndex;
-        }
-
-
-
-        
-// Back Button
-function goBack() {
-    window.history.back();
-}
-
-
-
-    </script>
-    
     <div class="buttons">
         <button  id="pre"  onclick="showPreviousCard()">Previous</button>
         <button  id="next" onclick="showNextCard()">Next</button>
     </div>
 
+    
+<script src="../JSS/flash.js"></script>
 </body>
 </html>
