@@ -12,7 +12,16 @@ let questions = [
          answer:  2
      },
     
-
+     {
+        question: 'The idiom "Root and branch" means-',
+        options: ["from top to bottom","completely","branch like root","none"],
+        answer: 1 
+    },
+    {
+        question: " 'To kick off ' means ---- ",
+        options: ["to stop","to end","to begin","to kick"],
+        answer: 2 
+    },
 
      { 
          question:  " What is the meaning of this idiom - He was always pulling my legs.", 
