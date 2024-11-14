@@ -1,11 +1,5 @@
-let timer;
-let timeLeft = 20;
-
 
 let questions = [
-
-
-
 
 
 {
@@ -653,157 +647,67 @@ let questions = [
       },
   
 
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
-
-      // {
-      //     question: '   ?',
-      //     options: ['       ', '       ', '    ', '      '],
-      //     answer:
-      // },
-  
 
 ]
 
 
 
 
+        let currentQuestionIndex;
+        // Display a random question from the array
+        function displayQuestion() {
+            currentQuestionIndex = Math.floor(Math.random() * questions.length);
+            const currentQuestion = questions[currentQuestionIndex];
 
-let currentQuestionIndex;
+            document.getElementById("question").innerText = currentQuestion.question;
 
-function startTimer() {
-    timer = setInterval(() => {
-        timeLeft--;
-        document.getElementById("timer").innerText = timeLeft;
-        if (timeLeft <= 0) {
+            const answerDivs = document.querySelectorAll('.answer');
+            answerDivs.forEach((div, index) => {
+                div.innerText = currentQuestion.options[index];
+                div.className = "answer"; // Reset class
+                div.style.pointerEvents = 'auto'; // Enable clicks
+            });
+
+            timeLeft = 20;
+            document.getElementById("timer").innerText = timeLeft;
+            startTimer();
+        }
+
+        // Check if the selected answer is correct
+        function checkAnswer(selectedIndex) {
             clearInterval(timer);
-            alert("Time's up!");
+            const currentQuestion = questions[currentQuestionIndex];
+            const answerDivs = document.querySelectorAll('.answer');
+
+            if (selectedIndex === currentQuestion.answer) {
+                document.getElementById("correctSound").play();
+                answerDivs[selectedIndex].classList.add("correct");
+                answerDivs.forEach(div => div.style.pointerEvents = 'none'); // Disable clicks after correct answer
+            } else {
+                document.getElementById("incorrectSound").play();
+                answerDivs[selectedIndex].classList.add("incorrect");
+                // Do not disable clicks, allowing the user to try again
+            }
+
+            // Show the Next button after selecting an answer
             document.getElementById("next").style.display = "block";
         }
-    }, 1000);
-}
 
-function displayQuestion() {
-    currentQuestionIndex = Math.floor(Math.random() * questions.length);
-    const currentQuestion = questions[currentQuestionIndex];
-    
-    document.getElementById("question").innerText = currentQuestion.question;
-    
-    const answerDivs = document.querySelectorAll('.answer');
-    answerDivs.forEach((div, index) => {
-        div.innerText = currentQuestion.options[index];
-        div.className = "answer"; // Reset class
-        div.style.pointerEvents = 'auto'; // Enable clicks
-    });
+        // Go to the next question
+        function nextQuestion() {
+            displayQuestion();
+            document.getElementById("next").style.display = "none";
+            const answerDivs = document.querySelectorAll('.answer');
+            answerDivs.forEach(div => {
+                div.classList.remove("correct", "incorrect");
+            });
+        }
 
-    timeLeft = 20;
-    document.getElementById("timer").innerText = timeLeft;
-    startTimer();
-}
+        // Go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
 
-function checkAnswer(selectedIndex) {
-    clearInterval(timer);
-    const currentQuestion = questions[currentQuestionIndex];
-    const answerDivs = document.querySelectorAll('.answer');
-
-    if (selectedIndex === currentQuestion.answer) {
-        document.getElementById("correctSound").play();
-        answerDivs[selectedIndex].classList.add("correct");
-        answerDivs.forEach(div => div.style.pointerEvents = 'none'); // Disable clicks after correct answer
-    } else {
-        document.getElementById("incorrectSound").play();
-        answerDivs[selectedIndex].classList.add("incorrect");
-        // Do not disable clicks, allowing the user to try again
-    }
-
-    // Show the next button after selecting an answer
-    document.getElementById("next").style.display = "block";
-}
-
-function nextQuestion() {
-    displayQuestion();
-    document.getElementById("next").style.display = "none";
-    const answerDivs = document.querySelectorAll('.answer');
-    answerDivs.forEach(div => {
-        div.classList.remove("correct", "incorrect");
-    });
-}
-
-
-window.onload = displayQuestion;
-
-
-
-// Back Button
-function goBack() {
-    window.history.back();
-}
-
+        // Initialize the quiz
+        window.onload = displayQuestion;
 
