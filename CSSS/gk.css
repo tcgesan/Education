@@ -126,7 +126,7 @@ color: white;
     text-align: center;
     padding: 20px;
     user-select: none;
-    width: 65%;
+    width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +161,7 @@ color: white;
 button{
     padding: 10px 20px;
     font-size: 12px;
-    margin-top: 15%;
+    margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,12 +171,12 @@ button{
     color:white;
     width: 50%;
     transform: scale(1.3);
+    margin-bottom: 7%;
     height: 30px;
     /* margin-left: 22%; */
     border: none;
     font-family: "Fira Sans", sans-serif;
     border-radius: 25px;
-    cursor: pointer;
     transition-duration: 0.2s;
 }
 
@@ -190,6 +190,7 @@ button:active{
 #banglaFact{
     margin-top: 20%;
     font-size: 15px;
+    font-weight: 300px;
     /* margin-bottom: 10%; */
   font-family: iphone;
 }
