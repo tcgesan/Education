@@ -284,25 +284,6 @@ user-select: none;
   transition: background-color 0.3s;
 }
 
-
-#fire{
-  color:red;
-  animation: blink 1s linear infinite;
-}
-@keyframes blink {
-  
-  0%{
-    opacity: 1;
-    color: white;
-  }
-
-
-  100%{
-    color: red;
-    opacity: 0.8;
-  }
-}
-
 .options li.correct {
   background-color: rgb(155, 244, 176);
   color: black;
