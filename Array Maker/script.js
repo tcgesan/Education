@@ -22,7 +22,7 @@ function addQuestion() {
         return;
     }
     if (isNaN(answer) || answer < 1 || answer > 4) {
-        alert("Please enter a valid answer number (between 1 and 4).");
+        alert("Please enter a valid answer number (between 1 and 4). 🐰");
         return;
     }
 
@@ -55,20 +55,20 @@ function displayData() {
 function copyData() {
     const dataDisplay = document.getElementById("dataDisplay").textContent;
     navigator.clipboard.writeText(dataDisplay).then(() => {
-        alert("Questions copied to clipboard!");
+        alert("Questions copied to clipboard 🔗");
     }).catch(err => {
-        console.error("Failed to copy text: ", err);
+        console.error("Failed to copy text 😐: ", err);
     });
 }
 
 // Function to delete all data
 function deleteAllData() {
-    const confirmation = confirm("Are you sure you want to delete all data?");
+    const confirmation = confirm("Are you sure you want to delete all data? 🤔");
     if (confirmation) {
         questions = []; // Clear the array
         localStorage.setItem("questions", JSON.stringify(questions)); // Update localStorage
         displayData(); // Re-display the data (empty)
-        alert("All data deleted successfully.");
+        alert("All data deleted successfully. 😊");
     }
 }
 
