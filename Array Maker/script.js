@@ -4,6 +4,7 @@ localforage.config({
     storeName: 'questions'
 });
 
+
 // Load existing questions from localForage or initialize an empty array
 let questions = [];
 
@@ -16,6 +17,7 @@ localforage.getItem("questions").then(savedQuestions => {
 }).catch(err => {
     console.error("Error loading questions: ", err);
 });
+
 
 // Function to add a question to the array
 function addQuestion() {
@@ -72,7 +74,7 @@ function displayData() {
 function copyData() {
     const dataDisplay = document.getElementById("dataDisplay").textContent;
     navigator.clipboard.writeText(dataDisplay).then(() => {
-        alert("Questions copied to clipboard! ✅");
+        alert("Questions copied to clipboard  ✅");
     }).catch(err => {
         console.error("Failed to copy text 😐: ", err);
     });
