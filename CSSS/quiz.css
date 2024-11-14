@@ -63,10 +63,10 @@ h1{
     color: rgb(0, 0, 0);
     padding: 17px;
     height: auto;
-    background: linear-gradient(-280deg,rgb(249, 207, 249),rgb(169, 203, 252));
+    background: linear-gradient(-280deg,rgb(245, 173, 245),rgb(140, 186, 251));
     width: 80%;
     /* font-weight: bold; */
-    box-shadow: 0 05px 15px rgba(164, 195, 242, 0.59);
+    box-shadow: 0 05px 15px rgba(216, 216, 217, 0.826);
 }
 .options {
     list-style: none;
@@ -90,14 +90,14 @@ h1{
     transition: background-color 0.3s;
 }
 .options li.correct {
-    background-color: rgb(5, 250, 9);
+    background-color: rgb(179, 252, 196);
     color: black;
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
 .options li.incorrect {
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
-    background-color: red;
-    color: white;
+    background-color: rgb(248, 166, 166);
+    /* color: white; */
 }
 button {
     padding:9px;
