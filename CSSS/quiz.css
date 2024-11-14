@@ -26,7 +26,7 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
-    /* background-color: #f0f0f0; */
+    background-color: #f5f9ff;
 }
 h1{
     font-size: 1.5rem;
@@ -43,7 +43,7 @@ h1{
     height: 50px;
 }
 .quiz-container {
-    background: white;
+    background-color: #f5f9ff;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -66,18 +66,19 @@ h1{
     /* background: linear-gradient(-280deg,rgb(245, 173, 245),rgb(140, 186, 251)); */
     width: 80%;
     /* font-weight: bold; */
-    box-shadow: 0 0px 15px rgba(188, 208, 237, 0.826);
+    background-color: gold;
+    box-shadow: 0 05px 14px rgba(193, 195, 195, 0.826);
 }
 .options {
     list-style: none;
     border: none;
 }
 .options li {
-    /* background-color: #f5f4f4; */
+    background-color:white;
     padding: 16px;
     display: flex;
     font-family: 'ip';
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 02px 8px rgba(171, 168, 168, 0.448);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -92,11 +93,11 @@ h1{
 .options li.correct {
     background-color: rgb(179, 252, 196);
     color: black;
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(218, 215, 215);
 }
 .options li.incorrect {
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
-    background-color: rgb(244, 202, 202);
+    border: 1px solid rgb(207, 203, 203);
+    background-color: rgba(243, 195, 195, 0.885);
     /* color: white; */
 }
 button {
