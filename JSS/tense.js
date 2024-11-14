@@ -5,7 +5,17 @@ let timeLeft = 20;
 let questions = [
 
 
+{
+    question: 'He has been ill------ friday last.',
+    options: ["since","in","from","to"],
+    answer: 0 
+},
 
+{
+    question: 'I have lived in Cumilla ----- .',
+    options: ["from 5 years","with 5 years","for 5 years","till now"],
+    answer: 2 
+},
 
 {
     question: 'Select the correct sentence --',
