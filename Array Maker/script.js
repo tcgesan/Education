@@ -30,15 +30,15 @@ function addQuestion() {
 
     // Validate that all fields are filled
     if (!questionText) {
-        alert("Please enter the question.");
+        alert("Please enter the question. 😐");
         return;
     }
     if (options.some(option => !option)) {
-        alert("Please fill all options.");
+        alert("Please fill all options. 🥹");
         return;
     }
     if (isNaN(answer) || answer < 1 || answer > 4) {
-        alert("Please enter a valid answer number (between 1 and 4).");
+        alert("Please enter a valid answer number (between 1 and 4). 🐥");
         return;
     }
 
@@ -54,7 +54,7 @@ function addQuestion() {
         displayData();
         document.getElementById("questionForm").reset(); // Reset form
     }).catch(err => {
-        console.error("Error saving question: ", err);
+        console.error("Error saving question 😐: ", err);
     });
 }
 
@@ -64,7 +64,7 @@ function displayData() {
     question: '${q.question}',
     options: ${JSON.stringify(q.options)},
     answer: ${q.answer} 
-}`).join('\n\n');
+},`).join('\n\n');
     document.getElementById("dataDisplay").textContent = formattedData;
 }
 
@@ -72,22 +72,22 @@ function displayData() {
 function copyData() {
     const dataDisplay = document.getElementById("dataDisplay").textContent;
     navigator.clipboard.writeText(dataDisplay).then(() => {
-        alert("Questions copied to clipboard!");
+        alert("Questions copied to clipboard! ✅");
     }).catch(err => {
-        console.error("Failed to copy text: ", err);
+        console.error("Failed to copy text 😐: ", err);
     });
 }
 
 // Function to delete all data
 function deleteAllData() {
-    const confirmation = confirm("Are you sure you want to delete all data?");
+    const confirmation = confirm("Are you sure you want to delete all data? 🤔");
     if (confirmation) {
         questions = []; // Clear the array
         localforage.setItem("questions", questions).then(() => {
             displayData(); // Re-display the data (empty)
-            alert("All data deleted successfully.");
+            alert("All data deleted successfully. 😊");
         }).catch(err => {
-            console.error("Error deleting questions: ", err);
+            console.error("Error deleting questions 😐: ", err);
         });
     }
 }
