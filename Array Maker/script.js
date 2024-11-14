@@ -3,29 +3,40 @@ let questions = JSON.parse(localStorage.getItem("questions")) || [];
 
 // Function to add a question to the array
 function addQuestion() {
-    const questionText = document.getElementById("questionInput").value;
+    const questionText = document.getElementById("questionInput").value.trim();
     const options = [
-        document.getElementById("option1").value,
-        document.getElementById("option2").value,
-        document.getElementById("option3").value,
-        document.getElementById("option4").value
+        document.getElementById("option1").value.trim(),
+        document.getElementById("option2").value.trim(),
+        document.getElementById("option3").value.trim(),
+        document.getElementById("option4").value.trim()
     ];
     const answer = parseInt(document.getElementById("answerInput").value);
 
-    // Check if the answer is within the allowed range (1-4)
-    if (answer < 1 || answer > 4) {
-        alert("Answer number must be between 1 and 4.");
-        return; // Stop further execution if validation fails
+    // Validate that all fields are filled
+    if (!questionText) {
+        alert("Please enter the question.");
+        return;
+    }
+    if (options.some(option => !option)) {
+        alert("Please fill all options.");
+        return;
+    }
+    if (isNaN(answer) || answer < 1 || answer > 4) {
+        alert("Please enter a valid answer number (between 1 and 4).");
+        return;
     }
 
+    // Add the question to the array
     questions.push({
         question: questionText,
         options: options,
         answer: answer - 1 // Adjust to 0-based index
     });
 
+    // Save the updated questions array to localStorage
     localStorage.setItem("questions", JSON.stringify(questions));
 
+    // Display the updated data and reset the form
     displayData();
     document.getElementById("questionForm").reset();
 }
