@@ -4,6 +4,33 @@ let timeLeft = 20;
 
 let questions = [
 
+
+
+
+{
+    question: 'Select the correct sentence --',
+    options: ["He has come home yesterday.","He came home yesterday.","He had come home yesterday.","He would come home yesterday."],
+    answer: 1 
+},
+
+{
+    question: 'She is always ----- her gloves.',
+    options: ["loosing","loses","loose","losing"],
+    answer: 3 
+},
+
+{
+    question: 'Do not call me after ten oclock. I ----.',
+    options: ["will sleep","will be sleeping","will have slept","will have been sleeping"],
+    answer: 1 
+},
+
+{
+    question: 'He has been ill ----- friday last.',
+    options: ["since","in","from","Don"],
+    answer: 0 
+},
+
     // 1
     { 
         question: "  One of the professor's greatest attributes is -------- .", 
