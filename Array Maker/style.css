@@ -10,7 +10,6 @@
 /* Base Styles */
  body {
     font-family: Arial, sans-serif;
-    background:linear-gradient(130deg,rgba(231, 244, 248, 0.438),rgb(255, 255, 255));
     color: #333;
     display: flex;
     justify-content: center;
@@ -41,7 +40,7 @@ input[type="number"] {
     margin: 17px 0;
     border-radius: 4px;
     border: none;
-    box-shadow: 0px 05px 15px rgb(224, 224, 227);
+    box-shadow: 0px 0px 15px rgb(219, 219, 221);
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -58,8 +57,8 @@ button {
     border: none;
     border-radius: 4px;
     font-size: 16px;
+    transition-duration: 0.2s;
     cursor: pointer;
-    transition: background-color 0.3s;
     width: 100%;
     box-sizing: border-box;
 }
@@ -94,6 +93,7 @@ h2 {
     justify-content: space-between;
     width: 100%;
     gap: 10px;
+    transition-duration: 0.3s;
 }
 
 .button-container button {
@@ -113,6 +113,7 @@ h2 {
     }
 
     button {
+        transition-duration: 0.3s;
         font-size: 14px;
     }
 
@@ -134,6 +135,7 @@ h2 {
     .button-container {
         flex-direction: row;
         gap: 15px;
+        transition-duration: 0.3s;
         width: 80%;
         padding: 40px;
         font-family: ip;
@@ -152,6 +154,7 @@ h2 {
 
     button {
         padding: 8px;
+        transition-duration: 0.3s;
         font-size: 12px;
     }
 
@@ -163,25 +166,37 @@ h2 {
 
 #copy{
     width: 40%;
-    height: 2.4rem;
-    font-size: 14px;
+    height: 2rem;
+    font-size: 12px;
     border: none;
+    transform: scale(1.3);
     font-family: ip;
     border-radius: 50px;
 color: black;
-box-shadow: 05px 10px 10px rgba(198, 188, 145, 0.877);
+transition-duration: 0.3s;
+box-shadow: 0px 3px 5px rgba(154, 154, 152, 0.877);
     background: linear-gradient(135deg,gold,rgb(236, 225, 160));
+}
+
+#copy:active{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
 }
 
 #delet{
     width: 40%;
-    height: 2.4rem;
-    font-size: 14px;
+    height: 2rem;
+    transform: scale(1.3);
+    font-size: 12px;
     border: none;
     font-family: ip;
     border-radius: 50px;
-box-shadow: 05px 10px 10px rgba(244, 168, 168, 0.681);
+    box-shadow: 0px 3px 5px rgba(239, 174, 180, 0.877);
     background: linear-gradient(135deg,red,rgb(240, 131, 131));
+}
+
+#delet:active{
+    transform: scale(1.1);
 }
 
 label{
@@ -196,15 +211,23 @@ label{
 }
 
 #add-que{
-    font-size: 15px;
-    width: 60%;
+    font-size: 13px;
+    width: 50%;
     font-family: ip;
     margin-bottom: 5%;
+    transform: scale(1.3);
     border: none;
-    border-radius: 40px;
+    transition-duration:0.2s;
+    border-radius: 50px;
     box-shadow: 0 10px 10px rgba(219, 216, 216, 0.915);
-    height: 3rem;
+    height: 2.3rem;
 }
+
+#add-que:active{
+    transform: scale(1.1);
+}
+
+
 #questionInput{
     font-family: op;
     border-radius: 5px;
