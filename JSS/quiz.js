@@ -8,7 +8,23 @@ let questions = [
 
 
 
+{
+    question: 'Which one is the least populated division in Bangladesh ?',
+    options: ["Rangpur","Barisal","Dhaka","Sylhet"],
+    answer: 1 
+},
 
+{
+    question: 'আয়তনে বাংলাদেশের সর্ববৃহৎ সিটি কর্পোরেশন কোনটি ?',
+    options: ["চট্টগ্রাম","রাজশাহী","ঢাকা","গাজীপুর"],
+    answer: 3 
+},
+
+{
+    question: 'ঢাকাকে প্রথম কখন বাংলার রাজধানী করা হয় ?',
+    options: ["১৫১০ সালে","১৫৯০ সালে","১৬১০ সালে","১৬০০ সালে"],
+    answer: 2 
+},
 
 {
     question: 'মৌজা কী ?',
