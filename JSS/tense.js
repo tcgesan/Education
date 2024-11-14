@@ -225,6 +225,8 @@ let questions = [
 
 
 
+
+
 let currentQuestionIndex;
 
 function startTimer() {

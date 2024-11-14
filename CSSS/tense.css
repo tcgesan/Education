@@ -12,13 +12,13 @@ body{
     justify-content: center;
     align-items: center;
     height: auto;
-    overflow: hidden;
     background-color: rgb(249, 249, 251);
 }
 
 #answers{
     width: 100%;
     display: flex;
+    z-index: 1000;
 padding-top: 20px;
 margin-top: 6%;
     justify-content: center;

@@ -1,5 +1,5 @@
 
-let questions = [
+const questions = [
 
 
 
@@ -707,62 +707,69 @@ let questions = [
 
 
 
+let questionHistory = [];
+let currentQuestionIndex = -1;
 
-        let currentQuestionIndex;
-        // Display a random question from the array
-        function displayQuestion() {
-            currentQuestionIndex = Math.floor(Math.random() * questions.length);
-            const currentQuestion = questions[currentQuestionIndex];
+function getRandomQuestion() {
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    return questions[randomIndex];
+}
 
-            document.getElementById("question").innerText = currentQuestion.question;
+function loadQuestion(question) {
+    document.getElementById('question').innerText = question.question;
 
-            const answerDivs = document.querySelectorAll('.answer');
-            answerDivs.forEach((div, index) => {
-                div.innerText = currentQuestion.options[index];
-                div.className = "answer"; // Reset class
-                div.style.pointerEvents = 'auto'; // Enable clicks
-            });
+    const optionsList = document.getElementById('options');
+    optionsList.innerHTML = '';
+    question.options.forEach((option, index) => {
+        const optionElement = document.createElement('li');
+        optionElement.innerText = option;
+        optionElement.onclick = () => selectOption(optionElement, index, question.answer);
+        optionsList.appendChild(optionElement);
+    });
 
-            timeLeft = 20;
-            document.getElementById("timer").innerText = timeLeft;
-            startTimer();
+    document.getElementById('prevBtn').disabled = currentQuestionIndex <= 0;
+}
+
+function nextQuestion() {
+    const nextQuestion = getRandomQuestion();
+    questionHistory = questionHistory.slice(0, currentQuestionIndex + 1);
+    questionHistory.push(nextQuestion);
+    currentQuestionIndex++;
+    loadQuestion(nextQuestion);
+}
+
+function previousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion(questionHistory[currentQuestionIndex]);
+    }
+}
+
+function selectOption(element, index, correctAnswer) {
+    const options = document.querySelectorAll('.options li');
+    
+    options.forEach(option => {
+        if (!option.classList.contains('correct') && !option.classList.contains('incorrect')) {
+            option.classList.remove('selected');
         }
+    });
 
-        // Check if the selected answer is correct
-        function checkAnswer(selectedIndex) {
-            clearInterval(timer);
-            const currentQuestion = questions[currentQuestionIndex];
-            const answerDivs = document.querySelectorAll('.answer');
+    if (index === correctAnswer) {
+        element.classList.add('correct');
+        document.getElementById('correctSound').play();
+    } else {
+        element.classList.add('incorrect');
+        document.getElementById('incorrectSound').play();
+    }
 
-            if (selectedIndex === currentQuestion.answer) {
-                document.getElementById("correctSound").play();
-                answerDivs[selectedIndex].classList.add("correct");
-                answerDivs.forEach(div => div.style.pointerEvents = 'none'); // Disable clicks after correct answer
-            } else {
-                document.getElementById("incorrectSound").play();
-                answerDivs[selectedIndex].classList.add("incorrect");
-                // Do not disable clicks, allowing the user to try again
-            }
+    element.classList.add('selected');
+}
 
-            // Show the Next button after selecting an answer
-            document.getElementById("next").style.display = "block";
-        }
+nextQuestion();
 
-        // Go to the next question
-        function nextQuestion() {
-            displayQuestion();
-            document.getElementById("next").style.display = "none";
-            const answerDivs = document.querySelectorAll('.answer');
-            answerDivs.forEach(div => {
-                div.classList.remove("correct", "incorrect");
-            });
-        }
+// Back Button
+function goBack() {
+    window.history.back();
+}
 
-        // Go back to the previous page
-        function goBack() {
-            window.history.back();
-        }
-
-        // Initialize the quiz
-        window.onload = displayQuestion;
 

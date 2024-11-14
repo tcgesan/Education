@@ -3,47 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable="no">
-    <title>Quiz</title>
-    <!-- <link rel="stylesheet" href="../CSSS/style.css"> -->
+    <title> Quiz Test</title>
     <link rel="stylesheet" href="../CSSS/quiz.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+             <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 
 
+    <div class="head-back">
+        <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    <h1>Quiz</h1>
+    <div class="quiz-container">
+        <div id="question" class="question">Question Text</div>
+        <ul id="options" class="options"></ul>
 
-    <div class="all">
-    
-        <div class="tops">
-            <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
-             <div class="headname">Quiz</div>
-        </div>
-            <div id="question"></div>
-            <div id="answers">
-                <div class="answer" onclick="checkAnswer(0)"></div>
-                <div class="answer" onclick="checkAnswer(1)"></div>
-                <div class="answer" onclick="checkAnswer(2)"></div>
-                <div class="answer" onclick="checkAnswer(3)"> </div>
-                
-            </div>
-        
-            <div class="tops">
-                
-            <div  onclick="window.location.href='../HTMLS/quiz.html'"  class="refresh"><i class="fa-solid fa-rotate"></i></div>
-        </div>
-        
-        </div>
+
+        <div class="bottom-btn">
+        <button id="prevBtn" onclick="previousQuestion()">Previous</button>
+        <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+    </div>
+
+    <!-- Add audio files for correct and incorrect answers -->
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="incorrectSound" src="incorrect.mp3"></audio>
 
 
 
-<audio id="clickSound">
-    <source src="../sound/POOOO.mp3" type="audio/mpeg">
-</audio>
-
-<audio id="correctSound" src="../sound/Correct.mp3"></audio>
-<audio id="incorrectSound" src="../sound/incorrect.mp3"></audio>
-<script src="../JSS/quiz.js"></script>
-    <!-- <script src="../script.js"></script> -->
+    <script src="../JSS/quiz.js" ></script>
 </body>
 </html>
