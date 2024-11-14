@@ -5,6 +5,21 @@ let timeLeft = 20;
 let questions = [
 
 
+
+
+
+{
+    question: '----traffic in Dhaka City is increasing, no one is doing anything about it. Fill in the gap.',
+    options: ["Because","Since","Although","Which"],
+    answer: 2 
+},
+
+{
+    question: 'As the sun, I decided to go out.',
+    options: ["was shining","have shone","shine","shines"],
+    answer: 0 
+},
+
 {
     question: 'He has been ill------ friday last.',
     options: ["since","in","from","to"],
