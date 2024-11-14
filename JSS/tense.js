@@ -1,9 +1,21 @@
-let timer;
-let timeLeft = 20;
-
 
 let questions = [
 
+
+
+
+
+{
+    question: '----traffic in Dhaka City is increasing, no one is doing anything about it. Fill in the gap.',
+    options: ["Because","Since","Although","Which"],
+    answer: 2 
+},
+
+{
+    question: 'As the sun, I decided to go out.',
+    options: ["was shining","have shone","shine","shines"],
+    answer: 0 
+},
 
 {
     question: 'He has been ill------ friday last.',
@@ -41,7 +53,7 @@ let questions = [
     answer: 0 
 },
 
-    // 1
+   
     { 
         question: "  One of the professor's greatest attributes is -------- .", 
         options: ["When he gives lectures", "how in the manner that he lectures", "the way to give lectures", "his ability to lecture"], 
@@ -49,7 +61,7 @@ let questions = [
     },
 
 
-    // 2
+   
     { 
         question: " I ------  to a foreign country.", 
         options: ["was nerver been", "am never gone", "have never been", "am never been"], 
@@ -57,14 +69,14 @@ let questions = [
     },
 
 
-    // 3
+   
     { 
         question: "Hurrah ! we have won the match . What kind of sentence is this?", 
         options: ["Assertive", "Optative", "Imperative", "Exclamatory"], 
         answer: 3 
     },
 
-    // 4
+ 
     { 
         question: " Which one is the correct sentence?", 
         options: ["I know him for two years", "I have been knowing him for two years", "I have know him for two years", "I have known him since years"], 
@@ -72,7 +84,7 @@ let questions = [
     },
     
 
-    // 5
+  
     { 
         question: "----- school very young, he is very successful.", 
         options: ["Although leaving", "In spite of he left", "Because of", "In spite of leaving"], 
@@ -80,7 +92,7 @@ let questions = [
     },
     
 
-    // 6
+ 
 
     { 
         question: " Which one of the following is a compound sentence?", 
@@ -89,7 +101,6 @@ let questions = [
     },
 
     
-// 7
     { 
         question: "Which is correct ? ", 
         options: [" We write by ink ", " We write with ink ", " We write in ink  ", " We write under ink"], 
@@ -97,7 +108,7 @@ let questions = [
     },
 
     
-    // 8
+    
     { 
         question: "Hold fast to dreams for when dreams £20 ------  ", 
         options: ["life is broken ", "man died  ", " man become helpless", "life is a barren field "], 
@@ -105,7 +116,7 @@ let questions = [
     },
 
     
-    // 9
+   
     { 
         question: "Choose the correct sentense ----", 
         options: ["I am very better today", "The goods are of inferior qualities ", "He gave me some advice", "He requested of my help"], 
@@ -114,7 +125,7 @@ let questions = [
     
 
 
-    // 10
+    
     { 
         question: "When water ----- it turns into ice . ", 
         options: [" Will freeze", "freezes ", " would freeze", " froze"], 
@@ -122,7 +133,7 @@ let questions = [
     },
     
     
-    // 11
+    
     { 
         question: "Which Sentence is correct ?", 
         options: ["I wish i was a king ", " I wish i am a king", " I wish i can be a king", " I wish i were a king"], 
@@ -131,7 +142,7 @@ let questions = [
     
     
 
-    // 12
+    
     { 
         question: "I ------ him only one letter up to now .", 
         options: [" sent ", "had sent ", "have sent ", "send "], 
@@ -140,7 +151,7 @@ let questions = [
     
     
 
-    // 13
+    
     { 
         question: "A good player should know ------.", 
         options: [" how to practice hard", "how to be a good player ", " how to play effectively", " how to play in efficiently "], 
@@ -149,7 +160,7 @@ let questions = [
     
     
 
-    // 14
+    
     { 
         question: " Choose the correct option: Even as harvesting was going on ", 
         options: [" the rainy reason began", " the rainy season has begun", " the rainy reason had begun", " the rainy seasons begins"], 
@@ -158,7 +169,7 @@ let questions = [
     
     
 
-    // 15
+   
     { 
         question: "How ---- learning English", 
         options: ["long have you been", "much time are you ", " long are you", " many times have you been"], 
@@ -166,7 +177,7 @@ let questions = [
     },
     
 
-    // 16
+   
     { 
         question: "He said nothing ---- a long time", 
         options: [" after", " since", " during", " for"], 
@@ -175,7 +186,7 @@ let questions = [
     
     
 
-    // 17
+    
     { 
         question: "Those who are vulnearable are ----", 
         options: [" aggressive and uncooperative", " reed to be trained in intensive care units", " guilty of crime", "susceptible to injury or disease  "], 
@@ -183,7 +194,7 @@ let questions = [
     },
     
 
-    // 18
+   
     
     { 
         question: "The author states that during wartime the regular sources of news present only ----", 
@@ -192,7 +203,7 @@ let questions = [
     },
 
 
-    // 19
+   
     { 
         question: "A good student must know -----", 
         options: [" to study hard", " to be a good student ", " how to study effectively", " the way of efficiency in study"], 
@@ -201,7 +212,7 @@ let questions = [
     
 
 
-    // 20
+   
     { 
         question: "Choose the correct sentence :", 
         options: [" A snake bite him yesterday", " A snake bit him yesterday", " A snake bitten him yesterday", "A snake beat him yesterday "], 
