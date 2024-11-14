@@ -37,6 +37,10 @@ input[type="number"] {
     width: 100%;
     padding: 10px;
     margin-top: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin: 17px 0;
     border-radius: 4px;
     border: none;
