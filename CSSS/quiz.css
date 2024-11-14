@@ -65,7 +65,7 @@ h1{
     height: auto;
     /* background: linear-gradient(-280deg,rgb(245, 173, 245),rgb(140, 186, 251)); */
     width: 80%;
-    /* font-weight: bold; */
+    font-weight: bold;
     background-color: gold;
     box-shadow: 0 05px 14px rgba(193, 195, 195, 0.826);
 }
@@ -90,6 +90,7 @@ h1{
     width: 80%;
     transition: background-color 0.3s;
 }
+
 .options li.correct {
     background-color: rgb(155, 244, 176);
     color: black;
