@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable="no">
+    <title>Question Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Input form for adding questions -->
+     
+    <form id="questionForm">
+        <h1>Question</h1>
+        <label>Question:</label><br>
+        <input type="text" id="questionInput" required><br><br> <br><br> <br>
+
+
+        <h1>Options</h1>
+        <label>Option 1:</label><br>
+        <input type="text" id="option1" required><br>
+
+        <label>Option 2:</label><br>
+        <input type="text" id="option2" required><br>
+
+        <label>Option 3:</label><br>
+        <input type="text" id="option3" required><br>
+
+        <label>Option 4:</label><br>
+        <input type="text" id="option4" required><br>
+
+        <label><font color="blue" > Answer no. (1-4) : </font></label><br>
+        <input type="number" id="answerInput" min="1" max="4" required><br><br> <br>
+
+        
+    </form>
+    <button id="add-que" type="button" onclick="addQuestion()">Print Question</button>
+    <h2>Results</h2>
+    <pre id="dataDisplay"></pre>
+    
+    <div class="button-container">
+        <button  id="copy" onclick="copyData()">Copy All</button>
+        <button  id="delet" onclick="deleteAllData()">Delete All</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

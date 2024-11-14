@@ -114,6 +114,14 @@ function adb() {
     }, 150);
 }
 
+function work() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/login.html';
+    }, 150);
+}
+
 
 
 function chatbot() {

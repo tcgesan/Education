@@ -13,7 +13,7 @@ let questions = [
      },
     
      {
-        question: 'The idiom "Root and branch" means-',
+        question: "The idiom  ' Root and branch' means--",
         options: ["from top to bottom","completely","branch like root","none"],
         answer: 1 
     },

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable="no">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../CSSS/login.css">
+</head>
+<body>
+
+
+
+<div class="login-container">
+  <h2>Enter PIN</h2>
+  <input type="password" id="pinInput" placeholder="Enter your PIN">
+  <button onclick="checkPin()">Login</button>
+  <p id="error" class="error"></p>
+</div>
+
+<script>
+  const correctPin = "0055";
+  const redirectUrl = "../Array Maker/work.html"; // Replace with the URL of your new page
+  
+  function checkPin() {
+    const pin = document.getElementById("pinInput").value;
+    const errorElement = document.getElementById("error");
+    
+    if (pin === correctPin) {
+      window.location.href = redirectUrl;
+    } else {
+      errorElement.textContent = "Incorrect PIN. Please try again.";
+    }
+  }
+</script>
+
+
+
+</body>
+</html>

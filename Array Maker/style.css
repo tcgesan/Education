@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    user-select: none;
+    padding: 0;
+}
+
+
+
+
+/* Base Styles */
+ body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(130deg,rgba(231, 244, 248, 0.438),rgb(255, 255, 255));
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #4A90E2;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5%;
+    margin: 17px 0;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 05px 15px rgb(224, 224, 227);
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border: none;
+box-shadow: 0px 0px 15px rgb(204, 204, 238);
+}
+
+button {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+#dataDisplay {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 15px;
+    white-space: pre-wrap;
+    font-family: Consolas, monospace;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.button-container button {
+    width: 48%;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+        font-family: ip;
+    }
+
+    form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    font-family: ip;
+    }
+
+    #dataDisplay {
+        padding: 12px;
+        width: 90%;
+        font-family: op;
+        font-size: 14px;
+    }
+@font-face {
+    font-family: 'op';
+    src: url(Font/Ios\ Kohinoor\ font.ttf);
+}
+    .button-container {
+        flex-direction: row;
+        gap: 15px;
+        width: 80%;
+        padding: 40px;
+        font-family: ip;
+    }
+
+    .button-container button {
+        width: 100%;
+    }
+}
+
+/* For very small devices like phones in portrait */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    #dataDisplay {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+#copy{
+    width: 40%;
+    height: 2.4rem;
+    font-size: 14px;
+    border: none;
+    font-family: ip;
+    border-radius: 50px;
+color: black;
+box-shadow: 05px 10px 10px rgba(198, 188, 145, 0.877);
+    background: linear-gradient(135deg,gold,rgb(236, 225, 160));
+}
+
+#delet{
+    width: 40%;
+    height: 2.4rem;
+    font-size: 14px;
+    border: none;
+    font-family: ip;
+    border-radius: 50px;
+box-shadow: 05px 10px 10px rgba(244, 168, 168, 0.681);
+    background: linear-gradient(135deg,red,rgb(240, 131, 131));
+}
+
+label{
+    font-family: ip;
+    padding: 10px;
+}
+
+
+@font-face {
+    font-family: 'ip';
+    src: url(Font/FiraSans-Regular.ttf);
+}
+
+#add-que{
+    font-size: 15px;
+    width: 60%;
+    font-family: ip;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px rgba(219, 216, 216, 0.915);
+    height: 3rem;
+}
+#questionInput{
+    font-family: op;
+    border-radius: 5px;
+    border: 2px solid rgba(42, 70, 182, 0.196);
+}
+#option1{
+    border-radius: 50px;
+    font-family: op;
+}
+
+#option2{
+    border-radius: 50px;
+    font-family: op;
+}
+
+#option3{
+    border-radius: 50px;
+    font-family: op;
+}
+
+#option4{
+    border-radius: 50px;
+    font-family: op;
+}
+#answerInput{
+    width: 40%;
+    font-family: op;
+    margin-top: 10%;
+    border-radius: 010px;
+    border: 2px solid rgba(170, 31, 87, 0.225);
+}
+
