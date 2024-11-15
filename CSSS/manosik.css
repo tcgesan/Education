@@ -65,6 +65,7 @@ margin-top: 6%;
 user-select: none;
 }
 .correct {
+
     background-color: rgb(0, 255, 0);
     flex-wrap: wrap;
     color:black;
@@ -72,6 +73,7 @@ user-select: none;
     font-family:iphone;
 }
 .incorrect {
+
     background-color: rgb(247, 9, 9);
     color: white;
     flex-wrap: wrap;
