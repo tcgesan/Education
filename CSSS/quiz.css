@@ -31,11 +31,12 @@ body{
 
 @font-face {
     font-family: opp;
-    src: url(../font/RobotoCondensed-Regular.ttf);
+    src: url(../font/Ios\ Kohinoor\ font.ttf);
 }
 h1{
     font-weight: bold;
     user-select: none;
+    color:crimson;
     font-family:opp;
 
     font-size: 1.3rem;

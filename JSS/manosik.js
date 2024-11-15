@@ -1,6 +1,3 @@
-let timer;
-let timeLeft = 20;
-
 
 let questions = [
 
@@ -150,74 +147,67 @@ let questions = [
 ]
 
 
-let currentQuestionIndex;
+let questionHistory = [];
+let currentQuestionIndex = -1;
 
-function startTimer() {
-    timer = setInterval(() => {
-        timeLeft--;
-        document.getElementById("timer").innerText = timeLeft;
-        if (timeLeft <= 0) {
-            clearInterval(timer);
-            alert("Time's up!");
-            document.getElementById("next").style.display = "block";
-        }
-    }, 1000);
+function getRandomQuestion() {
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    return questions[randomIndex];
 }
 
-function displayQuestion() {
-    currentQuestionIndex = Math.floor(Math.random() * questions.length);
-    const currentQuestion = questions[currentQuestionIndex];
-    
-    document.getElementById("question").innerText = currentQuestion.question;
-    
-    const answerDivs = document.querySelectorAll('.answer');
-    answerDivs.forEach((div, index) => {
-        div.innerText = currentQuestion.options[index];
-        div.className = "answer"; // Reset class
-        div.style.pointerEvents = 'auto'; // Enable clicks
+function loadQuestion(question) {
+    document.getElementById('question').innerText = question.question;
+
+    const optionsList = document.getElementById('options');
+    optionsList.innerHTML = '';
+    question.options.forEach((option, index) => {
+        const optionElement = document.createElement('li');
+        optionElement.innerText = option;
+        optionElement.onclick = () => selectOption(optionElement, index, question.answer);
+        optionsList.appendChild(optionElement);
     });
 
-    timeLeft = 20;
-    document.getElementById("timer").innerText = timeLeft;
-    startTimer();
-}
-
-function checkAnswer(selectedIndex) {
-    clearInterval(timer);
-    const currentQuestion = questions[currentQuestionIndex];
-    const answerDivs = document.querySelectorAll('.answer');
-
-    if (selectedIndex === currentQuestion.answer) {
-        document.getElementById("correctSound").play();
-        answerDivs[selectedIndex].classList.add("correct");
-        answerDivs.forEach(div => div.style.pointerEvents = 'none'); // Disable clicks after correct answer
-    } else {
-        document.getElementById("incorrectSound").play();
-        answerDivs[selectedIndex].classList.add("incorrect");
-        // Do not disable clicks, allowing the user to try again
-    }
-
-    // Show the next button after selecting an answer
-    document.getElementById("next").style.display = "block";
+    document.getElementById('prevBtn').disabled = currentQuestionIndex <= 0;
 }
 
 function nextQuestion() {
-    displayQuestion();
-    document.getElementById("next").style.display = "none";
-    const answerDivs = document.querySelectorAll('.answer');
-    answerDivs.forEach(div => {
-        div.classList.remove("correct", "incorrect");
-    });
+    const nextQuestion = getRandomQuestion();
+    questionHistory = questionHistory.slice(0, currentQuestionIndex + 1);
+    questionHistory.push(nextQuestion);
+    currentQuestionIndex++;
+    loadQuestion(nextQuestion);
 }
 
+function previousQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        loadQuestion(questionHistory[currentQuestionIndex]);
+    }
+}
 
-window.onload = displayQuestion;
+function selectOption(element, index, correctAnswer) {
+    const options = document.querySelectorAll('.options li');
+    
+    options.forEach(option => {
+        if (!option.classList.contains('correct') && !option.classList.contains('incorrect')) {
+            option.classList.remove('selected');
+        }
+    });
 
+    if (index === correctAnswer) {
+        element.classList.add('correct');
+        document.getElementById('correctSound').play();
+    } else {
+        element.classList.add('incorrect');
+        document.getElementById('incorrectSound').play();
+    }
 
+    element.classList.add('selected');
+}
+
+nextQuestion();
 
 // Back Button
 function goBack() {
     window.history.back();
 }
-
-
