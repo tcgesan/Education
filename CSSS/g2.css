@@ -7,7 +7,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(251, 251, 251);
+    /* background-color: rgb(251, 251, 251); */
     flex-direction: column;
 }
 
@@ -41,13 +41,13 @@ body{
 button{
     width: 35px;
     margin-left: -35%;
+    color: aliceblue;
     height: 35px;
-    color: rgb(55, 55, 58);
     transition-duration: 0.2s;
     transform: scale(1.4);
-    background:linear-gradient(100deg , rgb(143, 143, 238),rgb(203, 203, 242));
+    background:black;
     border: none;
-    box-shadow: 1px 5px 8px rgb(198, 215, 239);
+    box-shadow: 1px 5px 14px rgb(167, 197, 240);
     border-radius: 50px;
 }
 

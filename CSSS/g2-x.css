@@ -57,7 +57,7 @@ h1{
     /* background-color: #f5f9ff; */
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 10%;
     align-self: center;
     border-radius: 8px;
@@ -112,7 +112,6 @@ h1{
     background-color: rgb(0, 255, 0);
     flex-wrap: wrap;
     color:black;
-    font-weight: bold;
 }
 .options li.incorrect {
     background-color: rgb(247, 9, 9);
