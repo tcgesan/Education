@@ -26,7 +26,7 @@ body{
     height: auto;
     overflow: hidden;
     flex-direction: column;
-    background-color: rgb(249, 249, 251);
+    /* background-color: rgb(249, 249, 251); */
 }
 
 @font-face {
@@ -55,7 +55,7 @@ h1{
 
 
 .quiz-container {
-    background-color: #f5f9ff;
+    /* background-color: #f5f9ff; */
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -65,18 +65,22 @@ h1{
     width: 100%;
     text-align: center;
 }
+
+@font-face {
+    font-family: pp;
+    src: url(../font/Poppins-Regular.ttf);
+}
 .question {
     font-size: 15px;
     margin-bottom: 25px;
     align-self: center;
     border-radius: 9px;
-    font-family: 'ip';
+    font-family: pp;
+    font-weight: bold;
     color: rgb(0, 0, 0);
     padding: 17px;
     height: auto;
     width: 80%;
-    background-color:cornsilk;
-    box-shadow: 0px 3px 8px rgb(151, 151, 149);
 }
 .options {
     list-style: none;
