@@ -53,6 +53,8 @@
     // "<span style='color: blue; font-size:20px; font-family:Fira Sans;'>   </span> <br> <i class='fa-solid fa-arrow-down'></i> <br> <span style=' font-size:20px;'>  </span> ",
 ];
 
+
+
   // Function to get a random fact
   function getBanglaFact() {
     const randomIndex = Math.floor(Math.random() * banglaFacts.length);
