@@ -88,61 +88,7 @@ let questions = [
           answer: 1
       },
 
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
 
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-
-//     { 
-//           question: "  ", 
-//           options: [" ", " ", " ", " "], 
-//           answer: 3
-//       },
-      
-  
     
 ]
 

@@ -28,6 +28,14 @@ function Fact() {
     }, 150);
 }
 
+function g2() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/g2.html';
+    }, 150);
+}
+
 
 
 function riddle() {
