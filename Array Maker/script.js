@@ -69,7 +69,7 @@ function addQuestion() {
 // Function to display data in the <pre> tag in desired format
 function displayData() {
     const formattedData = questions.map(q => `{
-    question: '${q.question}',
+    question: "${q.question}",
     options: ${JSON.stringify(q.options)},
     answer: ${q.answer} 
 },`).join('\n\n');
