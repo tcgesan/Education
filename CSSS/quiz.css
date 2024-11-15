@@ -70,8 +70,8 @@ h1{
     padding: 17px;
     height: auto;
     width: 80%;
-    background-color:gold;
-    box-shadow: 0px 3px 3px rgb(151, 151, 149);
+    background-color:cornsilk;
+    box-shadow: 0px 3px 7px rgb(151, 151, 149);
 }
 .options {
     list-style: none;
@@ -158,8 +158,8 @@ gap: 20px;
     height: 35px;
     margin-top: 18%;
     margin-left: 6%;
-    box-shadow: 0 4px 14px rgb(143, 143, 144);
-    background: linear-gradient(00deg,rgb(7, 7, 7),rgb(93, 92, 93));
+    box-shadow: 0 10px 14px rgb(201, 201, 202);
+    background: black;
     transition-duration: 0.2s;
 }
 
