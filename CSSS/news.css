@@ -88,6 +88,7 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     display: flex;
+    padding-bottom: 2%;
     flex-direction: column;
 }
 .news-item img {
@@ -109,11 +110,13 @@ main {
     margin: 10px;
     font-size: 15px;
     color: blue;
+    text-align: center;
     text-decoration: none;
     font-weight: bold;
 }
 .news-item a:hover {
     text-decoration: none;
+
 }
 #loader {
     text-align: center;
