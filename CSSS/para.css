@@ -4,13 +4,12 @@
 }
 
 .main{
-          width: 90%;
+          width: 100%;
           /* margin-top: 10%; */
           height: auto;
           font-family: head;
           background: linear-gradient(135deg, rgb(201, 201, 254) 0%, aliceblue 100%);
           border: none;
-          padding: 20px;
           font-size:17px;
           padding-top: 20px;
           line-height: 25px;
