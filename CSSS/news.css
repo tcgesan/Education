@@ -126,3 +126,15 @@ main {
 .hidden {
     display: none;
 }
+
+.p{
+    margin-left: 25%;
+    font-size: 1.3rem;
+    width: 10%;
+    border-radius: 20px;
+    height:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
