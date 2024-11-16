@@ -90,23 +90,6 @@ body{
   
 
 
-#dot{
-    font-size: 06px;
-    margin-left: 7%;
-    animation: blink 0.5s ease-out infinite;
-    margin-top: 6px;
-}
-@keyframes blink{
-    0%{
-        color:rgb(20, 220, 20);
-    }
-    50%{
-        color:rgb(20, 220, 20);
-    }
-    100%{
-        color: black;
-    }
-}
 
 
 

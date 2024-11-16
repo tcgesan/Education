@@ -14,15 +14,10 @@
   <body>
 
 
-<!-- Header -->
-<div class="navbar">
-    <div  class="Home" ><i onclick="window.location.href='../index.html'" class="fa-solid fa-house-chimney-window"></i>   </div>
-    <div  class="ebook" > <i onclick="window.location.href='../HTMLS/question-board.html'"  class="fa-solid fa-layer-group"></i></div>
-    <div  class="practice"><i onclick="window.location.href='../HTMLS/Practice.html'"  class="fa-solid fa-lightbulb"></i></div>
-    <div class="more"><i  onclick="window.location.href='../HTMLS/more.html'" class="fa-solid fa-list"></i></div>
- 
-</div>
-
+    <div class="header">
+        <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+    <p id="head">  Question Bank  </p>
+    </div>
 
 <div class="contents">
 
@@ -31,11 +26,11 @@
     <p> সকল বিষয়ের প্রশ্নব্যাংক</p>
 </div>
 
-<div class="box" id="box1"></div>
+<div onclick="window.location.href='../Question-Bank/Bangla1.html'" class="box" id="box1"></div>
 <div class="box" id="box2"></div>
-<div class="box" id="box3"></div>
+<div  onclick="window.location.href='../Question-Bank/English1.html'"  class="box" id="box3"></div>
 <div class="box" id="box4"></div>
-<div class="box" id="box5"> </div>
+<div   onclick="window.location.href='../Question-Bank/ICT.html'"  class="box" id="box5"> </div>
 <br>
 
 <div class="headers2"> 
@@ -51,7 +46,7 @@
 
 </div>
 
-
+<script src="../script.js"></script>
 </body>
 </html>
 

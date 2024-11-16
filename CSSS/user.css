@@ -43,23 +43,6 @@ font-size: min(25px);
 }
 
 
-#dot{
-    font-size: 06px;
-    margin-left: 7%;
-    animation: blink 0.5s ease-out infinite;
-    margin-top: 6px;
-}
-@keyframes blink{
-    0%{
-        color:rgb(20, 220, 20);
-    }
-    50%{
-        color:rgb(20, 220, 20);
-    }
-    100%{
-        color: black;
-    }
-}
 
 #Profile{
     width: 15%;
@@ -124,21 +107,3 @@ h1{
     margin-left: 40%; */
 }
 
-
-#dot{
-    font-size: 06px;
-    margin-left: 28%;
-    animation: blink 0.5s ease-out infinite;
-    margin-top: 6px;
-}
-@keyframes blink{
-    0%{
-        color:rgb(20, 220, 20);
-    }
-    50%{
-        color:rgb(20, 220, 20);
-    }
-    100%{
-        color: black;
-    }
-}

@@ -29,69 +29,52 @@ a{
 }
 
 
-.navbar{
-  width: 100%;
-  display: flex;
-  background-color: black;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  z-index: 1000;
-  position: fixed;
-  color: white;
-  column-gap: 10px;
-  box-shadow: 0 5px 25px rgba(70, 150, 243,1);
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 60px;
+.header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    top: 0;
+    align-items: center;
+    position: fixed;
+    flex-direction: row;
+    z-index: 1000;
+    background-color:white;
 }
 
-.Home{
-  width: 6%;
-  display: flex;
-  font-size: 23px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
+.back-button{
+    /* width: 40px; */
+    margin-left: 7%;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(250, 250, 252);
+    /* background:linear-gradient(-0deg,rgb(120, 120, 233),rgb(207, 207, 244)) ; */
+    /* box-shadow: 0px 6px 10px rgb(210, 210, 249); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* height: 40px; */
 }
-
-.ebook{
-  width: 6%;
-  display: flex;
-  font-size: 23px;
-  flex-direction: row;
-  justify-content: center;
-  color: #9ad9f2;
-  align-items: center;
-  height: 4rem;
+@font-face {
+    font-family: op;
+    src: url(../font/Poppins-Regular.ttf);
 }
-
-.practice{
-  width: 6%;
-  display: flex;
-  font-size: 23px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
+#head{
+    width: 70%;
+    align-self: center;
+    font-size: 18px;
+    font-family: op;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: cyan; */
 }
-.more{
-  width: 6%;
-  display: flex;
-  font-size: 23px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
-}
-
 
 
 .contents{
-    margin-top: 35%;
+    margin-top: 20%;
 width: 100%;
 height: auto;
+user-select: none;
 overflow-x: hidden;
 font-family: ip;
 display: flex;
@@ -148,6 +131,7 @@ flex-wrap: wrap;
 
 .box{
     width: 8.6rem;
+    transition-duration: 0.2s;
     height: 9rem;
     box-shadow: 05px 08px 15px rgb(174, 172, 172);
     border-radius: 10px;
@@ -155,7 +139,9 @@ flex-wrap: wrap;
     background-color:black;
 }
 
-
+.box:active{
+    transform: scale(0.8);
+}
 #box1{
     background-size: cover;
     background-image: url(../Pho/Bangla1.png);
