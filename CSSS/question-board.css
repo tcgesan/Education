@@ -74,6 +74,8 @@ a{
     margin-top: 20%;
 width: 100%;
 height: auto;
+align-items: center;
+justify-content: center;
 user-select: none;
 overflow-x: hidden;
 font-family: ip;
@@ -137,6 +139,14 @@ flex-wrap: wrap;
     border-radius: 10px;
     background-size: cover;
     background-color:black;
+}
+
+.box:nth-child(7){
+    visibility: hidden;
+}
+
+.box:nth-child(15){
+    visibility: hidden;
 }
 
 .box:active{
