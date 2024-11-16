@@ -38,8 +38,17 @@ body{
     box-shadow: 0 5px 25px rgba(70, 150, 243,1);
 }
 
+.news{
+    width: 6%;
+    display: flex;
+    color: white;
+    font-size: 23px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+  }
 #Home{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,7 +63,6 @@ body{
 
 
 #ebook{
-    width: 15%;
     display: flex;
     font-weight: bold;
     align-items: center;
@@ -66,7 +74,6 @@ color: white;
 
 
 #Motivations{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +86,6 @@ color: white;
 }
 
 #Syllabus{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;

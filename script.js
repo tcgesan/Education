@@ -274,7 +274,7 @@ function flash() {
 
 
 // Back Button
-function goBack() {
+function () {
     window.history.back();
 }
 

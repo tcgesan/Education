@@ -24,6 +24,15 @@ body{
     color:inherit;
 }
 
+.news{
+  width: 6%;
+  display: flex;
+  font-size: 23px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+}
 .navbar{
     width: 100%;
     display: flex;

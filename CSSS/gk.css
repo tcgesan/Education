@@ -23,6 +23,16 @@ body{
       width: 100%;
   }
 
+  .news{
+    width: 6%;
+    display: flex;
+    font-size: 23px;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+  }
 
 
 #aa{
@@ -46,7 +56,6 @@ body{
 }
 
 #Home{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +70,6 @@ body{
 
 
 #ebook{
-    width: 15%;
     display: flex;
     font-weight: bold;
     align-items: center;
@@ -73,7 +81,6 @@ color: white;
 
 
 #Motivations{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +93,6 @@ color: white;
 }
 
 #Syllabus{
-    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
