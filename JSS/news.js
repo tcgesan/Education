@@ -64,10 +64,6 @@ window.addEventListener('scroll', () => {
 // Initial fetch
 fetchNews();
 
-// Automatically reload the news content every minute (60000 milliseconds)
-setInterval(() => {
-    resetNews(); // Reset news every 1 minute
-}, 4000000);
 
 
 // Back Button
