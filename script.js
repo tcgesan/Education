@@ -274,10 +274,9 @@ function flash() {
 
 
 // Back Button
-function () {
-    window.history.back();
+function goBack(){
+  window.history.back();
 }
-
 
 
 // Service Worker code start
