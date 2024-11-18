@@ -71,7 +71,7 @@ function displayData() {
     const formattedData = questions.map(q => `{
     text: "${q.question}",
     options: ${JSON.stringify(q.options)},
-    answer: ${q.answer} 
+    correct: ${q.answer} 
 },`).join('\n\n');
     document.getElementById("dataDisplay").textContent = formattedData;
 }
