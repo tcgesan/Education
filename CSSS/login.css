@@ -6,20 +6,24 @@
   }
 
   
-  body, html {
+  body{
+width: 100%;
+    height:auto;
+    background-color: #fdfefe;
+  }
+  
+  .con{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f3f4f6;
-    color: #333;
+justify-content: center;
+margin-top: 40%;
   }
 
   .login-container {
     width: 85%;
     padding: 2rem;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(120, 119, 119, 0.495);
     border-radius: 8px;
     text-align: center;
   }
@@ -71,3 +75,9 @@
     src: url(../font/FiraSans-Regular.ttf);
   }
 
+.back-button{
+  width: 40px;
+  margin-left: 10%;
+  height: 40px;
+  border-radius: 50px;
+}

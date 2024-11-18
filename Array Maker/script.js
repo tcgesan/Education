@@ -102,3 +102,11 @@ function deleteAllData() {
 
 // Initial display of data from localForage
 displayData();
+
+
+
+// Back Button
+function goBack(){
+    window.history.back();
+  }
+  

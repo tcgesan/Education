@@ -12,23 +12,11 @@
 <body>
 
 
-    
 
-    <!-- Header -->
-    <div class="header">
-
-        <div  id="Home" ><i onclick="window.location.href='../index.html'"  class="fa-solid fa-house-chimney-window"></i></div>
-        <div  class="news" ><i onclick="window.location.href='../HTMLS/news.html'" <i class="fa-solid fa-newspaper"></i></div>
-        <div  id="ebook" > <i onclick="window.location.href='../HTMLS/question-board.html'"   class="fa-solid fa-layer-group"></i></div>
-        
-    
-        <div  id="Motivations"><i onclick="window.location.href='../HTMLS/Practice.html'" class="fa-solid fa-lightbulb"></i></div>
-    
-        <div id="Syllabus"><i  onclick="window.location.href='../HTMLS/more.html'"class="fa-solid fa-list"></i>
-        </div>
-    </div>
-    
-<!-- content -->
+    <div class="head"> 
+        <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
+        <p>Library </p>
+</div>
 
 
 <img src="../Pho/Book.gif" width="300" alt="" id="book-logo">
@@ -77,7 +65,8 @@
     <a href="https://drive.google.com/file/d/1-56cpLRUiToGs3bCTE-QoA4XrCMFEiAG/view?usp=drivesdk">
           <div class="download">Download </div>
     </a></div>
-
+    
+    <div class="next" onclick="next();">Next &nbsp <i class="fa-solid fa-arrow-right"></i></div>
 </div>
 
 
@@ -91,8 +80,7 @@
 
     
 
-    
-<div class="next" onclick="next();">Next &nbsp <i class="fa-solid fa-arrow-right"></i></div>
+
 
 
 <audio id="clickSound">

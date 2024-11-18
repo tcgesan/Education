@@ -13,12 +13,20 @@
 }
 
 body{
-    background-size: cover;
     width: 100%;
-    background-repeat: no-repeat;
-    background-color: rgb(249, 246, 246);
+
 }
 
+.con{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    flex-direction: column;
+    margin-top: 36%;
+}
 .news{
     display: flex;
     font-size: 23px;
@@ -96,18 +104,13 @@ color: white;
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding: 26px;
     user-select: none;
-    position: absolute;
-    z-index: -1;
     width: 60%;
     height: auto;
     flex-direction: column;
-    margin-left: 15%;
     display: flex;
-    margin-top: 430px;
     border-radius: 20px;
-    background-color: white;
     box-shadow: -2px 10px 13px 2px rgb(193, 196, 198);
 
 }
@@ -121,22 +124,16 @@ color: white;
 
 .containerr{
     text-align: center;
-    padding: 20px;
+    padding: 26px;
     user-select: none;
-    position: absolute;
     width: 60%;
-    z-index: -1;
     height: auto;
     flex-direction: column;
-    margin-left: 15%;
     display: flex;
-    margin-top: 150px;
     border-radius: 20px;
-    background-color: white;
     box-shadow: -2px 10px 13px 2px  rgb(193, 196, 198);
 
 }
-
 
 
 
@@ -192,7 +189,6 @@ button:active{
 
 
 h1{
-    /* margin: 20px 0; */
     font-size: 20px;
     font-family: "Fira Sans", sans-serif;
 }

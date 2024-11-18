@@ -5,7 +5,7 @@ function ques() {
     var sound = document.getElementById("clickSound");
     sound.play();
     setTimeout(function() {
-        window.location.href = '../HTMLS/updating.html';
+        window.location.href = '../HTMLS/question-board.html';
     }, 150); 
 }
 
@@ -260,6 +260,14 @@ function dokhota() {
     sound.play();
     setTimeout(function() {
         window.location.href = '../HTMLS/mental-power.html';
+    }, 150); 
+}
+
+function other() {
+    var sound = document.getElementById("clickSound");
+    sound.play();
+    setTimeout(function() {
+        window.location.href = '../HTMLS/other.html';
     }, 150); 
 }
 

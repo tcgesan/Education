@@ -137,12 +137,6 @@ const handleOutgoingChat = () => {
     setTimeout(showLoadingAnimation, 500); // Show loading animation after a delay
 };
 
-// Toggle buttons for light and dark theme
-toggleThemeButton.addEventListener("click", () => {
-    const isLightMode = document.body.classList.toggle("light_mode");
-    localStorage.setItem("themeColor", isLightMode ? "light_mode" : "dark_mode");
-    toggleThemeButton.innerText = isLightMode ? "dark_mode" : "light_mode";
-});
 
 // Delete all chats
 deleteChatButton.addEventListener("click", () => {

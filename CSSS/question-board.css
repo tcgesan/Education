@@ -79,7 +79,7 @@ user-select: none;
 overflow-x: hidden;
 font-family: ip;
 display: flex;
-gap: 23px;
+gap: 16px;
 margin-bottom: 20%;
 padding: 25px;
 flex-wrap: wrap;
@@ -152,7 +152,7 @@ flex-wrap: wrap;
 
 
 .box{
-    width: 8.6rem;
+    width: 9rem;
     transition-duration: 0.2s;
     height: 9rem;
     box-shadow: 05px 08px 15px rgb(174, 172, 172);
