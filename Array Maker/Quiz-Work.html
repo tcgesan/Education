@@ -15,20 +15,31 @@
 <body>
     <button class="back-button" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></button>
     <!-- Input form for adding questions -->
+    <form id="questionForm"><br><br>
+        <h1>Question</h1>
+        <input type="text" id="questionInput" required><br><br><br>
+
+        <h1>Options</h1>
+        <input placeholder="Option 1" type="text" id="option1" required><br>
+        <input placeholder="Option 2" type="text" id="option2" required><br>
+        <input placeholder="Option 3" type="text" id="option3" required><br>
+        <input placeholder="Option 4" type="text" id="option4" required><br><br>
+        
+
+    </form>
     
-    <div class="Quiz"> 
-        <div onclick="window.location.href='../Array Maker/Quiz-Work.html'" class="box"> 
-  <h2> For </h2>
-  <p>Quiz  ,  Grammar </p>
-        </div>
+    <label><font color="blue">Answer no :</font></label>
+    <input type="number" id="answerInput" min="1" max="4" required><br><br>
+    <button id="add-que" type="button" onclick="addQuestion()">Print Question</button>
 
-        <div onclick="window.location.href='../Array Maker/Arr.html'" class="box">
-            <h2> For </h2>
-            <p> Question Bank  </p>
-        </div>
+    <h2>Results</h2>
+    <pre id="dataDisplay"></pre>
 
-
+    <div class="button-container">
+        <button id="copy" onclick="copyData()">Copy</button>
+        <button id="delet" onclick="deleteAllData()">Delete</button>
     </div>
+
     <script src="../Array Maker/script.js"></script>
 </body>
 </html>

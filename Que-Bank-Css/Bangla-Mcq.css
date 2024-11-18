@@ -45,8 +45,6 @@ input:focus{
     margin-left: 7%;
     font-size: 18px;
     border: none;
-    /* background:linear-gradient(-0deg,rgb(120, 120, 233),rgb(207, 207, 244)) ; */
-    /* box-shadow: 0px 6px 10px rgb(210, 210, 249); */
     display: flex;
     background-color:rgb(250, 249, 248);
 
@@ -64,6 +62,7 @@ p{
     width: 70%;
     align-self: center;
     font-size: 17px;
+    margin-left: 10%;
     font-family: ip;
     font-weight: bold;
     text-align: center;

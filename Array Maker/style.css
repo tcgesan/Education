@@ -2,6 +2,7 @@
     margin: 0;
     user-select: none;
     padding: 0;
+    font-family: opp;
 }
 
 
@@ -24,9 +25,11 @@
  body {
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: rgb(251, 252, 253);
     justify-content: center;
     align-items: center;
     margin: 0;
+    overflow-x: hidden;
     flex-direction: column;
     padding: 20px;
 }
@@ -268,3 +271,43 @@ label{
     border: 2px solid rgba(170, 31, 87, 0.225);
 }
 
+
+.Quiz{
+    width: 100%;
+    height: auto;
+display: flex;
+flex-direction: column;
+gap: 30px;
+margin-top: 20%;
+justify-content: center;
+align-items: center;
+}
+
+.box{
+    border-radius: 10px;
+width: 75%;
+background:lavender;
+height: 6.5rem;
+box-shadow: 05px 5px 6px rgba(175, 175, 175, 0.512);
+transition-duration: 0.2s;
+}
+
+.box:active{
+    transform: scale(0.8);
+}
+h2{
+    font-size: 1.4rem;
+}
+
+@font-face {
+    font-family: opp;
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+p{
+    text-align: center;
+    opacity: 0.7;
+    font-size:20px;
+    margin-top: -3%;
+    font-family: opp;
+    font-weight: bold;
+}
