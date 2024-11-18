@@ -44,9 +44,9 @@ function addQuestion() {
 
     // Add the question to the array
     questions.push({
-        title: questionText,
+        question: questionText,
         options: options,
-        correct: answer - 1 // Adjust to 0-based index
+        answer: answer - 1 // Adjust to 0-based index
     });
 
     // Save the updated questions array to localForage
@@ -69,9 +69,9 @@ function addQuestion() {
 // Function to display data in the <pre> tag in desired format
 function displayData() {
     const formattedData = questions.map(q => `{
-    title: "${q.title}",
+    text: "${q.question}",
     options: ${JSON.stringify(q.options)},
-    correct: ${q.correct} 
+    answer: ${q.answer} 
 },`).join('\n\n');
     document.getElementById("dataDisplay").textContent = formattedData;
 }
