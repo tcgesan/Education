@@ -1,72 +1,112 @@
+// Initialize localForage to store questions
+localforage.config({
+    name: 'questionApp',
+    storeName: 'questions'
+});
 
+// Load existing questions from localForage or initialize an empty array
+let questions = [];
 
+// Fetch questions from localForage on page load
+localforage.getItem("questions").then(savedQuestions => {
+    if (savedQuestions) {
+        questions = savedQuestions;
+        displayData();
+    }
+}).catch(err => {
+    console.error("Error loading questions: ", err);
+});
 
-let generatedArrays = [];
-
-function generateArray() {
-    const text = document.getElementById('text').value.trim();
+// Function to add a question to the array
+function addQuestion() {
+    const questionText = document.getElementById("questionInput").value.trim();
     const options = [
-        document.getElementById('option1').value.trim(),
-        document.getElementById('option2').value.trim(),
-        document.getElementById('option3').value.trim(),
-        document.getElementById('option4').value.trim()
+        document.getElementById("option1").value.trim(),
+        document.getElementById("option2").value.trim(),
+        document.getElementById("option3").value.trim(),
+        document.getElementById("option4").value.trim()
     ];
-    const correct = parseInt(document.getElementById('correct').value.trim(), 10) - 1; // Convert 1-based to 0-based index
+    const answer = parseInt(document.getElementById("answerInput").value);
 
-    // Validation
-    if (!text || options.some(opt => opt === "") || isNaN(correct) || correct < 0 || correct >= options.length) {
-        alert("Please fill in all fields correctly!");
+    // Validate that all fields are filled
+    if (!questionText) {
+        alert("Please enter the question. 😐");
+        return;
+    }
+    if (options.some(option => !option)) {
+        alert("Please fill all options. 🥹");
+        return;
+    }
+    if (isNaN(answer) || answer < 1 || answer > 4) {
+        alert("Please enter a valid answer number (between 1 and 4). 🐥");
         return;
     }
 
-    const newArray = {
-        text: text,
+    // Add the question to the array
+    questions.push({
+        title: questionText,
         options: options,
-        correct: correct
-    };
-    generatedArrays.push(newArray);
+        correct: answer - 1 // Adjust to 0-based index
+    });
 
-    // Clear input fields
-    document.getElementById('text').value = '';
-    document.getElementById('option1').value = '';
-    document.getElementById('option2').value = '';
-    document.getElementById('option3').value = '';
-    document.getElementById('option4').value = '';
-    document.getElementById('correct').value = '';
+    // Save the updated questions array to localForage
+    localforage.setItem("questions", questions).then(() => {
+        displayData();
 
-    displayArrays();
-}
+        // Clear the input fields
+        document.getElementById("questionInput").value = "";
+        document.getElementById("option1").value = "";
+        document.getElementById("option2").value = "";
+        document.getElementById("option3").value = "";
+        document.getElementById("option4").value = "";
+        document.getElementById("answerInput").value = "";
 
-function displayArrays() {
-    const outputDiv = document.getElementById('output');
-    outputDiv.innerHTML = ''; // Clear existing content
-
-    generatedArrays.forEach((array, index) => {
-        const arrayDiv = document.createElement('div');
-        arrayDiv.classList.add('array-item');
-        arrayDiv.innerText = `{
-text: "${array.text}",
-options: ["${array.options.join('", "')}"],
-correct: ${array.correct}
-},`;
-        outputDiv.appendChild(arrayDiv);
+    }).catch(err => {
+        console.error("Error saving question 😐: ", err);
     });
 }
 
-function copyArrays() {
-    const allArrays = generatedArrays.map(array => `{
-text: "${array.text}",
-options: ["${array.options.join('", "')}"],
-correct: ${array.correct}
-},`).join(',\n');
-    navigator.clipboard.writeText(allArrays)
-        .then(() => alert('All arrays copied to clipboard!'))
-        .catch(err => alert('Failed to copy arrays: ' + err));
+// Function to display data in the <pre> tag in desired format
+function displayData() {
+    const formattedData = questions.map(q => `{
+    title: "${q.title}",
+    options: ${JSON.stringify(q.options)},
+    correct: ${q.correct} 
+},`).join('\n\n');
+    document.getElementById("dataDisplay").textContent = formattedData;
 }
 
-function deleteArrays() {
-    if (confirm('Are you sure you want to delete all arrays?')) {
-        generatedArrays = [];
-        document.getElementById('output').innerHTML = '';
+// Function to copy data to clipboard
+function copyData() {
+    const dataDisplay = document.getElementById("dataDisplay").textContent;
+    navigator.clipboard.writeText(dataDisplay).then(() => {
+        alert("Questions copied to clipboard ✅");
+    }).catch(err => {
+        console.error("Failed to copy text 😐: ", err);
+    });
+}
+
+// Function to delete all data
+function deleteAllData() {
+    const confirmation = confirm("Are you sure you want to delete all data? 🤔");
+    if (confirmation) {
+        questions = []; // Clear the array
+        localforage.setItem("questions", questions).then(() => {
+            displayData(); // Re-display the data (empty)
+            alert("All data deleted successfully. 😊");
+        }).catch(err => {
+            console.error("Error deleting questions 😐: ", err);
+        });
     }
 }
+
+// Initial display of data from localForage
+displayData();
+
+
+
+// Back Button
+function goBack(){
+    window.history.back();
+  }
+  
