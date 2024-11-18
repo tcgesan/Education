@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: white;
+    background-color:rgb(254, 254, 254);
 }
 input{
     width: 65%;
@@ -28,4 +28,135 @@ input:focus{
     display: flex;
     justify-content: center;
   
+}
+
+.header{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    top: 0;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: blue; */
+}
+
+.back-button{
+    /* width: 40px; */
+    margin-left: 7%;
+    font-size: 18px;
+    border: none;
+    /* background:linear-gradient(-0deg,rgb(120, 120, 233),rgb(207, 207, 244)) ; */
+    /* box-shadow: 0px 6px 10px rgb(210, 210, 249); */
+    display: flex;
+    background-color:rgb(250, 249, 248);
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    /* height: 40px; */
+}
+@font-face {
+    font-family: ip;
+    src: url(../font/Ios\ Kohinoor\ font.ttf);
+}
+p{
+    width: 70%;
+    align-self: center;
+    font-size: 17px;
+    font-family: ip;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: cyan; */
+}
+
+
+.contents{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+@font-face {
+    font-family: ip;
+    src: url(../font/Ios\ Kohinoor\ font.ttf);
+}
+.box{
+    width: 90%;
+    display: flex;
+    font-family: ip;
+    gap: 5px;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 5rem;
+    padding-bottom: 03px;
+    box-shadow: 0px 0px 13px rgba(192, 192, 192, 0.573);
+    background-color:white;
+}
+h3{
+font-size: 16px;
+}
+
+@font-face {
+    font-family: op;
+    src: url(../font/RobotoCondensed-Regular.ttf);
+}
+h4{
+    width: 30%;
+    text-align: center;
+    font-family: op;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.9rem;
+    color: rgb(8, 8, 205);
+    font-weight: normal;
+    font-size: 13px;
+    transition-duration: 0.2s;
+    background-color:rgba(23, 23, 246, 0.101);
+    box-shadow: 0px 4px 6px rgb(189, 189, 246);
+    border-radius: 050px;
+}
+h4:active{
+    transform: scale(0.8);
+}
+
+h5{
+    width: 30%;
+    text-align: center;
+    font-family: op;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 1.9rem;
+    color:rgb(207, 11, 11);
+    font-weight: normal;
+    font-size: 13px;
+    box-shadow: 0px 4px 6px rgba(236, 156, 156, 0.595) ;
+    transition-duration: 0.2s;
+    background-color:rgb(252, 227, 227);
+    border-radius: 050px;
+}
+h5:active{
+    transform: scale(0.8);
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
 }
