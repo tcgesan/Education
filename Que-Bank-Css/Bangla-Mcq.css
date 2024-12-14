@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .4s ease 1;
 }
 
 body{
@@ -159,3 +160,13 @@ h5:active{
     gap: 10px;
     flex-direction: row;
 }
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

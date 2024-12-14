@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .4s ease 1;
     user-select: none;
     font-family: ip;
 }
@@ -253,3 +254,14 @@ border-radius: 10px;
     display: flex;
     height: 3rem;
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

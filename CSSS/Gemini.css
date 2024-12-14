@@ -3,6 +3,7 @@
    font-family: "poppins", sans-serif ;
    margin: 0;
    padding: 0;
+   animation: fade .3s ease 1;
    user-select: none;
    box-sizing: border-box;
 }
@@ -334,3 +335,13 @@ h5{
    margin-top: 3%;
    margin-left: 77%;
 }
+
+
+@keyframes fade {
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+ }

@@ -3,6 +3,7 @@
 body{
     align-items: center;
     justify-content: center;
+    animation: fade .3s ease 1;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -214,3 +215,14 @@ button.wrong {
     user-select: none;
     transform: scale(1.1);
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
     /* background-color: silver; */
 }
 
@@ -191,3 +192,15 @@ h1{
     font-size: 17px;
     font-family: iphone;
 }
+
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

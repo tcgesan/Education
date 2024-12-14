@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     user-select: none;
+    animation: fade .3s ease 1;
 }
 
 @font-face {
@@ -176,3 +177,13 @@ gap: 20px;
     transform: scale(1.1);
 }
 
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

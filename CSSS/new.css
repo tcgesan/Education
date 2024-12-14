@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: ip;
+    animation: fade .3s ease 1;
 }
 
 @font-face {
@@ -98,3 +99,13 @@ a {
     color: #777;
     margin-top: 10px;
 }
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

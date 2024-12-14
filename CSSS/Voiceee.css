@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
 }
 .light{
     background: linear-gradient(to right,white,rgb(108, 105, 105));
@@ -369,3 +370,14 @@ font-size: min(25px);
     /* width:20% ;
     margin-left: 40%; */
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

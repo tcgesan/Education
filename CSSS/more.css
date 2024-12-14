@@ -6,6 +6,7 @@
     margin: 0;
     font-family: "Fira Sans Condensed", sans-serif;
     padding: 0;
+    animation: fade .3s ease 1;
  
 }
 
@@ -264,3 +265,13 @@ a{
   }
   
 
+
+
+  @keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

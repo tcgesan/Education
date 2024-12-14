@@ -5,6 +5,7 @@
 *{
     padding: 0;
     margin: 0;
+    animation: fade .3s ease 1;
 }
 
 
@@ -236,3 +237,13 @@ h2{
 
 
 
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
 }
 p{
     font-size: 1.2rem;
@@ -125,3 +126,13 @@ body{
     transform: scale(1.1);
 }
 
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

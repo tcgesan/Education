@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
    
 }
 
@@ -310,3 +311,14 @@ input:hover{
     margin-left: -100%;
     margin-top: -195%;
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

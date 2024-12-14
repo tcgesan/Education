@@ -1,6 +1,7 @@
 
 *{
     user-select: none;
+    animation: fade .3s ease 1;
 }
 a{
     text-decoration: none;
@@ -138,3 +139,15 @@ main {
     align-items: center;
     /* background-color: blue; */
 }
+
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

@@ -4,6 +4,7 @@
 
 *{
     margin: 0;
+    animation: fade .3s ease 1;
     padding: 0;
 }
 
@@ -244,3 +245,13 @@ flex-wrap: wrap;
     background-repeat: no-repeat;
 }
 
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

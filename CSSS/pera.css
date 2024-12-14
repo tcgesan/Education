@@ -2,6 +2,7 @@
 body {
           margin: 40px;
           color: #333;
+          animation: fade .3s ease 1;
         }
     
         input[type="text"] {
@@ -111,3 +112,14 @@ body {
         p{
           opacity: 0.8;
         }
+
+        
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}

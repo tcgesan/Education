@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
     /* background-color: silver; */
 }
 
@@ -186,3 +187,14 @@ h1{
     font-size: 19px;
     font-family: "Fira Sans", sans-serif;
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

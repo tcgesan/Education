@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
 }
 
 body {
@@ -179,3 +180,14 @@ color: white;
 .back-button:hover{
     transform: scale(1.2);
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

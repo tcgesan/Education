@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
 }
 
 body{
@@ -166,3 +167,14 @@ user-select: none;
 .back-button:active{
     transform: scale(1.1);
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

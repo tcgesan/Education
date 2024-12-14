@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
    
 }
 
@@ -183,3 +184,14 @@ align-items: center;
     border-radius: 10px;
     position: absolute;
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

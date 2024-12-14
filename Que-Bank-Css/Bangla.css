@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .4s ease 1;
 
 }
 
@@ -95,3 +96,14 @@ p{
     background-image: url(../Que-Bank-Pic/khooo-vander.png);
     background-size: cover;
 }
+
+
+
+@keyframes fade {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }

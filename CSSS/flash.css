@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
   }
   
   
@@ -103,4 +104,15 @@ padding-bottom: 0%;
 @font-face {
     font-family: 'ip';
     src: url(../font/Ios\ Kohinoor\ font.ttf);
+}
+
+
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }

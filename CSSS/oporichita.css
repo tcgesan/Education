@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    animation: fade .3s ease 1;
 }
 
 #pics{
@@ -192,4 +193,14 @@ h1{
   padding-bottom: 20%;
   /* position: absolute; */
   /* background-color: blue; */
+}
+
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
