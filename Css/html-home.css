@@ -170,22 +170,6 @@ body{
     background-color:rgb(0, 0, 0);
 }
 
-.kothai{
-    width:65%;
-    display: flex;
-    color: rgb(255, 255, 255);
-    font-family: poopins;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    padding: 5%;
-    box-shadow: 0px 0px 20px rgb(212, 210, 210);
-    margin-top: 5%;
-    margin-left: 10%;
-    border-radius: 5px;
-    height: 1rem;
-    background-color:rgb(0, 0, 0);
-}
 
 .tag{
     width: 35%;
@@ -281,11 +265,12 @@ border-radius: 10px;
 }
 
 .tg{
-    padding: 4%;
+    /* padding: 4%; */
     margin-top: 5%;
     width: 100%;
     border-radius: 5px;
     font-size: 1rem;
+    z-index: 1000;
     color: white;
     display: flex;
     flex-direction: column;
@@ -328,3 +313,29 @@ border-radius: 10px;
       opacity: 1;
     }
   }
+
+  button{
+    background-color:aliceblue;
+    z-index: 1000;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.kothai{
+    width:65%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: poopins;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 5%;
+    box-shadow: 0px 0px 20px rgb(212, 210, 210);
+    margin-top: 5%;
+    margin-left: 10%;
+    border-radius: 5px;
+    height: 1rem;
+    background-color:rgb(0, 0, 0);
+}
